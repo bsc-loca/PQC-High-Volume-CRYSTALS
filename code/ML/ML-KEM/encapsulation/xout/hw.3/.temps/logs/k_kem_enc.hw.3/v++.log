@@ -1,0 +1,123 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/k_kem_enc.hw.3
+	Log files: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/logs/k_kem_enc.hw.3
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xobj/k_kem_enc.hw.3.xo.compile_summary, at Fri Sep 15 12:35:08 2023
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Sep 15 12:35:08 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/k_kem_enc.hw.3/v++_compile_k_kem_enc.hw.3_guidance.html', at Fri Sep 15 12:35:09 2023
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/hw/xilinx_u280_xdma_201920_3.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.2
+INFO: [v++ 60-1302] Platform 'xilinx_u280_xdma_201920_3.xpfm' has been explicitly enabled for this release.
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u280_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'k_kem_enc'
+INFO: [v++ 60-804] Imported HLS script '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/tcl/k_kem_enc.hw.3.tcl' for kernel 'k_kem_enc'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: k_kem_enc Log file: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/k_kem_enc.hw.3/k_kem_enc/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'readmem'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'readmem'
+INFO: [v++ 204-61] Pipelining loop 'readmem'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'readmem'
+INFO: [v++ 204-61] Pipelining loop 'duplicate'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'duplicate'
+INFO: [v++ 204-61] Pipelining loop 'duplicate'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'duplicate'
+INFO: [v++ 204-61] Pipelining loop 'sha1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'sha1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_264_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 9, loop 'VITIS_LOOP_264_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_358_4'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_358_4'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_365_5'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 9, loop 'VITIS_LOOP_365_5'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_414_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 32, Final II = 32, Depth = 33, loop 'VITIS_LOOP_414_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_430_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 7, Depth = 8, loop 'VITIS_LOOP_430_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_470_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_470_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_652_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 10, loop 'VITIS_LOOP_652_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_652_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 10, loop 'VITIS_LOOP_652_1'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'ntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'ntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'ntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'ntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'ntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'ntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'ntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'ntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'ntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'ntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'ntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'ntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'ntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'ntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'merge'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'merge'
+INFO: [v++ 204-61] Pipelining loop 'bar_reduce'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'bar_reduce'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_785_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_785_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_789_3_VITIS_LOOP_790_4'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_789_3_VITIS_LOOP_790_4'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_801_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 4, loop 'VITIS_LOOP_801_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_810_3'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_810_3'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_896_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 4, loop 'VITIS_LOOP_896_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1067_8'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1067_8'
+INFO: [v++ 204-61] Pipelining loop 'basemul_montgomery'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 25, loop 'basemul_montgomery'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1116_1_VITIS_LOOP_1118_2_VITIS_LOOP_1119_3'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_1116_1_VITIS_LOOP_1118_2_VITIS_LOOP_1119_3'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 13, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'merge'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'merge'
+INFO: [v++ 204-61] Pipelining loop 'stream_reverse_fqmul'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 11, loop 'stream_reverse_fqmul'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1190_1_VITIS_LOOP_1192_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 11, loop 'VITIS_LOOP_1190_1_VITIS_LOOP_1192_2'
+INFO: [v++ 204-61] Pipelining loop 'add_reduce_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, loop 'add_reduce_1'
+INFO: [v++ 204-61] Pipelining loop 'add_reduce_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, loop 'add_reduce_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1263_2_VITIS_LOOP_1264_3'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 5, Final II = 5, Depth = 10, loop 'VITIS_LOOP_1263_2_VITIS_LOOP_1264_3'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1292_5'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 13, loop 'VITIS_LOOP_1292_5'
+INFO: [v++ 204-61] Pipelining loop 'writemem'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'writemem'
+INFO: [v++ 204-61] Pipelining loop 'writemem'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'writemem'
+INFO: [v++ 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [v++ 200-789] **** Estimated Fmax: 279.87 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/k_kem_enc.hw.3/system_estimate_k_kem_enc.hw.3.xtxt
+INFO: [v++ 60-586] Created xout/hw.3/xobj/k_kem_enc.hw.3.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xobj/k_kem_enc.hw.3.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 3m 30s

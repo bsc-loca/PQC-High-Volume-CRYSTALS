@@ -1,0 +1,89 @@
+{
+ "session": {
+  "name": "v++_link_k_kem_dec.hw_emu.2",
+  "uuid": "c994096f-1158-4eb9-ada9-74447266a940",
+  "description": "v++  --platform xilinx_u280_xdma_201920_3 --target hw_emu --temp_dir xout/hw_emu.2/.temps --config config.cfg -Ixinclude -g -DKYBER_K=2 -l -o xout/hw_emu.2/xclbin/k_kem_dec.hw_emu.2.xclbin xout/hw_emu.2/xobj/k_kem_dec.hw_emu.2.xo ",
+  "timestamp": "0",
+  "report_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/home/xcarril/pqc_code/CRYSTALS-Kyber/decapsulation/xout/hw_emu.2/.temps/reports/link/v++_link_k_kem_dec.hw_emu.2_guidance.html",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "proto_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/home/xcarril/pqc_code/CRYSTALS-Kyber/decapsulation/xout/hw_emu.2/.temps/v++_link_k_kem_dec.hw_emu.2_guidance.pb",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "build_target": "",
+  "config_files": [
+   {
+    "fileName": "config.cfg",
+    "contents": "[connectivity]\n#sp=k_indcpa_enc_1.m_axi_gmemc:HBM[0]\n#sp=k_indcpa_enc_1.m_axi_gmemm:HBM[1]\n#sp=k_indcpa_enc_1.m_axi_gmempk:HBM[2]\n#sp=k_indcpa_enc_1.m_axi_gmemcoins:HBM[3]\nsp=k_kem_dec_1.m_axi_gmemss:HBM[0]\nsp=k_kem_dec_1.m_axi_gmemct:HBM[1]\nsp=k_kem_dec_1.m_axi_gmemsk:HBM[2]\n"
+   }
+  ]
+ },
+ "violation_count": 0,
+ "waived_count": 0,
+ "affirmation_count": 1,
+ "affirmations": {
+  "hashmap": {
+   "1": {
+    "id": 1,
+    "rule_key": "SYSLINK-1",
+    "examples": {
+     "uri": []
+    },
+    "build_target": "",
+    "expects": "",
+    "details": {
+     "text": "Created top level block diagram design dr.bd.tcl",
+     "args": {
+      "arg": [
+       {
+        "string_val": "dr.bd.tcl"
+       }
+      ]
+     }
+    },
+    "categories": {},
+    "extended_categories": {},
+    "group": ""
+   }
+  }
+ },
+ "specs_affirmed": {
+  "hashmap": {
+   "SYSLINK-1": {
+    "key": "SYSLINK-1",
+    "full_name": "system_link Top Level BD Creation",
+    "owner": "system_link",
+    "raw_msg": "Created top level block diagram design %STR",
+    "msg_abbrev": "",
+    "msg_id": "0",
+    "categories": {},
+    "resolution_msg": "",
+    "severity": "SEV_FATAL",
+    "disposition": "ENABLED",
+    "expects": "",
+    "affirm_msg": "",
+    "dynamic_categories": {},
+    "extensible_categories": [],
+    "impact": "IMPACT_UNKNOWN",
+    "group": ""
+   }
+  }
+ }
+}
+

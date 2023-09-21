@@ -1,0 +1,304 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/link
+	Log files: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xclbin/k_kem_enc.hw.3.xclbin.link_summary, at Fri Sep 15 12:38:40 2023
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Sep 15 12:38:40 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/link/v++_link_k_kem_enc.hw.3_guidance.html', at Fri Sep 15 12:38:41 2023
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/hw/xilinx_u280_xdma_201920_3.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.2
+INFO: [v++ 60-1302] Platform 'xilinx_u280_xdma_201920_3.xpfm' has been explicitly enabled for this release.
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u280_xdma_201920_3
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [12:38:51] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xobj/k_kem_enc.hw.3.xo --config /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm --target hw --output_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int --temp_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Fri Sep 15 12:38:53 2023
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xobj/k_kem_enc.hw.3.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [12:38:56] build_xd_ip_db started: /opt/Xilinx/Vitis/2021.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/xilinx_u280_xdma_201920_3.hpfm -clkid 0 -ip /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/iprepo/xilinx_com_hls_k_kem_enc_0_0,k_kem_enc -o /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [12:39:00] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2167.438 ; gain = 0.000 ; free physical = 52730 ; free virtual = 191831
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [12:39:00] cfgen started: /opt/Xilinx/Vitis/2021.2/bin/cfgen  -sp k_kem_enc_1.m_axi_gmemct:HBM[0] -sp k_kem_enc_1.m_axi_gmemss:HBM[1] -sp k_kem_enc_1.m_axi_gmembuf:HBM[2] -sp k_kem_enc_1.m_axi_gmempk:HBM[3] -dmclkid 0 -r /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: k_kem_enc, num: 1  {k_kem_enc_1}
+INFO: [CFGEN 83-0] Port Specs: 
+INFO: [CFGEN 83-0]   kernel: k_kem_enc_1, k_port: m_axi_gmemct, sptag: HBM[0]
+INFO: [CFGEN 83-0]   kernel: k_kem_enc_1, k_port: m_axi_gmemss, sptag: HBM[1]
+INFO: [CFGEN 83-0]   kernel: k_kem_enc_1, k_port: m_axi_gmembuf, sptag: HBM[2]
+INFO: [CFGEN 83-0]   kernel: k_kem_enc_1, k_port: m_axi_gmempk, sptag: HBM[3]
+INFO: [CFGEN 83-2228] Creating mapping for argument k_kem_enc_1.ct to HBM[0] for directive k_kem_enc_1.m_axi_gmemct:HBM[0]
+INFO: [CFGEN 83-2228] Creating mapping for argument k_kem_enc_1.ss to HBM[1] for directive k_kem_enc_1.m_axi_gmemss:HBM[1]
+INFO: [CFGEN 83-2228] Creating mapping for argument k_kem_enc_1.buf to HBM[2] for directive k_kem_enc_1.m_axi_gmembuf:HBM[2]
+INFO: [CFGEN 83-2228] Creating mapping for argument k_kem_enc_1.pk to HBM[3] for directive k_kem_enc_1.m_axi_gmempk:HBM[3]
+INFO: [SYSTEM_LINK 82-37] [12:39:07] cfgen finished successfully
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2167.438 ; gain = 0.000 ; free physical = 52730 ; free virtual = 191831
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [12:39:07] cf2bd started: /opt/Xilinx/Vitis/2021.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/_sysl/.xsd --temp_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link --output_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int --target_bd pfm_dynamic.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd pfm_dynamic.bd -dn dr -dp /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [12:39:09] cf2bd finished successfully
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2167.438 ; gain = 0.000 ; free physical = 52554 ; free virtual = 191660
+INFO: [v++ 60-1441] [12:39:09] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2062.172 ; gain = 0.000 ; free physical = 52606 ; free virtual = 191707
+INFO: [v++ 60-1443] [12:39:09] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/sdsl.dat -rtd /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/cf2sw.rtd -nofilter /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/cf2sw_full.rtd -xclbin /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/xclbin_orig.xml -o /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link
+INFO: [v++ 60-1441] [12:39:13] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2062.172 ; gain = 0.000 ; free physical = 52562 ; free virtual = 191664
+INFO: [v++ 60-1443] [12:39:13] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link
+INFO: [v++ 60-1441] [12:39:13] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.49 . Memory (MB): peak = 2062.172 ; gain = 0.000 ; free physical = 52600 ; free virtual = 191701
+INFO: [v++ 60-1443] [12:39:13] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u280_xdma_201920_3 --remote_ip_cache /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/.ipcache --output_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int --log_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/logs/link --report_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/link --config /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/vplConfig.ini -k /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link --no-info --iprepo /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/xo/ip_repo/xilinx_com_hls_k_kem_enc_0_0 --messageDb /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link/vpl.pb /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link
+
+****** vpl v2021.2 (64-bit)
+  **** SW Build 3363252 on 2021-10-14-04:41:01
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/kernel_info.dat'.
+INFO: [VPL 74-78] Compiler Version string: 2021.2
+INFO: [VPL 60-423]   Target device: xilinx_u280_xdma_201920_3
+INFO: [VPL 60-1032] Extracting hardware platform to /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/vivado/vpl/.local/hw_platform
+[12:40:07] Run vpl: Step create_project: Started
+Creating Vivado project.
+[12:40:13] Run vpl: Step create_project: Completed
+[12:40:13] Run vpl: Step create_bd: Started
+[12:41:32] Run vpl: Step create_bd: RUNNING...
+[12:41:44] Run vpl: Step create_bd: Completed
+[12:41:44] Run vpl: Step update_bd: Started
+[12:41:46] Run vpl: Step update_bd: Completed
+[12:41:46] Run vpl: Step generate_target: Started
+[12:42:53] Run vpl: Step generate_target: Completed
+[12:42:53] Run vpl: Step config_hw_runs: Started
+[12:42:56] Run vpl: Step config_hw_runs: Completed
+[12:42:56] Run vpl: Step synth: Started
+[12:43:28] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:43:59] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:44:29] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:45:00] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:45:31] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:46:01] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:46:32] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:47:02] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:47:33] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:48:04] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:48:34] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:49:05] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:49:36] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:50:06] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:50:37] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:51:13] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:51:47] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:52:19] Block-level synthesis in progress, 0 of 1 jobs complete, 1 job running.
+[12:52:50] Block-level synthesis in progress, 1 of 1 jobs complete, 0 jobs running.
+[12:53:22] Top-level synthesis in progress.
+[12:53:53] Top-level synthesis in progress.
+[12:54:06] Run vpl: Step synth: Completed
+[12:54:06] Run vpl: Step impl: Started
+[13:01:18] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 22m 02s 
+
+[13:01:18] Starting logic optimization..
+[13:02:50] Phase 1 Retarget
+[13:02:50] Phase 2 Constant propagation
+[13:02:50] Phase 3 Sweep
+[13:03:21] Phase 4 BUFG optimization
+[13:03:52] Phase 5 Shift Register Optimization
+[13:03:52] Phase 6 Post Processing Netlist
+[13:05:24] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 04m 06s 
+
+[13:05:24] Starting logic placement..
+[13:05:55] Phase 1 Placer Initialization
+[13:05:55] Phase 1.1 Placer Initialization Netlist Sorting
+[13:09:31] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[13:10:02] Phase 1.3 Build Placer Netlist Model
+[13:11:03] Phase 1.4 Constrain Clocks/Macros
+[13:11:34] Phase 2 Global Placement
+[13:11:34] Phase 2.1 Floorplanning
+[13:12:05] Phase 2.1.1 Partition Driven Placement
+[13:12:05] Phase 2.1.1.1 PBP: Partition Driven Placement
+[13:12:35] Phase 2.1.1.2 PBP: Clock Region Placement
+[13:13:06] Phase 2.1.1.3 PBP: Compute Congestion
+[13:13:06] Phase 2.1.1.4 PBP: UpdateTiming
+[13:13:37] Phase 2.1.1.5 PBP: Add part constraints
+[13:13:37] Phase 2.2 Physical Synthesis After Floorplan
+[13:14:08] Phase 2.3 Update Timing before SLR Path Opt
+[13:14:08] Phase 2.4 Post-Processing in Floorplanning
+[13:14:08] Phase 2.5 Global Placement Core
+[13:20:51] Phase 2.5.1 Physical Synthesis In Placer
+[13:22:28] Phase 3 Detail Placement
+[13:22:28] Phase 3.1 Commit Multi Column Macros
+[13:22:28] Phase 3.2 Commit Most Macros & LUTRAMs
+[13:23:29] Phase 3.3 Small Shape DP
+[13:23:29] Phase 3.3.1 Small Shape Clustering
+[13:23:29] Phase 3.3.2 Flow Legalize Slice Clusters
+[13:23:29] Phase 3.3.3 Slice Area Swap
+[13:24:00] Phase 3.4 Place Remaining
+[13:24:00] Phase 3.5 Re-assign LUT pins
+[13:24:31] Phase 3.6 Pipeline Register Optimization
+[13:24:31] Phase 3.7 Fast Optimization
+[13:25:04] Phase 4 Post Placement Optimization and Clean-Up
+[13:25:04] Phase 4.1 Post Commit Optimization
+[13:26:05] Phase 4.1.1 Post Placement Optimization
+[13:26:05] Phase 4.1.1.1 BUFG Insertion
+[13:26:05] Phase 1 Physical Synthesis Initialization
+[13:26:36] Phase 4.1.1.2 BUFG Replication
+[13:26:36] Phase 4.1.1.3 Post Placement Timing Optimization
+[13:29:09] Phase 4.1.1.4 Replication
+[13:30:13] Phase 4.2 Post Placement Cleanup
+[13:30:13] Phase 4.3 Placer Reporting
+[13:30:13] Phase 4.3.1 Print Estimated Congestion
+[13:30:47] Phase 4.4 Final Placement Cleanup
+[13:32:19] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 26m 55s 
+
+[13:32:19] Starting logic routing..
+[13:33:21] Phase 1 Build RT Design
+[13:34:23] Phase 2 Router Initialization
+[13:34:23] Phase 2.1 Fix Topology Constraints
+[13:34:23] Phase 2.2 Pre Route Cleanup
+[13:34:53] Phase 2.3 Global Clock Net Routing
+[13:34:53] Phase 2.4 Update Timing
+[13:36:26] Phase 2.5 Update Timing for Bus Skew
+[13:36:26] Phase 2.5.1 Update Timing
+[13:36:56] Phase 3 Initial Routing
+[13:36:56] Phase 3.1 Global Routing
+[13:37:58] Phase 4 Rip-up And Reroute
+[13:37:58] Phase 4.1 Global Iteration 0
+[13:45:39] Phase 4.2 Global Iteration 1
+[13:48:13] Phase 4.3 Global Iteration 2
+[13:51:17] Phase 4.4 Global Iteration 3
+[13:54:54] Phase 4.5 Global Iteration 4
+[13:57:59] Phase 4.6 Global Iteration 5
+[14:00:36] Phase 5 Delay and Skew Optimization
+[14:00:36] Phase 5.1 Delay CleanUp
+[14:00:36] Phase 5.1.1 Update Timing
+[14:01:07] Phase 5.1.2 Update Timing
+[14:01:38] Phase 5.2 Clock Skew Optimization
+[14:01:38] Phase 6 Post Hold Fix
+[14:01:38] Phase 6.1 Hold Fix Iter
+[14:01:38] Phase 6.1.1 Update Timing
+[14:02:10] Phase 6.1.2 Lut RouteThru Assignment for hold
+[14:02:41] Phase 6.2 Additional Hold Fix
+[14:03:13] Phase 7 Leaf Clock Prog Delay Opt
+[14:04:19] Phase 7.1 Delay CleanUp
+[14:04:19] Phase 7.1.1 Update Timing
+[14:04:50] Phase 7.2 Hold Fix Iter
+[14:04:50] Phase 7.2.1 Update Timing
+[14:05:21] Phase 7.2.2 Lut RouteThru Assignment for hold
+[14:05:52] Phase 7.3 Additional Hold Fix
+[14:07:28] Phase 7.4 Global Iteration for Hold
+[14:07:28] Phase 7.4.1 Update Timing
+[14:10:09] Phase 8 Route finalize
+[14:10:40] Phase 9 Verifying routed nets
+[14:11:12] Phase 10 Depositing Routes
+[14:12:15] Phase 11 Resolve XTalk
+[14:12:15] Phase 12 Post Router Timing
+[14:12:48] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 40m 29s 
+
+[14:12:48] Starting bitstream generation..
+[14:24:54] Creating bitmap...
+[14:29:30] Run vpl: Step impl: Completed
+[14:29:30] Writing bitstream ./pfm_top_i_dynamic_region_my_rm_partial.bit...
+[14:29:30] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 16m 41s 
+[14:29:31] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [14:29:33] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:00:50 ; elapsed = 01:50:20 . Memory (MB): peak = 2062.172 ; gain = 0.000 ; free physical = 74572 ; free virtual = 214590
+INFO: [v++ 60-1443] [14:29:33] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link
+INFO: [v++ 60-991] clock name 'clkwiz_kernel_clk_out1' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'clkwiz_kernel2_clk_out1' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'clk_out1_pfm_top_clkwiz_hbm_aclk_0' (clock ID '') is being mapped to clock name 'clk_out1_pfm_top_clkwiz_hbm_aclk_0' in the xclbin
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): System (SYSTEM) clock: clk_out1_pfm_top_clkwiz_hbm_aclk_0 = 450, Kernel (DATA) clock: clkwiz_kernel_clk_out1 = 300, Kernel (KERNEL) clock: clkwiz_kernel2_clk_out1 = 500
+INFO: [v++ 60-1453] Command Line: cf2sw -a /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/address_map.xml -sdsl /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/sdsl.dat -xclbin /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/xclbin_orig.xml -rtd /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3.rtd -o /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3.xml
+INFO: [v++ 60-1652] Cf2sw returned exit code: 0
+INFO: [v++ 60-1441] [14:29:36] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2062.172 ; gain = 0.000 ; free physical = 76949 ; free virtual = 216452
+INFO: [v++ 60-1443] [14:29:36] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3.rtd --append-section :JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3_xml.rtd --add-section BUILD_METADATA:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3.xml --add-section SYSTEM_METADATA:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/systemDiagramModelSlrBaseAddress.json --output /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xclbin/k_kem_enc.hw.3.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link
+XRT Build Version: 2.8.0 (master)
+       Build Date: 2020-10-07 18:28:36
+          Hash ID: 1f714c4db4541b793423d51cf78ffa2bb4f3797c
+Creating a default 'in-memory' xclbin image.
+
+Section: 'DEBUG_IP_LAYOUT'(9) was successfully added.
+Size   : 296 bytes
+Format : JSON
+File   : '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/debug_ip_layout.rtd'
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 45571827 bytes
+Format : RAW
+File   : '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/partial.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
+Size   : 410 bytes
+Format : JSON
+File   : '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 3544 bytes
+Format : JSON
+File   : '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 128465 bytes
+Format : RAW
+File   : '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/k_kem_enc.hw.3.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 16674 bytes
+Format : RAW
+File   : '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/int/systemDiagramModelSlrBaseAddress.json'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (45747120 bytes) to the output file: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xclbin/k_kem_enc.hw.3.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [14:29:36] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2062.172 ; gain = 0.000 ; free physical = 77896 ; free virtual = 217457
+INFO: [v++ 60-1443] [14:29:36] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xclbin/k_kem_enc.hw.3.xclbin.info --input /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xclbin/k_kem_enc.hw.3.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link
+INFO: [v++ 60-1441] [14:29:37] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.37 . Memory (MB): peak = 2062.172 ; gain = 0.000 ; free physical = 79825 ; free virtual = 219398
+INFO: [v++ 60-1443] [14:29:37] Run run_link: Step generate_sc_driver: Started
+INFO: [v++ 60-1453] Command Line: 
+INFO: [v++ 60-1454] Run Directory: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/link/run_link
+INFO: [v++ 60-1441] [14:29:37] Run run_link: Step generate_sc_driver: Completed
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2062.172 ; gain = 0.000 ; free physical = 79826 ; free virtual = 219398
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/link/system_estimate_k_kem_enc.hw.3.xtxt
+INFO: [v++ 60-586] Created /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xclbin/k_kem_enc.hw.3.ltx
+INFO: [v++ 60-586] Created xout/hw.3/xclbin/k_kem_enc.hw.3.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/link/v++_link_k_kem_enc.hw.3_guidance.html
+	Timing Report: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/reports/link/imp/impl_1_xilinx_u280_xdma_201920_3_bb_locked_timing_summary_routed.rpt
+	Vivado Log: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/logs/link/vivado.log
+	Steps Log File: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/.temps/logs/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.3/xclbin/k_kem_enc.hw.3.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 1h 51m 9s

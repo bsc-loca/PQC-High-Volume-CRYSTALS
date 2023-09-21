@@ -1,0 +1,700 @@
+
+*** Running vivado
+    with args -log bd_5dca_interconnect1_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_5dca_interconnect1_0_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_5dca_interconnect1_0_0.tcl -notrace
+INFO: Dispatch client connection id - 40157
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2691.008 ; gain = 2.992 ; free physical = 53333 ; free virtual = 189483
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/int/xo/ip_repo/xilinx_com_hls_k_kem_dec_0_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top bd_5dca_interconnect1_0_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1797136
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 3458.164 ; gain = 284.797 ; free physical = 46745 ; free virtual = 183134
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_5dca_interconnect1_0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_3/synth/bd_5dca_interconnect1_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1AQRLQ6' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:768]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_one_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_0/synth/bd_763a_one_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (1#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_one_0' (2#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_0/synth/bd_763a_one_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_763a_psr0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_1/synth/bd_763a_psr0_0.vhd:74]
+	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_1/synth/bd_763a_psr0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (3#1) [/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (4#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (5#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (6#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (7#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (8#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_763a_psr0_0' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_1/synth/bd_763a_psr0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_763a_psr0_0' is unconnected for instance 'psr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:809]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_763a_psr0_0' is unconnected for instance 'psr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:809]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_763a_psr0_0' is unconnected for instance 'psr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:809]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_763a_psr0_0' is unconnected for instance 'psr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:809]
+WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_763a_psr0_0' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:809]
+INFO: [Synth 8-638] synthesizing module 'bd_763a_psr_aclk_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_2/synth/bd_763a_psr_aclk_0.vhd:74]
+	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_2/synth/bd_763a_psr_aclk_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_763a_psr_aclk_0' (10#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_2/synth/bd_763a_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_763a_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:816]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_763a_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:816]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_763a_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:816]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_763a_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:816]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_763a_psr_aclk_0' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:816]
+INFO: [Synth 8-638] synthesizing module 'bd_763a_psr_aclk1_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_3/synth/bd_763a_psr_aclk1_0.vhd:74]
+	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_3/synth/bd_763a_psr_aclk1_0.vhd:129]
+INFO: [Synth 8-256] done synthesizing module 'bd_763a_psr_aclk1_0' (11#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_3/synth/bd_763a_psr_aclk1_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_763a_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:823]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_763a_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:823]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_763a_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:823]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_763a_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:823]
+WARNING: [Synth 8-7023] instance 'psr_aclk1' of module 'bd_763a_psr_aclk1_0' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:823]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1AQRLQ6 does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:786]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1AQRLQ6' (12#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:768]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_MFJDR9' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:832]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_m00e_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_14/synth/bd_763a_m00e_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (15#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_m00e_0' (23#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_14/synth/bd_763a_m00e_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_MFJDR9' (24#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:832]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_m00s2a_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_13/synth/bd_763a_m00s2a_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_m00s2a_0' (26#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_13/synth/bd_763a_m00s2a_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_s00a2s_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_7/synth/bd_763a_s00a2s_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_s00a2s_0' (28#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_7/synth/bd_763a_s00a2s_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1MT1U1Y' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:1203]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_s00mmu_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_4/synth/bd_763a_s00mmu_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_s00mmu_0' (31#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_4/synth/bd_763a_s00mmu_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_s00sic_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_6/synth/bd_763a_s00sic_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_s00sic_0' (34#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_6/synth/bd_763a_s00sic_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_s00tr_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_5/synth/bd_763a_s00tr_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_s00tr_0' (37#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_5/synth/bd_763a_s00tr_0.sv:58]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_763a_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:1731]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_763a_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:1731]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_763a_s00tr_0' has 82 connections declared, but only 80 given [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:1731]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1MT1U1Y' (38#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:1203]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1J0M4XO' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:1814]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_sarn_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_8/synth/bd_763a_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (43#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (44#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (46#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_sarn_0' (54#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_8/synth/bd_763a_sarn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_sawn_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_10/synth/bd_763a_sawn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_sawn_0' (55#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_10/synth/bd_763a_sawn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_sbn_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_12/synth/bd_763a_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (55#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (55#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_sbn_0' (56#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_12/synth/bd_763a_sbn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_srn_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_9/synth/bd_763a_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (57#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized1' (57#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (57#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (57#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_srn_0' (58#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_9/synth/bd_763a_srn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_763a_swn_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_11/synth/bd_763a_swn_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (60#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (60#1) [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8471]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a_swn_0' (61#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_11/synth/bd_763a_swn_0.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1J0M4XO' (62#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:1814]
+INFO: [Synth 8-6155] done synthesizing module 'bd_763a' (63#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/synth/bd_763a.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'bd_5dca_interconnect1_0_0' (64#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_3/synth/bd_5dca_interconnect1_0_0.v:57]
+WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[303] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[302] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[301] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[300] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[299] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[298] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[297] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[296] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[295] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[294] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[293] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[292] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[291] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[290] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[289] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[288] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[287] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[286] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[285] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[284] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[283] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[282] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[281] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[280] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[279] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[278] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[277] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[276] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[275] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[274] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[273] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[272] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[271] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[270] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[269] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[268] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[267] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[266] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[265] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[264] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[263] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[262] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[261] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[260] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[259] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[258] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[257] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[256] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[255] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[254] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[253] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[252] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[251] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[250] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[249] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[248] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[247] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[246] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[245] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[244] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[243] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[242] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[241] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[240] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[239] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[238] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[237] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[236] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[235] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[234] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[233] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[232] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[231] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[230] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[229] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[228] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[227] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[226] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[225] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[224] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[223] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[222] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[221] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[220] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[219] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[218] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[217] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[216] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[215] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[214] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[213] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[212] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[211] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[210] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[209] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_sc_payld[208] in module sc_node_v1_0_14_ingress__parameterized3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 3620.039 ; gain = 446.672 ; free physical = 49767 ; free virtual = 186304
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 3637.852 ; gain = 464.484 ; free physical = 49617 ; free virtual = 186207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 3637.852 ; gain = 464.484 ; free physical = 49617 ; free virtual = 186207
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.96 ; elapsed = 00:00:01 . Memory (MB): peak = 3648.820 ; gain = 0.000 ; free physical = 45976 ; free virtual = 182649
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_3/ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 3942.008 ; gain = 23.750 ; free physical = 44588 ; free virtual = 181275
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_3/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_1/bd_763a_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_1/bd_763a_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_1/bd_763a_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_1/bd_763a_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_2/bd_763a_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_2/bd_763a_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_2/bd_763a_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_2/bd_763a_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_3/bd_763a_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_3/bd_763a_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_3/bd_763a_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_1/ip/ip_3/bd_763a_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_interconnect1_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_interconnect1_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_5dca_interconnect1_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_5dca_interconnect1_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {PRIMITIVE_SUBGROUP==LUTRAM || PRIMITIVE_SUBGROUP==dram || PRIMITIVE_SUBGROUP==uram || PRIMITIVE_SUBGROUP==BRAM}'. [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:3]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_5dca_interconnect1_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_5dca_interconnect1_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 31 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3942.008 ; gain = 0.000 ; free physical = 44300 ; free virtual = 180988
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  FDR => FDRE: 36 instances
+  SRL16 => SRL16E: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3947.945 ; gain = 5.938 ; free physical = 45037 ; free virtual = 181729
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:01:10 . Memory (MB): peak = 3947.945 ; gain = 774.578 ; free physical = 44809 ; free virtual = 181571
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:01:10 . Memory (MB): peak = 3947.945 ; gain = 774.578 ; free physical = 44814 ; free virtual = 181575
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_interconnect1_0_0_synth_1/dont_touch.xdc, line 86).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/s_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_exit_pipeline/m00_exit/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_mmu/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_si_converter/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_entry_pipeline/s00_transaction_regulator/inst/xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addra_to_rd_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_async_clocks.inst_cdc_addrb_to_wr_clk . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[1].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[1].inst_xpm_memory . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:10 . Memory (MB): peak = 3947.945 ; gain = 774.578 ; free physical = 44779 ; free virtual = 181540
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:01:18 . Memory (MB): peak = 3947.945 ; gain = 774.578 ; free physical = 44037 ; free virtual = 180781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 39    
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 13    
+	   2 Input    3 Bit       Adders := 3     
+	   3 Input    3 Bit       Adders := 1     
+	   3 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      6 Bit         XORs := 10    
+	   2 Input      1 Bit         XORs := 103   
++---Registers : 
+	             2178 Bit    Registers := 2     
+	              512 Bit    Registers := 2     
+	              188 Bit    Registers := 2     
+	              161 Bit    Registers := 2     
+	              148 Bit    Registers := 1     
+	              147 Bit    Registers := 1     
+	               64 Bit    Registers := 4     
+	               47 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 41    
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 62    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 37    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 205   
++---Muxes : 
+	   2 Input 2178 Bit        Muxes := 2     
+	   2 Input  512 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 11    
+	   2 Input    7 Bit        Muxes := 24    
+	   2 Input    6 Bit        Muxes := 9     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 8     
+	  11 Input    3 Bit        Muxes := 8     
+	   2 Input    3 Bit        Muxes := 12    
+	   2 Input    2 Bit        Muxes := 37    
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 104   
+	   6 Input    1 Bit        Muxes := 40    
+	  12 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/FDRE_inst) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr0/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/FDRE_inst) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_763a.
+WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk1/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_763a.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:49 . Memory (MB): peak = 3947.945 ; gain = 774.578 ; free physical = 56534 ; free virtual = 193275
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|inst/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M16 x 2   | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 148             | RAM32M16 x 11  | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 147             | RAM32M16 x 11  | 
+|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12  | 
+|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12  | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:02:07 . Memory (MB): peak = 3994.820 ; gain = 821.453 ; free physical = 58222 ; free virtual = 195035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+WARNING: [Synth 8-6779] Delay data for wire-load model not found, using default value
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:02:10 . Memory (MB): peak = 4033.852 ; gain = 860.484 ; free physical = 54801 ; free virtual = 191589
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                                                                               | RTL Object                       | Inference      | Size (Depth x Width) | Primitives     | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|xpm_memory_sdpram:/xpm_memory_base_inst                                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 188             | RAM32M16 x 14  | 
+|inst/\s00_nodes/s00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 23              | RAM32M16 x 2   | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 148             | RAM32M16 x 11  | 
+|inst/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 147             | RAM32M16 x 11  | 
+|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12  | 
+|xpm_memory_sdpram__parameterized3:/xpm_memory_base_inst                                                                                                                   | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 161             | RAM32M16 x 12  | 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:02:13 . Memory (MB): peak = 4049.867 ; gain = 876.500 ; free physical = 56866 ; free virtual = 193647
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:02:23 . Memory (MB): peak = 4049.867 ; gain = 876.500 ; free physical = 56647 ; free virtual = 193425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:02:23 . Memory (MB): peak = 4049.867 ; gain = 876.500 ; free physical = 56644 ; free virtual = 193422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:02:23 . Memory (MB): peak = 4049.867 ; gain = 876.500 ; free physical = 55907 ; free virtual = 192712
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:02:23 . Memory (MB): peak = 4049.867 ; gain = 876.500 ; free physical = 55901 ; free virtual = 192707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:02:23 . Memory (MB): peak = 4049.867 ; gain = 876.500 ; free physical = 55883 ; free virtual = 192674
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:02:23 . Memory (MB): peak = 4049.867 ; gain = 876.500 ; free physical = 55841 ; free virtual = 192635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__119   | shift_reg_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    14|
+|2     |LUT1     |    89|
+|3     |LUT2     |   167|
+|4     |LUT3     |   239|
+|5     |LUT4     |   169|
+|6     |LUT5     |   185|
+|7     |LUT6     |   433|
+|8     |MUXF7    |    32|
+|9     |RAM32M16 |    59|
+|10    |SRL16    |     3|
+|11    |SRL16E   |    25|
+|12    |FDCE     |    42|
+|13    |FDR      |    20|
+|14    |FDRE     |  1742|
+|15    |FDSE     |    80|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:02:23 . Memory (MB): peak = 4049.867 ; gain = 876.500 ; free physical = 55812 ; free virtual = 192607
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13796 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:52 . Memory (MB): peak = 4049.867 ; gain = 566.406 ; free physical = 55794 ; free virtual = 192565
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:02:23 . Memory (MB): peak = 4049.875 ; gain = 876.500 ; free physical = 55778 ; free virtual = 192548
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.22 . Memory (MB): peak = 4049.875 ; gain = 0.000 ; free physical = 57089 ; free virtual = 193836
+INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4137.414 ; gain = 0.000 ; free physical = 57637 ; free virtual = 194385
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 82 instances were transformed.
+  FDR => FDRE: 20 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 59 instances
+  SRL16 => SRL16E: 3 instances
+
+Synth Design complete, checksum: 52146734
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 160 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:02:51 . Memory (MB): peak = 4137.414 ; gain = 1446.406 ; free physical = 57562 ; free virtual = 194310
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_interconnect1_0_0_synth_1/bd_5dca_interconnect1_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 166 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/decapsulation/xout/hw.4/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_interconnect1_0_0_synth_1/bd_5dca_interconnect1_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4137.414 ; gain = 0.000 ; free physical = 54542 ; free virtual = 191304
+INFO: [runtcl-4] Executing : report_utilization -file bd_5dca_interconnect1_0_0_utilization_synth.rpt -pb bd_5dca_interconnect1_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 15 11:16:41 2023...

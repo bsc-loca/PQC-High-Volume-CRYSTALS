@@ -1,0 +1,1721 @@
+<ENTRY>
+{
+ "thisFile": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xclbin/k_verify.hw.2.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Sep 15 14:01:43 2023",
+ "timestampMillis": "1694779303966",
+ "buildStep": {
+  "cmdId": "3363ece2-e323-4471-b772-b5d68a8eca16",
+  "name": "v++",
+  "logFile": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --platform xilinx_u280_xdma_201920_3 --target hw --temp_dir xout/hw.2/.temps --config config.cfg -Ixinclude -DDILITHIUM_MODE=2 -l -o xout/hw.2/xclbin/k_verify.hw.2.xclbin xout/hw.2/xobj/k_verify.hw.2.xo ",
+  "args": [
+   "--platform",
+   "xilinx_u280_xdma_201920_3",
+   "--target",
+   "hw",
+   "--temp_dir",
+   "xout/hw.2/.temps",
+   "--config",
+   "config.cfg",
+   "-Ixinclude",
+   "-DDILITHIUM_MODE=2",
+   "-l",
+   "-o",
+   "xout/hw.2/xclbin/k_verify.hw.2.xclbin",
+   "xout/hw.2/xobj/k_verify.hw.2.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/config.cfg",
+    "content": "[connectivity]\nsp=k_verify_1.m_axi_gmemver:HBM[0]\nsp=k_verify_1.m_axi_gmemsig:HBM[1]\nsp=k_verify_1.m_axi_gmemm:HBM[3]\nsp=k_verify_1.m_axi_gmempk:HBM[2]\n"
+   }
+  ],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:01:43 2023",
+ "timestampMillis": "1694779303967",
+ "status": {
+  "cmdId": "3363ece2-e323-4471-b772-b5d68a8eca16",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Sep 15 14:01:57 2023",
+ "timestampMillis": "1694779317305",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u280_xdma_201920_3.xpfm",
+  "hardwareDsa": "xilinx_u280_xdma_201920_3.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u280_xdma_201920_3",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "k_verify.hw.2",
+    "file": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xclbin/k_verify.hw.2.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "k_verify",
+     "file": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xobj/k_verify.hw.2.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xo/k_verify/k_verify/cpu_sources/k_verify.cpp",
+     "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xo/k_verify/k_verify/cpu_sources/kernel.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "k_verify_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.2. SW Build 3363252 on 2021-10-14-04:41:01"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 14:01:57 2023",
+ "timestampMillis": "1694779317832",
+ "buildStep": {
+  "cmdId": "db1c9260-46a5-4fc5-8c50-35d7701a0d6e",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xobj/k_verify.hw.2.xo --config /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/syslinkConfig.ini --xpfm /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm --target hw --output_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int --temp_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xobj/k_verify.hw.2.xo",
+   "--config",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int",
+   "--temp_dir",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/syslinkConfig.ini",
+    "content": "sp=k_verify_1.m_axi_gmemver:HBM[0]\nsp=k_verify_1.m_axi_gmemsig:HBM[1]\nsp=k_verify_1.m_axi_gmemm:HBM[3]\nsp=k_verify_1.m_axi_gmempk:HBM[2]\n\n"
+   }
+  ],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:01:57 2023",
+ "timestampMillis": "1694779317832",
+ "status": {
+  "cmdId": "db1c9260-46a5-4fc5-8c50-35d7701a0d6e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:02:17 2023",
+ "timestampMillis": "1694779337798",
+ "status": {
+  "cmdId": "db1c9260-46a5-4fc5-8c50-35d7701a0d6e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 14:02:17 2023",
+ "timestampMillis": "1694779337804",
+ "buildStep": {
+  "cmdId": "07f596d5-2f41-40fa-b82b-89beed5dc58e",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/sdsl.dat -rtd /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/cf2sw.rtd -nofilter /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/cf2sw_full.rtd -xclbin /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xclbin_orig.xml -o /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/sdsl.dat",
+   "-rtd",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:02:17 2023",
+ "timestampMillis": "1694779337804",
+ "status": {
+  "cmdId": "07f596d5-2f41-40fa-b82b-89beed5dc58e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:02:21 2023",
+ "timestampMillis": "1694779341865",
+ "status": {
+  "cmdId": "07f596d5-2f41-40fa-b82b-89beed5dc58e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 14:02:21 2023",
+ "timestampMillis": "1694779341868",
+ "buildStep": {
+  "cmdId": "07491d2d-dd0c-421e-89a3-a1345b875206",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:02:21 2023",
+ "timestampMillis": "1694779341869",
+ "status": {
+  "cmdId": "07491d2d-dd0c-421e-89a3-a1345b875206",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:02:22 2023",
+ "timestampMillis": "1694779342508",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:02:22 2023",
+ "timestampMillis": "1694779342509",
+ "status": {
+  "cmdId": "07491d2d-dd0c-421e-89a3-a1345b875206",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 14:02:22 2023",
+ "timestampMillis": "1694779342513",
+ "buildStep": {
+  "cmdId": "3581ca02-e549-4669-887b-a2a48113e1ec",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u280_xdma_201920_3 --remote_ip_cache /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/.ipcache --output_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int --log_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/logs/link --report_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link --config /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/vplConfig.ini -k /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link --no-info --iprepo /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xo/ip_repo/xilinx_com_hls_k_verify_0_0 --messageDb /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/run_link/vpl.pb /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u280_xdma_201920_3",
+   "--remote_ip_cache",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/.ipcache",
+   "--output_dir",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int",
+   "--log_dir",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/logs/link",
+   "--report_dir",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link",
+   "--config",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/vplConfig.ini",
+   "-k",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link",
+   "--no-info",
+   "--iprepo",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xo/ip_repo/xilinx_com_hls_k_verify_0_0",
+   "--messageDb",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/run_link/vpl.pb",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification\nmisc=BinaryName=k_verify.hw.2\n\n[connectivity]\nnk=k_verify:1:k_verify_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:02:22 2023",
+ "timestampMillis": "1694779342514",
+ "status": {
+  "cmdId": "3581ca02-e549-4669-887b-a2a48113e1ec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Sep 15 14:02:24 2023",
+ "timestampMillis": "1694779344014",
+ "buildStep": {
+  "cmdId": "6581fe5d-1be0-46db-87d7-fc2fdfa7abfe",
+  "name": "vpl",
+  "logFile": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.2/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u280_xdma_201920_3 --remote_ip_cache /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/.ipcache --output_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int --log_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/logs/link --report_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link --config /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/vplConfig.ini -k /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link --no-info --iprepo /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xo/ip_repo/xilinx_com_hls_k_verify_0_0 --messageDb /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/run_link/vpl.pb /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:02:24 2023",
+ "timestampMillis": "1694779344014",
+ "status": {
+  "cmdId": "6581fe5d-1be0-46db-87d7-fc2fdfa7abfe",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Fri Sep 15 14:03:04 2023",
+ "timestampMillis": "1694779384174",
+ "vivadoProject": {
+  "openDir": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 14:03:04 2023",
+ "timestampMillis": "1694779384176",
+ "buildStep": {
+  "cmdId": "d29f52b4-a96d-4612-8ad3-99e3aca8db18",
+  "name": "vivado",
+  "logFile": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:03:04 2023",
+ "timestampMillis": "1694779384177",
+ "status": {
+  "cmdId": "d29f52b4-a96d-4612-8ad3-99e3aca8db18",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:04:53 2023",
+ "timestampMillis": "1694779493922",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/debug_ip_layout.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "DEBUG_IP_LAYOUT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Sep 15 14:30:41 2023",
+ "timestampMillis": "1694781041370",
+ "buildStep": {
+  "cmdId": "dfbe6ca6-c2e2-4019-881c-8451b4db7557",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:30:41 2023",
+ "timestampMillis": "1694781041371",
+ "status": {
+  "cmdId": "dfbe6ca6-c2e2-4019-881c-8451b4db7557",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Sep 15 14:30:41 2023",
+ "timestampMillis": "1694781041371",
+ "buildStep": {
+  "cmdId": "2a041b3c-3139-409d-b4d9-306cfb0ca4a6",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:30:41 2023",
+ "timestampMillis": "1694781041371",
+ "status": {
+  "cmdId": "2a041b3c-3139-409d-b4d9-306cfb0ca4a6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:02:46 2023",
+ "timestampMillis": "1694786566875",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:04:31 2023",
+ "timestampMillis": "1694786671908",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:04:31 2023",
+ "timestampMillis": "1694786671910",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:46 2023",
+ "timestampMillis": "1694787466948",
+ "status": {
+  "cmdId": "d29f52b4-a96d-4612-8ad3-99e3aca8db18",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467131",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467133",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467136",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467137",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467139",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467142",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467144",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467147",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467149",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467151",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467153",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467157",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467159",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467161",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467625",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0_synth_1_pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467627",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_axi_vip_ctrl_mgntpf_0_synth_1_pfm_dynamic_axi_vip_ctrl_mgntpf_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467629",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_axi_vip_data_0_synth_1_pfm_dynamic_axi_vip_data_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467631",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_axilite_user_input_reg_0_synth_1_pfm_dynamic_axilite_user_input_reg_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467634",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_debug_bridge_xsdbm_0_synth_1_pfm_dynamic_debug_bridge_xsdbm_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467636",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_hmss_0_0_synth_1_pfm_dynamic_hmss_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467638",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_synth_1_pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467640",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_axi_gpio_null_slr0_0_synth_1_pfm_dynamic_axi_gpio_null_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467642",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_logic_reset_op_0_synth_1_pfm_dynamic_logic_reset_op_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467644",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_control_0_synth_1_pfm_dynamic_psreset_gate_pr_control_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467646",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_dataclk_0_synth_1_pfm_dynamic_psreset_gate_pr_dataclk_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467648",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel_0_synth_1_pfm_dynamic_psreset_gate_pr_kernel_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467650",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel2_0_synth_1_pfm_dynamic_psreset_gate_pr_kernel2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467652",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_control_1_synth_1_pfm_dynamic_psreset_gate_pr_control_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467654",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_data_1_synth_1_pfm_dynamic_psreset_gate_pr_data_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467656",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_dataclk_1_synth_1_pfm_dynamic_psreset_gate_pr_dataclk_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467658",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel_1_synth_1_pfm_dynamic_psreset_gate_pr_kernel_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467660",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel2_1_synth_1_pfm_dynamic_psreset_gate_pr_kernel2_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467662",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_logic_reset_op_1_synth_1_pfm_dynamic_logic_reset_op_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467664",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_control_2_synth_1_pfm_dynamic_psreset_gate_pr_control_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467666",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_dataclk_2_synth_1_pfm_dynamic_psreset_gate_pr_dataclk_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467669",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel_2_synth_1_pfm_dynamic_psreset_gate_pr_kernel_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467671",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel2_2_synth_1_pfm_dynamic_psreset_gate_pr_kernel2_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467673",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_xbar_4_synth_1_pfm_dynamic_xbar_4_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467675",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_k_verify_1_0_synth_1_pfm_dynamic_k_verify_1_0_utilization_synth.rpt",
+  "name": "k_verify",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467677",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_ebbe_xsdbm_0_synth_1_bd_ebbe_xsdbm_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467679",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_ebbe_lut_buffer_0_synth_1_bd_ebbe_lut_buffer_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467680",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_axi_apb_bridge_inst_0_synth_1_bd_5dca_axi_apb_bridge_inst_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467683",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_interconnect1_0_0_synth_1_bd_5dca_interconnect1_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467685",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_slice1_0_0_synth_1_bd_5dca_slice1_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467687",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_interconnect2_1_0_synth_1_bd_5dca_interconnect2_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467689",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_interconnect3_2_0_synth_1_bd_5dca_interconnect3_2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467691",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_interconnect4_3_0_synth_1_bd_5dca_interconnect4_3_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467693",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_interconnect0_4_0_synth_1_bd_5dca_interconnect0_4_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467695",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_slice0_4_0_synth_1_bd_5dca_slice0_4_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467698",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_init_reduce_0_synth_1_bd_5dca_init_reduce_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467700",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/bd_5dca_hbm_inst_0_synth_1_bd_5dca_hbm_inst_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467702",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_s00_regslice_15_synth_1_pfm_dynamic_s00_regslice_15_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467704",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_m01_regslice_10_synth_1_pfm_dynamic_m01_regslice_10_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467706",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/syn/pfm_dynamic_auto_cc_0_synth_1_pfm_dynamic_auto_cc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467710",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "2a041b3c-3139-409d-b4d9-306cfb0ca4a6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467841",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_xilinx_u280_xdma_201920_3_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "2a041b3c-3139-409d-b4d9-306cfb0ca4a6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467969",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_xilinx_u280_xdma_201920_3_bb_locked_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "2a041b3c-3139-409d-b4d9-306cfb0ca4a6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:47 2023",
+ "timestampMillis": "1694787467971",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/imp/impl_1_xilinx_u280_xdma_201920_3_bb_locked_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "2a041b3c-3139-409d-b4d9-306cfb0ca4a6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:50 2023",
+ "timestampMillis": "1694787470062",
+ "status": {
+  "cmdId": "6581fe5d-1be0-46db-87d7-fc2fdfa7abfe",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:50 2023",
+ "timestampMillis": "1694787470082",
+ "status": {
+  "cmdId": "3581ca02-e549-4669-887b-a2a48113e1ec",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 16:17:50 2023",
+ "timestampMillis": "1694787470088",
+ "buildStep": {
+  "cmdId": "2e52b0ec-a343-4d04-9365-a5a7faa7323a",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:50 2023",
+ "timestampMillis": "1694787470089",
+ "status": {
+  "cmdId": "2e52b0ec-a343-4d04-9365-a5a7faa7323a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:50 2023",
+ "timestampMillis": "1694787470129",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 16:17:50 2023",
+ "timestampMillis": "1694787470138",
+ "buildStep": {
+  "cmdId": "85f725e8-658d-469b-93ae-0ca950360338",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/address_map.xml -sdsl /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/sdsl.dat -xclbin /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xclbin_orig.xml -rtd /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.rtd -o /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.xml",
+  "args": [
+   "-a",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/address_map.xml",
+   "-sdsl",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.rtd",
+   "-o",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:50 2023",
+ "timestampMillis": "1694787470138",
+ "status": {
+  "cmdId": "85f725e8-658d-469b-93ae-0ca950360338",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:55 2023",
+ "timestampMillis": "1694787475172",
+ "status": {
+  "cmdId": "85f725e8-658d-469b-93ae-0ca950360338",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 16:17:55 2023",
+ "timestampMillis": "1694787475173",
+ "buildStep": {
+  "cmdId": "b8ebd6f0-ce08-451e-a199-dfeae8157b6e",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.rtd",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:55 2023",
+ "timestampMillis": "1694787475173",
+ "status": {
+  "cmdId": "b8ebd6f0-ce08-451e-a199-dfeae8157b6e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:55 2023",
+ "timestampMillis": "1694787475178",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:55 2023",
+ "timestampMillis": "1694787475178",
+ "status": {
+  "cmdId": "b8ebd6f0-ce08-451e-a199-dfeae8157b6e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:55 2023",
+ "timestampMillis": "1694787475180",
+ "status": {
+  "cmdId": "2e52b0ec-a343-4d04-9365-a5a7faa7323a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 16:17:55 2023",
+ "timestampMillis": "1694787475186",
+ "buildStep": {
+  "cmdId": "5f026b20-78f1-4f64-809a-33321880457f",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.rtd --append-section :JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2_xml.rtd --add-section BUILD_METADATA:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.xml --add-section SYSTEM_METADATA:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/systemDiagramModelSlrBaseAddress.json --output /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xclbin/k_verify.hw.2.xclbin",
+  "args": [
+   "--add-section",
+   "DEBUG_IP_LAYOUT:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/debug_ip_layout.rtd",
+   "--add-section",
+   "BITSTREAM:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.rtd",
+   "--append-section",
+   ":JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/k_verify.hw.2.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--output",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xclbin/k_verify.hw.2.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:55 2023",
+ "timestampMillis": "1694787475186",
+ "status": {
+  "cmdId": "5f026b20-78f1-4f64-809a-33321880457f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:56 2023",
+ "timestampMillis": "1694787476270",
+ "status": {
+  "cmdId": "5f026b20-78f1-4f64-809a-33321880457f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 16:17:56 2023",
+ "timestampMillis": "1694787476273",
+ "buildStep": {
+  "cmdId": "7fdcee6e-caba-40da-82ae-067f51ba0d44",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xclbin/k_verify.hw.2.xclbin.info --input /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xclbin/k_verify.hw.2.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xclbin/k_verify.hw.2.xclbin.info",
+   "--input",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/xclbin/k_verify.hw.2.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:56 2023",
+ "timestampMillis": "1694787476273",
+ "status": {
+  "cmdId": "7fdcee6e-caba-40da-82ae-067f51ba0d44",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:56 2023",
+ "timestampMillis": "1694787476988",
+ "status": {
+  "cmdId": "7fdcee6e-caba-40da-82ae-067f51ba0d44",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 16:17:56 2023",
+ "timestampMillis": "1694787476992",
+ "buildStep": {
+  "cmdId": "372a0257-74d2-4523-9f99-1c2d7c160163",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:56 2023",
+ "timestampMillis": "1694787476993",
+ "status": {
+  "cmdId": "372a0257-74d2-4523-9f99-1c2d7c160163",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:56 2023",
+ "timestampMillis": "1694787476994",
+ "status": {
+  "cmdId": "372a0257-74d2-4523-9f99-1c2d7c160163",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:57 2023",
+ "timestampMillis": "1694787477073",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/system_estimate_k_verify.hw.2.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:59 2023",
+ "timestampMillis": "1694787479143",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/reports/link/v++_link_k_verify.hw.2_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:59 2023",
+ "timestampMillis": "1694787479144",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/v++_link_k_verify.hw.2_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 16:17:59 2023",
+ "timestampMillis": "1694787479151",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 16:17:59 2023",
+ "timestampMillis": "1694787479153",
+ "status": {
+  "cmdId": "3363ece2-e323-4471-b772-b5d68a8eca16",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

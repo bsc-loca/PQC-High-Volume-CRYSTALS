@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: k_kem_enc
+Log file: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/k_kem_enc.hw.2/k_kem_enc/vitis_hls.log

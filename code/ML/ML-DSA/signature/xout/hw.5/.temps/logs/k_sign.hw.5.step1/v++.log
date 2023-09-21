@@ -1,0 +1,227 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.5/.temps/reports/k_sign.hw.5.step1
+	Log files: /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.5/.temps/logs/k_sign.hw.5.step1
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.5/xobj/k_sign.hw.5.step1.xo.compile_summary, at Fri Sep 15 13:56:04 2023
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Sep 15 13:56:04 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.5/.temps/reports/k_sign.hw.5.step1/v++_compile_k_sign.hw.5.step1_guidance.html', at Fri Sep 15 13:56:05 2023
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/hw/xilinx_u280_xdma_201920_3.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.2
+INFO: [v++ 60-1302] Platform 'xilinx_u280_xdma_201920_3.xpfm' has been explicitly enabled for this release.
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u280_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'k_sign'
+INFO: [v++ 60-804] Imported HLS script '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/tcl/k_sign.hw.5.step1.tcl' for kernel 'k_sign'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: k_sign Log file: /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.5/.temps/k_sign.hw.5.step1/k_sign/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_2594_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_2594_1'
+INFO: [v++ 204-61] Pipelining loop 'readmem'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'readmem'
+INFO: [v++ 204-61] Pipelining loop 'duplicate'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'duplicate'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_270_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_270_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_277_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 73, loop 'VITIS_LOOP_277_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_425_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_425_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_429_3'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_429_3'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_433_4'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_433_4'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_367_1_VITIS_LOOP_369_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 10, loop 'VITIS_LOOP_367_1_VITIS_LOOP_369_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_367_1_VITIS_LOOP_369_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 10, loop 'VITIS_LOOP_367_1_VITIS_LOOP_369_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_439_5'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 13, Final II = 13, Depth = 15, loop 'VITIS_LOOP_439_5'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_270_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_270_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_277_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_277_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_708_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_708_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_776_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_776_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_647_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_647_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_810_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_810_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1187_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_1187_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1769_1_VITIS_LOOP_1771_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1769_1_VITIS_LOOP_1771_2'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'merge'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'merge'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1832_1_VITIS_LOOP_1834_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1832_1_VITIS_LOOP_1834_2'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'merge'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'merge'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1811_1_VITIS_LOOP_1813_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1811_1_VITIS_LOOP_1813_2'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'merge'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'merge'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1811_1_VITIS_LOOP_1813_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1811_1_VITIS_LOOP_1813_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_656_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_656_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_788_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_788_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1423_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 10, loop 'VITIS_LOOP_1423_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_292_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_292_1'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'merge'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'merge'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1834_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1834_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1841_3'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1841_3'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1875_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_1875_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1885_1_VITIS_LOOP_1887_2_VITIS_LOOP_1888_3'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_1885_1_VITIS_LOOP_1887_2_VITIS_LOOP_1888_3'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1948_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_1948_1'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 11, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 11, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 11, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 11, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 11, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 11, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 11, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'invntt_layer'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 11, loop 'invntt_layer'
+INFO: [v++ 204-61] Pipelining loop 'merge'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'merge'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1937_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_1937_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1963_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_1963_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1992_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_1992_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_292_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_292_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_2061_1_VITIS_LOOP_2081_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 4, loop 'VITIS_LOOP_2061_1_VITIS_LOOP_2081_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_270_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_270_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_277_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_277_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1790_1_VITIS_LOOP_1792_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1790_1_VITIS_LOOP_1792_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_726_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_726_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_292_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_292_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1126_5'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_1126_5'
+INFO: [v++ 204-61] Pipelining loop 'stream_split'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'stream_split'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_1600_1'.
+INFO: [v++ 17-14] Message 'v++ 204-61' appears 100 times and further instances of the messages will be disabled.
+INFO: [v++ 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 13, loop 'VITIS_LOOP_1600_1'
+INFO: [v++ 17-14] Message 'v++ 200-1470' appears 100 times and further instances of the messages will be disabled.
+INFO: [v++ 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [v++ 200-789] **** Estimated Fmax: 212.18 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.5/.temps/reports/k_sign.hw.5.step1/system_estimate_k_sign.hw.5.step1.xtxt
+INFO: [v++ 60-586] Created xout/hw.5/xobj/k_sign.hw.5.step1.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.5/xobj/k_sign.hw.5.step1.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 13m 36s

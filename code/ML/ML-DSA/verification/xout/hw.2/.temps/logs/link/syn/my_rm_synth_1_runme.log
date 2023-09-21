@@ -1,0 +1,909 @@
+
+*** Running vivado
+    with args -log pfm_dynamic.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfm_dynamic.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source pfm_dynamic.tcl -notrace
+INFO: Dispatch client connection id - 39335
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xo/ip_repo/xilinx_com_hls_k_verify_0_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [BD 41-2576] File '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_sim_netlist.vhdl' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_sim_netlist.v' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_stub.vhdl' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_stub.v' referenced by design 'pfm_dynamic' could not be found.
+WARNING: [BD 41-2576] File '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic.dcp' referenced by design 'pfm_dynamic' could not be found.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2692.980 ; gain = 0.000 ; free physical = 86247 ; free virtual = 224900
+Command: synth_design -top pfm_dynamic -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/pfm_dynamic.bd
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/pfm_dynamic.bd
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3041963
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3540.137 ; gain = 286.797 ; free physical = 83498 ; free virtual = 222139
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1846]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0' (1#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_vip_ctrl_mgntpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' (2#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_vip_ctrl_mgntpf_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' is unconnected for instance 'axi_vip_ctrl_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+WARNING: [Synth 8-7023] instance 'axi_vip_ctrl_mgntpf' of module 'pfm_dynamic_axi_vip_ctrl_mgntpf_0' has 40 connections declared, but only 29 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2927]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_axi_vip_ctrl_userpf_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_vip_ctrl_userpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_axi_vip_ctrl_userpf_0' (3#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_vip_ctrl_userpf_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_axi_vip_data_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_vip_data_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_axi_vip_data_0' (4#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_vip_data_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_axilite_user_input_reg_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axilite_user_input_reg_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_axilite_user_input_reg_0' (5#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axilite_user_input_reg_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_debug_bridge_xsdbm_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_debug_bridge_xsdbm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_debug_bridge_xsdbm_0' (6#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_debug_bridge_xsdbm_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_hmss_0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_hmss_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_hmss_0_0' (7#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_hmss_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'interrupt_concat_imp_1SXQM3I' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:598]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xlconcat_interrupt_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_0/synth/pfm_dynamic_xlconcat_interrupt_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (8#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xlconcat_interrupt_0' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_0/synth/pfm_dynamic_xlconcat_interrupt_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xlconcat_interrupt_0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_0_0/synth/pfm_dynamic_xlconcat_interrupt_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xlconcat_interrupt_0_0' (10#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_0_0/synth/pfm_dynamic_xlconcat_interrupt_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xlconcat_interrupt_1_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_1_0/synth/pfm_dynamic_xlconcat_interrupt_1_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xlconcat_interrupt_1_0' (11#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_1_0/synth/pfm_dynamic_xlconcat_interrupt_1_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xlconcat_interrupt_2_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_2_0/synth/pfm_dynamic_xlconcat_interrupt_2_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xlconcat_interrupt_2_0' (12#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_2_0/synth/pfm_dynamic_xlconcat_interrupt_2_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xlconcat_interrupt_3_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_3_0/synth/pfm_dynamic_xlconcat_interrupt_3_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xlconcat_interrupt_3_0' (13#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconcat_interrupt_3_0/synth/pfm_dynamic_xlconcat_interrupt_3_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xlconstant_gnd_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconstant_gnd_0/synth/pfm_dynamic_xlconstant_gnd_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (14#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xlconstant_gnd_0' (15#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconstant_gnd_0/synth/pfm_dynamic_xlconstant_gnd_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'interrupt_concat_imp_1SXQM3I' (16#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:598]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_k_verify_1_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_k_verify_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_k_verify_1_0' (17#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_k_verify_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ap_local_block' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7071] port 'm_axi_gmemver_AWREGION' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7071] port 'm_axi_gmemver_ARREGION' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7071] port 'm_axi_gmemsig_AWREGION' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7071] port 'm_axi_gmemsig_ARREGION' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7071] port 'm_axi_gmemm_AWREGION' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7071] port 'm_axi_gmemm_ARREGION' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7071] port 'm_axi_gmempk_AWREGION' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7071] port 'm_axi_gmempk_ARREGION' of module 'pfm_dynamic_k_verify_1_0' is unconnected for instance 'k_verify_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+WARNING: [Synth 8-7023] instance 'k_verify_1' of module 'pfm_dynamic_k_verify_1_0' has 161 connections declared, but only 152 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3328]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0' (18#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0' is unconnected for instance 'regslice_pipe_ctrl_hbm_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3481]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0' is unconnected for instance 'regslice_pipe_ctrl_hbm_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3481]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0' is unconnected for instance 'regslice_pipe_ctrl_hbm_mgntpf' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3481]
+WARNING: [Synth 8-7023] instance 'regslice_pipe_ctrl_hbm_mgntpf' of module 'pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0' has 40 connections declared, but only 37 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3481]
+INFO: [Synth 8-6157] synthesizing module 'slr0_imp_1Q3M93Z' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5639]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_axi_gpio_null_slr0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_gpio_null_slr0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_axi_gpio_null_slr0_0' (19#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_gpio_null_slr0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_io_o' of module 'pfm_dynamic_axi_gpio_null_slr0_0' is unconnected for instance 'axi_gpio_null_slr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5868]
+WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'pfm_dynamic_axi_gpio_null_slr0_0' is unconnected for instance 'axi_gpio_null_slr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5868]
+WARNING: [Synth 8-7023] instance 'axi_gpio_null_slr0' of module 'pfm_dynamic_axi_gpio_null_slr0_0' has 22 connections declared, but only 20 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5868]
+INFO: [Synth 8-6157] synthesizing module 'expanded_region_resets_slr0_imp_I3VDPV' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:12]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_logic_reset_op_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_logic_reset_op_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_logic_reset_op_0' (20#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_logic_reset_op_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_control_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_control_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_control_0' (21#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_control_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_control_0' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:91]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_control_0' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:91]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_control_0' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:91]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_control_0' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:91]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_control' of module 'pfm_dynamic_psreset_gate_pr_control_0' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:91]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_data_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_data_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_data_0' (22#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_data_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_data_0' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:98]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_data_0' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:98]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_data_0' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:98]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_data_0' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:98]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_data' of module 'pfm_dynamic_psreset_gate_pr_data_0' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:98]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_dataclk_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_dataclk_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_dataclk_0' (23#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_dataclk_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_0' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:105]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_0' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:105]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_0' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:105]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_dataclk_0' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:105]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_dataclk' of module 'pfm_dynamic_psreset_gate_pr_dataclk_0' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:105]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel_0' (24#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_0' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:112]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_0' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:112]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_0' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:112]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_kernel' of module 'pfm_dynamic_psreset_gate_pr_kernel_0' has 10 connections declared, but only 7 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:112]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel2_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel2_0' (25#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel2_0' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:120]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel2_0' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:120]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel2_0' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:120]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_kernel2_0' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:120]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_kernel2' of module 'pfm_dynamic_psreset_gate_pr_kernel2_0' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:120]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_util_and2_hbm_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_util_and2_hbm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_util_and2_hbm_0' (26#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_util_and2_hbm_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_util_and2_hbm_ctrl_reset_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_util_and2_hbm_ctrl_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_util_and2_hbm_ctrl_reset_0' (27#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_util_and2_hbm_ctrl_reset_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_util_and2_slr0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_util_and2_slr0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_util_and2_slr0_0' (28#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_util_and2_slr0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_util_slice_hbm_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_slice_hbm_0/synth/pfm_dynamic_util_slice_hbm_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (29#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_util_slice_hbm_0' (30#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_slice_hbm_0/synth/pfm_dynamic_util_slice_hbm_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_util_slice_slr0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_slice_slr0_0/synth/pfm_dynamic_util_slice_slr0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (30#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_util_slice_slr0_0' (31#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_slice_slr0_0/synth/pfm_dynamic_util_slice_slr0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'expanded_region_resets_slr0_imp_I3VDPV' (32#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:12]
+WARNING: [Synth 8-7071] port 'dma_pcie_aresetn_pr' of module 'expanded_region_resets_slr0_imp_I3VDPV' is unconnected for instance 'expanded_region_resets_slr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5889]
+WARNING: [Synth 8-7071] port 'kernel2_aresetn_pr' of module 'expanded_region_resets_slr0_imp_I3VDPV' is unconnected for instance 'expanded_region_resets_slr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5889]
+WARNING: [Synth 8-7071] port 'perst' of module 'expanded_region_resets_slr0_imp_I3VDPV' is unconnected for instance 'expanded_region_resets_slr0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5889]
+WARNING: [Synth 8-7023] instance 'expanded_region_resets_slr0' of module 'expanded_region_resets_slr0_imp_I3VDPV' has 20 connections declared, but only 17 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5889]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_interconnect_axilite_user_slr0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_C3A2D6' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:959]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_m00_regslice_3' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m00_regslice_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_m00_regslice_3' (33#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m00_regslice_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'pfm_dynamic_m00_regslice_3' is unconnected for instance 'm00_regslice' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1118]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'pfm_dynamic_m00_regslice_3' is unconnected for instance 'm00_regslice' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1118]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'pfm_dynamic_m00_regslice_3' has 40 connections declared, but only 38 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1118]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_C3A2D6' (34#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:959]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1E0TSRO' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1159]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_auto_cc_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_auto_cc_0' (35#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_m01_regslice_10' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m01_regslice_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_m01_regslice_10' (36#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m01_regslice_10_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'pfm_dynamic_m01_regslice_10' is unconnected for instance 'm01_regslice' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1384]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'pfm_dynamic_m01_regslice_10' is unconnected for instance 'm01_regslice' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1384]
+WARNING: [Synth 8-7023] instance 'm01_regslice' of module 'pfm_dynamic_m01_regslice_10' has 40 connections declared, but only 38 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1384]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1E0TSRO' (37#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1159]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1JDGC4Q' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5019]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_s00_regslice_15' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_s00_regslice_15_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_s00_regslice_15' (38#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_s00_regslice_15_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1JDGC4Q' (39#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5019]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xbar_4' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_xbar_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xbar_4' (40#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_xbar_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_interconnect_axilite_user_slr0_0' (41#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:3725]
+INFO: [Synth 8-6155] done synthesizing module 'slr0_imp_1Q3M93Z' (42#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5639]
+INFO: [Synth 8-6157] synthesizing module 'slr1_imp_IZT2WG' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5971]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_axi_gpio_null_slr1_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_gpio_null_slr1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_axi_gpio_null_slr1_0' (43#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_gpio_null_slr1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_io_o' of module 'pfm_dynamic_axi_gpio_null_slr1_0' is unconnected for instance 'axi_gpio_null_slr1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6287]
+WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'pfm_dynamic_axi_gpio_null_slr1_0' is unconnected for instance 'axi_gpio_null_slr1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6287]
+WARNING: [Synth 8-7023] instance 'axi_gpio_null_slr1' of module 'pfm_dynamic_axi_gpio_null_slr1_0' has 22 connections declared, but only 20 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6287]
+INFO: [Synth 8-6157] synthesizing module 'expanded_region_resets_slr1_imp_WN1LWB' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:147]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_control_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_control_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_control_1' (44#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_control_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_control_1' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:217]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_control_1' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:217]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_control_1' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:217]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_control_1' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:217]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_control' of module 'pfm_dynamic_psreset_gate_pr_control_1' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:217]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_data_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_data_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_data_1' (45#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_data_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_data_1' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:224]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_data_1' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:224]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_data_1' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:224]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_data_1' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:224]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_data' of module 'pfm_dynamic_psreset_gate_pr_data_1' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:224]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_dataclk_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_dataclk_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_dataclk_1' (46#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_dataclk_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_1' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:231]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_1' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:231]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_1' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:231]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_dataclk_1' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:231]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_dataclk' of module 'pfm_dynamic_psreset_gate_pr_dataclk_1' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:231]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_ddr_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_ddr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_ddr_0' (47#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_ddr_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_ddr_0' is unconnected for instance 'psreset_gate_pr_ddr' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:238]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_ddr_0' is unconnected for instance 'psreset_gate_pr_ddr' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:238]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'pfm_dynamic_psreset_gate_pr_ddr_0' is unconnected for instance 'psreset_gate_pr_ddr' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:238]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_ddr_0' is unconnected for instance 'psreset_gate_pr_ddr' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:238]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_ddr' of module 'pfm_dynamic_psreset_gate_pr_ddr_0' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:238]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel_1' (48#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_1' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:245]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_1' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:245]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_1' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:245]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_kernel_1' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:245]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_kernel' of module 'pfm_dynamic_psreset_gate_pr_kernel_1' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:245]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel2_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel2_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel2_1' (49#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel2_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel2_1' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:252]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel2_1' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:252]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel2_1' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:252]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_kernel2_1' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:252]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_kernel2' of module 'pfm_dynamic_psreset_gate_pr_kernel2_1' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:252]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_util_and2_slr1_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_util_and2_slr1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_util_and2_slr1_0' (50#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_util_and2_slr1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_util_slice_slr1_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_slice_slr1_0/synth/pfm_dynamic_util_slice_slr1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (50#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_util_slice_slr1_0' (51#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_slice_slr1_0/synth/pfm_dynamic_util_slice_slr1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'expanded_region_resets_slr1_imp_WN1LWB' (52#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:147]
+WARNING: [Synth 8-7071] port 'kernel2_aresetn_pr' of module 'expanded_region_resets_slr1_imp_WN1LWB' is unconnected for instance 'expanded_region_resets_slr1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6308]
+WARNING: [Synth 8-7071] port 's_axi_data_aresetn_pr' of module 'expanded_region_resets_slr1_imp_WN1LWB' is unconnected for instance 'expanded_region_resets_slr1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6308]
+WARNING: [Synth 8-7023] instance 'expanded_region_resets_slr1' of module 'expanded_region_resets_slr1_imp_WN1LWB' has 19 connections declared, but only 17 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6308]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_interconnect_axilite_user_slr1_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:4197]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_14XUPPF' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:759]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_m00_regslice_4' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m00_regslice_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_m00_regslice_4' (53#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m00_regslice_4_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'pfm_dynamic_m00_regslice_4' is unconnected for instance 'm00_regslice' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:918]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'pfm_dynamic_m00_regslice_4' is unconnected for instance 'm00_regslice' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:918]
+WARNING: [Synth 8-7023] instance 'm00_regslice' of module 'pfm_dynamic_m00_regslice_4' has 40 connections declared, but only 38 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:918]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_14XUPPF' (54#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:759]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_3FADDP' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1425]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_m01_regslice_11' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m01_regslice_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_m01_regslice_11' (55#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m01_regslice_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_3FADDP' (56#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1425]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_X3IKM6' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1635]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_m02_regslice_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_m02_regslice_0' (57#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_X3IKM6' (58#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1635]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_ZE1UB7' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5429]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_s00_regslice_16' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_s00_regslice_16_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_s00_regslice_16' (59#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_s00_regslice_16_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_ZE1UB7' (60#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5429]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xbar_2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xbar_2' (61#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_xbar_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_interconnect_axilite_user_slr1_0' (62#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:4197]
+INFO: [Synth 8-6155] done synthesizing module 'slr1_imp_IZT2WG' (63#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5971]
+INFO: [Synth 8-6157] synthesizing module 'slr2_imp_EEMOLC' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6413]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_axi_gpio_null_slr2_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_gpio_null_slr2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_axi_gpio_null_slr2_0' (64#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_axi_gpio_null_slr2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_io_o' of module 'pfm_dynamic_axi_gpio_null_slr2_0' is unconnected for instance 'axi_gpio_null_slr2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6725]
+WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'pfm_dynamic_axi_gpio_null_slr2_0' is unconnected for instance 'axi_gpio_null_slr2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6725]
+WARNING: [Synth 8-7023] instance 'axi_gpio_null_slr2' of module 'pfm_dynamic_axi_gpio_null_slr2_0' has 22 connections declared, but only 20 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6725]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_dna_self_check_placeholder_0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_dna_self_check_placeholder_0_0/synth/pfm_dynamic_dna_self_check_placeholder_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (64#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_dna_self_check_placeholder_0_0' (65#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_dna_self_check_placeholder_0_0/synth/pfm_dynamic_dna_self_check_placeholder_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'expanded_region_resets_slr2_imp_B8LNJ7' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:268]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_logic_reset_op_1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_logic_reset_op_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_logic_reset_op_1' (66#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_logic_reset_op_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_control_2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_control_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_control_2' (67#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_control_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_control_2' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:332]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_control_2' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:332]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_control_2' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:332]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_control_2' is unconnected for instance 'psreset_gate_pr_control' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:332]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_control' of module 'pfm_dynamic_psreset_gate_pr_control_2' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:332]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_data_2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_data_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_data_2' (68#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_data_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_data_2' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:339]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_data_2' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:339]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_data_2' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:339]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_data_2' is unconnected for instance 'psreset_gate_pr_data' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:339]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_data' of module 'pfm_dynamic_psreset_gate_pr_data_2' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:339]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_dataclk_2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_dataclk_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_dataclk_2' (69#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_dataclk_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_2' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:346]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_2' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:346]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_dataclk_2' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:346]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_dataclk_2' is unconnected for instance 'psreset_gate_pr_dataclk' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:346]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_dataclk' of module 'pfm_dynamic_psreset_gate_pr_dataclk_2' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:346]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel_2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel_2' (70#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_2' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:353]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_2' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:353]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel_2' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:353]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'pfm_dynamic_psreset_gate_pr_kernel_2' is unconnected for instance 'psreset_gate_pr_kernel' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:353]
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_kernel' of module 'pfm_dynamic_psreset_gate_pr_kernel_2' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:353]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel2_2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel2_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_psreset_gate_pr_kernel2_2' (71#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_psreset_gate_pr_kernel2_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'pfm_dynamic_psreset_gate_pr_kernel2_2' is unconnected for instance 'psreset_gate_pr_kernel2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:360]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'psreset_gate_pr_kernel2' of module 'pfm_dynamic_psreset_gate_pr_kernel2_2' has 10 connections declared, but only 6 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:360]
+INFO: [Synth 8-6155] done synthesizing module 'expanded_region_resets_slr2_imp_B8LNJ7' (72#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:268]
+WARNING: [Synth 8-7023] instance 'expanded_region_resets_slr2' of module 'expanded_region_resets_slr2_imp_B8LNJ7' has 18 connections declared, but only 14 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6748]
+INFO: [Synth 8-6157] synthesizing module 'frequency_counters_imp_L6ZI6S' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:369]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_freq_counter_0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_freq_counter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_freq_counter_0_0' (73#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_freq_counter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_freq_counter_1_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_freq_counter_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_freq_counter_1_0' (74#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_freq_counter_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frequency_counters_imp_L6ZI6S' (75#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:369]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_interconnect_axilite_user_slr2_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:4809]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_U7G1P5' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5229]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_s00_regslice_17' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_s00_regslice_17_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_s00_regslice_17' (76#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/.Xil/Vivado-3041826-picu/realtime/pfm_dynamic_s00_regslice_17_stub.v:6]
+WARNING: [Synth 8-7023] instance 's00_regslice' of module 'pfm_dynamic_s00_regslice_17' has 40 connections declared, but only 38 given [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5388]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_U7G1P5' (77#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:5229]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_interconnect_axilite_user_slr2_0' (78#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:4809]
+WARNING: [Synth 8-3848] Net Res in module/entity slr2_imp_EEMOLC does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6488]
+INFO: [Synth 8-6155] done synthesizing module 'slr2_imp_EEMOLC' (79#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:6413]
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_xlconstant_0_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconstant_0_0/synth/pfm_dynamic_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (79#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_xlconstant_0_0' (80#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xlconstant_0_0/synth/pfm_dynamic_xlconstant_0_0.v:57]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_act_n in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2066]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_adr in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2067]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_ba in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2068]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_bg in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2069]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_ck_c in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2070]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_ck_t in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2071]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_cke in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2072]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_cs_n in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2073]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_odt in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2077]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_par in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2078]
+WARNING: [Synth 8-3848] Net ddrmem_0_C0_DDR4_reset_n in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2079]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_act_n in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2080]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_adr in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2081]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_ba in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2082]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_bg in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2083]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_ck_c in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2084]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_ck_t in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2085]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_cke in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2086]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_cs_n in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2087]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_odt in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2091]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_par in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2092]
+WARNING: [Synth 8-3848] Net ddrmem_1_C0_DDR4_reset_n in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2093]
+WARNING: [Synth 8-3848] Net io_gt_gtyquad_00_gtx_n in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2112]
+WARNING: [Synth 8-3848] Net io_gt_gtyquad_00_gtx_p in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2113]
+WARNING: [Synth 8-3848] Net io_gt_gtyquad_01_gtx_n in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2116]
+WARNING: [Synth 8-3848] Net io_gt_gtyquad_01_gtx_p in module/entity pfm_dynamic does not have driver. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:2117]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic' (81#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/synth/pfm_dynamic.v:1846]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_U7G1P5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_U7G1P5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module pfm_dynamic_interconnect_axilite_user_slr2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module pfm_dynamic_interconnect_axilite_user_slr2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Res[0] in module slr2_imp_EEMOLC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_ZE1UB7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_ZE1UB7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[31] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[30] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[29] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[28] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[27] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[26] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[25] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[24] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[23] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[22] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[21] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[20] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[19] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[18] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[17] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[16] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[15] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[14] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[13] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[12] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[11] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[10] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[9] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[31] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[30] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[29] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[28] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[27] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[26] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[25] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[24] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[23] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[22] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[21] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[20] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[19] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[18] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[17] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[16] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[15] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[14] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[13] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[12] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[11] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[10] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[9] in module m02_couplers_imp_X3IKM6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_3FADDP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_3FADDP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[31] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[30] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[29] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[28] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[27] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[26] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[25] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[24] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[23] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[22] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[21] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[20] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[19] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[18] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[17] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[16] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[15] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[14] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[13] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[12] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[11] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[10] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[9] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[31] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[30] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[29] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[28] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[27] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[26] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[25] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[24] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[23] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[22] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[21] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[20] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[19] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[18] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[17] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[16] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[15] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[14] in module m00_couplers_imp_14XUPPF is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3605.043 ; gain = 351.703 ; free physical = 82936 ; free virtual = 221573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3622.855 ; gain = 369.516 ; free physical = 83824 ; free virtual = 222461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3622.855 ; gain = 369.516 ; free physical = 83824 ; free virtual = 222461
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3622.855 ; gain = 0.000 ; free physical = 83826 ; free virtual = 222463
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_control_0/pfm_dynamic_psreset_gate_pr_control_0/pfm_dynamic_psreset_gate_pr_control_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_control'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_control_0/pfm_dynamic_psreset_gate_pr_control_0/pfm_dynamic_psreset_gate_pr_control_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_control'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_data_0/pfm_dynamic_psreset_gate_pr_data_0/pfm_dynamic_psreset_gate_pr_data_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_data'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_data_0/pfm_dynamic_psreset_gate_pr_data_0/pfm_dynamic_psreset_gate_pr_data_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_data'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_dataclk_0/pfm_dynamic_psreset_gate_pr_dataclk_0/pfm_dynamic_psreset_gate_pr_dataclk_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_dataclk'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_dataclk_0/pfm_dynamic_psreset_gate_pr_dataclk_0/pfm_dynamic_psreset_gate_pr_dataclk_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_dataclk'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel_0/pfm_dynamic_psreset_gate_pr_kernel_0/pfm_dynamic_psreset_gate_pr_kernel_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_kernel'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel_0/pfm_dynamic_psreset_gate_pr_kernel_0/pfm_dynamic_psreset_gate_pr_kernel_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_kernel'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel2_0/pfm_dynamic_psreset_gate_pr_kernel2_0/pfm_dynamic_psreset_gate_pr_kernel2_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_kernel2'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel2_0/pfm_dynamic_psreset_gate_pr_kernel2_0/pfm_dynamic_psreset_gate_pr_kernel2_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/psreset_gate_pr_kernel2'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_logic_reset_op_0/pfm_dynamic_logic_reset_op_0/pfm_dynamic_logic_reset_op_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/logic_reset_op'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_logic_reset_op_0/pfm_dynamic_logic_reset_op_0/pfm_dynamic_logic_reset_op_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/logic_reset_op'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_and2_hbm_0/pfm_dynamic_util_and2_hbm_0/pfm_dynamic_util_and2_hbm_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/util_and2_hbm'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_and2_hbm_0/pfm_dynamic_util_and2_hbm_0/pfm_dynamic_util_and2_hbm_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/util_and2_hbm'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_and2_hbm_ctrl_reset_0/pfm_dynamic_util_and2_hbm_ctrl_reset_0/pfm_dynamic_util_and2_hbm_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/util_and2_hbm_ctrl_reset'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_and2_hbm_ctrl_reset_0/pfm_dynamic_util_and2_hbm_ctrl_reset_0/pfm_dynamic_util_and2_hbm_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/util_and2_hbm_ctrl_reset'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_and2_slr0_0/pfm_dynamic_util_and2_slr0_0/pfm_dynamic_util_and2_hbm_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/util_and2_slr0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_and2_slr0_0/pfm_dynamic_util_and2_slr0_0/pfm_dynamic_util_and2_hbm_0_in_context.xdc] for cell 'slr0/expanded_region_resets_slr0/util_and2_slr0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xbar_4/pfm_dynamic_xbar_4/pfm_dynamic_xbar_4_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/xbar'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xbar_4/pfm_dynamic_xbar_4/pfm_dynamic_xbar_4_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/xbar'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_s00_regslice_15/pfm_dynamic_s00_regslice_15/pfm_dynamic_s00_regslice_15_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_s00_regslice_15/pfm_dynamic_s00_regslice_15/pfm_dynamic_s00_regslice_15_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/s00_couplers/s00_regslice'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m00_regslice_3/pfm_dynamic_m00_regslice_3/pfm_dynamic_s00_regslice_17_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m00_regslice_3/pfm_dynamic_m00_regslice_3/pfm_dynamic_s00_regslice_17_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/m00_couplers/m00_regslice'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m01_regslice_10/pfm_dynamic_m01_regslice_10/pfm_dynamic_m01_regslice_10_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/m01_couplers/m01_regslice'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m01_regslice_10/pfm_dynamic_m01_regslice_10/pfm_dynamic_m01_regslice_10_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/m01_couplers/m01_regslice'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_auto_cc_0/pfm_dynamic_auto_cc_0/pfm_dynamic_auto_cc_0_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/m01_couplers/auto_cc'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_auto_cc_0/pfm_dynamic_auto_cc_0/pfm_dynamic_auto_cc_0_in_context.xdc] for cell 'slr0/interconnect_axilite_user_slr0/m01_couplers/auto_cc'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_gpio_null_slr0_0/pfm_dynamic_axi_gpio_null_slr0_0/pfm_dynamic_axi_gpio_null_slr0_0_in_context.xdc] for cell 'slr0/axi_gpio_null_slr0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_gpio_null_slr0_0/pfm_dynamic_axi_gpio_null_slr0_0/pfm_dynamic_axi_gpio_null_slr0_0_in_context.xdc] for cell 'slr0/axi_gpio_null_slr0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_control_1/pfm_dynamic_psreset_gate_pr_control_1/pfm_dynamic_psreset_gate_pr_control_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_control'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_control_1/pfm_dynamic_psreset_gate_pr_control_1/pfm_dynamic_psreset_gate_pr_control_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_control'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_data_1/pfm_dynamic_psreset_gate_pr_data_1/pfm_dynamic_psreset_gate_pr_data_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_data'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_data_1/pfm_dynamic_psreset_gate_pr_data_1/pfm_dynamic_psreset_gate_pr_data_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_data'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_dataclk_1/pfm_dynamic_psreset_gate_pr_dataclk_1/pfm_dynamic_psreset_gate_pr_dataclk_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_dataclk'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_dataclk_1/pfm_dynamic_psreset_gate_pr_dataclk_1/pfm_dynamic_psreset_gate_pr_dataclk_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_dataclk'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_ddr_0/pfm_dynamic_psreset_gate_pr_ddr_0/pfm_dynamic_psreset_gate_pr_data_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_ddr'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_ddr_0/pfm_dynamic_psreset_gate_pr_ddr_0/pfm_dynamic_psreset_gate_pr_data_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_ddr'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel_1/pfm_dynamic_psreset_gate_pr_kernel_1/pfm_dynamic_psreset_gate_pr_kernel_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_kernel'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel_1/pfm_dynamic_psreset_gate_pr_kernel_1/pfm_dynamic_psreset_gate_pr_kernel_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_kernel'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel2_1/pfm_dynamic_psreset_gate_pr_kernel2_1/pfm_dynamic_psreset_gate_pr_kernel2_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_kernel2'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel2_1/pfm_dynamic_psreset_gate_pr_kernel2_1/pfm_dynamic_psreset_gate_pr_kernel2_1_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/psreset_gate_pr_kernel2'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_and2_slr1_0/pfm_dynamic_util_and2_slr1_0/pfm_dynamic_util_and2_hbm_0_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/util_and2_slr1'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_util_and2_slr1_0/pfm_dynamic_util_and2_slr1_0/pfm_dynamic_util_and2_hbm_0_in_context.xdc] for cell 'slr1/expanded_region_resets_slr1/util_and2_slr1'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xbar_2/pfm_dynamic_xbar_2/pfm_dynamic_xbar_2_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/xbar'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_xbar_2/pfm_dynamic_xbar_2/pfm_dynamic_xbar_2_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/xbar'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_s00_regslice_16/pfm_dynamic_s00_regslice_16/pfm_dynamic_s00_regslice_15_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_s00_regslice_16/pfm_dynamic_s00_regslice_16/pfm_dynamic_s00_regslice_15_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/s00_couplers/s00_regslice'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m00_regslice_4/pfm_dynamic_m00_regslice_4/pfm_dynamic_s00_regslice_17_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m00_regslice_4/pfm_dynamic_m00_regslice_4/pfm_dynamic_s00_regslice_17_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/m00_couplers/m00_regslice'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m01_regslice_11/pfm_dynamic_m01_regslice_11/pfm_dynamic_s00_regslice_15_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/m01_couplers/m01_regslice'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m01_regslice_11/pfm_dynamic_m01_regslice_11/pfm_dynamic_s00_regslice_15_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/m01_couplers/m01_regslice'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m02_regslice_0/pfm_dynamic_m02_regslice_0/pfm_dynamic_s00_regslice_17_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/m02_couplers/m02_regslice'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_m02_regslice_0/pfm_dynamic_m02_regslice_0/pfm_dynamic_s00_regslice_17_in_context.xdc] for cell 'slr1/interconnect_axilite_user_slr1/m02_couplers/m02_regslice'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_gpio_null_slr1_0/pfm_dynamic_axi_gpio_null_slr1_0/pfm_dynamic_axi_gpio_null_slr0_0_in_context.xdc] for cell 'slr1/axi_gpio_null_slr1'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_gpio_null_slr1_0/pfm_dynamic_axi_gpio_null_slr1_0/pfm_dynamic_axi_gpio_null_slr0_0_in_context.xdc] for cell 'slr1/axi_gpio_null_slr1'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_control_2/pfm_dynamic_psreset_gate_pr_control_2/pfm_dynamic_psreset_gate_pr_control_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_control'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_control_2/pfm_dynamic_psreset_gate_pr_control_2/pfm_dynamic_psreset_gate_pr_control_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_control'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_data_2/pfm_dynamic_psreset_gate_pr_data_2/pfm_dynamic_psreset_gate_pr_data_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_data'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_data_2/pfm_dynamic_psreset_gate_pr_data_2/pfm_dynamic_psreset_gate_pr_data_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_data'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_dataclk_2/pfm_dynamic_psreset_gate_pr_dataclk_2/pfm_dynamic_psreset_gate_pr_dataclk_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_dataclk'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_dataclk_2/pfm_dynamic_psreset_gate_pr_dataclk_2/pfm_dynamic_psreset_gate_pr_dataclk_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_dataclk'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel_2/pfm_dynamic_psreset_gate_pr_kernel_2/pfm_dynamic_psreset_gate_pr_kernel_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_kernel'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel_2/pfm_dynamic_psreset_gate_pr_kernel_2/pfm_dynamic_psreset_gate_pr_kernel_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_kernel'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel2_2/pfm_dynamic_psreset_gate_pr_kernel2_2/pfm_dynamic_psreset_gate_pr_kernel2_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_kernel2'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_psreset_gate_pr_kernel2_2/pfm_dynamic_psreset_gate_pr_kernel2_2/pfm_dynamic_psreset_gate_pr_kernel2_2_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/psreset_gate_pr_kernel2'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_logic_reset_op_1/pfm_dynamic_logic_reset_op_1/pfm_dynamic_logic_reset_op_1_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/logic_reset_op'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_logic_reset_op_1/pfm_dynamic_logic_reset_op_1/pfm_dynamic_logic_reset_op_1_in_context.xdc] for cell 'slr2/expanded_region_resets_slr2/logic_reset_op'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_freq_counter_0_0/pfm_dynamic_freq_counter_0_0/pfm_dynamic_freq_counter_0_0_in_context.xdc] for cell 'slr2/frequency_counters/freq_counter_0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_freq_counter_0_0/pfm_dynamic_freq_counter_0_0/pfm_dynamic_freq_counter_0_0_in_context.xdc] for cell 'slr2/frequency_counters/freq_counter_0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_freq_counter_1_0/pfm_dynamic_freq_counter_1_0/pfm_dynamic_freq_counter_0_0_in_context.xdc] for cell 'slr2/frequency_counters/freq_counter_1'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_freq_counter_1_0/pfm_dynamic_freq_counter_1_0/pfm_dynamic_freq_counter_0_0_in_context.xdc] for cell 'slr2/frequency_counters/freq_counter_1'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_s00_regslice_17/pfm_dynamic_s00_regslice_17/pfm_dynamic_s00_regslice_17_in_context.xdc] for cell 'slr2/interconnect_axilite_user_slr2/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_s00_regslice_17/pfm_dynamic_s00_regslice_17/pfm_dynamic_s00_regslice_17_in_context.xdc] for cell 'slr2/interconnect_axilite_user_slr2/s00_couplers/s00_regslice'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_gpio_null_slr2_0/pfm_dynamic_axi_gpio_null_slr2_0/pfm_dynamic_axi_gpio_null_slr0_0_in_context.xdc] for cell 'slr2/axi_gpio_null_slr2'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_gpio_null_slr2_0/pfm_dynamic_axi_gpio_null_slr2_0/pfm_dynamic_axi_gpio_null_slr0_0_in_context.xdc] for cell 'slr2/axi_gpio_null_slr2'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0_in_context.xdc] for cell 'axi_vip_ctrl_hbm_mgntpf'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0/pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0_in_context.xdc] for cell 'axi_vip_ctrl_hbm_mgntpf'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_vip_ctrl_mgntpf_0/pfm_dynamic_axi_vip_ctrl_mgntpf_0/pfm_dynamic_axi_vip_ctrl_mgntpf_0_in_context.xdc] for cell 'axi_vip_ctrl_mgntpf'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_vip_ctrl_mgntpf_0/pfm_dynamic_axi_vip_ctrl_mgntpf_0/pfm_dynamic_axi_vip_ctrl_mgntpf_0_in_context.xdc] for cell 'axi_vip_ctrl_mgntpf'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_vip_ctrl_userpf_0/pfm_dynamic_axi_vip_ctrl_userpf_0/pfm_dynamic_axi_vip_ctrl_mgntpf_0_in_context.xdc] for cell 'axi_vip_ctrl_userpf'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_vip_ctrl_userpf_0/pfm_dynamic_axi_vip_ctrl_userpf_0/pfm_dynamic_axi_vip_ctrl_mgntpf_0_in_context.xdc] for cell 'axi_vip_ctrl_userpf'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_vip_data_0/pfm_dynamic_axi_vip_data_0/pfm_dynamic_axi_vip_data_0_in_context.xdc] for cell 'axi_vip_data'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axi_vip_data_0/pfm_dynamic_axi_vip_data_0/pfm_dynamic_axi_vip_data_0_in_context.xdc] for cell 'axi_vip_data'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axilite_user_input_reg_0/pfm_dynamic_axilite_user_input_reg_0/pfm_dynamic_axilite_user_input_reg_0_in_context.xdc] for cell 'axilite_user_input_reg'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_axilite_user_input_reg_0/pfm_dynamic_axilite_user_input_reg_0/pfm_dynamic_axilite_user_input_reg_0_in_context.xdc] for cell 'axilite_user_input_reg'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/pfm_dynamic_debug_bridge_xsdbm_0/pfm_dynamic_debug_bridge_xsdbm_0_in_context.xdc] for cell 'debug_bridge_xsdbm'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/pfm_dynamic_debug_bridge_xsdbm_0/pfm_dynamic_debug_bridge_xsdbm_0_in_context.xdc] for cell 'debug_bridge_xsdbm'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/pfm_dynamic_hmss_0_0/pfm_dynamic_hmss_0_0_in_context.xdc] for cell 'hmss_0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/pfm_dynamic_hmss_0_0/pfm_dynamic_hmss_0_0_in_context.xdc] for cell 'hmss_0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_in_context.xdc] for cell 'regslice_pipe_ctrl_hbm_mgntpf'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_in_context.xdc] for cell 'regslice_pipe_ctrl_hbm_mgntpf'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_k_verify_1_0/pfm_dynamic_k_verify_1_0/pfm_dynamic_k_verify_1_0_in_context.xdc] for cell 'k_verify_1'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_k_verify_1_0/pfm_dynamic_k_verify_1_0/pfm_dynamic_k_verify_1_0_in_context.xdc] for cell 'k_verify_1'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_ooc.xdc]
+WARNING: [Constraints 18-619] A clock with name 'hbm_ref_clk' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_ooc.xdc:14]
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/pfm_dynamic_ooc.xdc]
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_gt_freerun' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:9]
+WARNING: [Constraints 18-619] A clock with name 'clk_out1_pfm_top_clkwiz_hbm_aclk_0' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:10]
+WARNING: [Constraints 18-619] A clock with name 'clkwiz_kernel2_clk_out1' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:11]
+WARNING: [Constraints 18-619] A clock with name 'clkwiz_kernel_clk_out1' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:12]
+WARNING: [Constraints 18-619] A clock with name 'dma_pcie_axi_aclk' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:13]
+WARNING: [Constraints 18-619] A clock with name 'hbm_ref_clk' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:14]
+WARNING: [Constraints 18-619] A clock with name 's_axi_aclk' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:15]
+WARNING: [Constraints 18-619] A clock with name 'c0_sys_clk_p' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:16]
+WARNING: [Constraints 18-619] A clock with name 'c1_sys_clk_p' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:17]
+WARNING: [Constraints 18-619] A clock with name 'public_debug_hub_drck' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:18]
+WARNING: [Constraints 18-619] A clock with name 'public_debug_hub_tck' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:19]
+WARNING: [Constraints 18-619] A clock with name 'public_debug_hub_update' already exists, overwriting the previous clock with the same name. [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc:20]
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/output/pfm_dynamic_ooc_copy.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3663.512 ; gain = 0.000 ; free physical = 83500 ; free virtual = 222132
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3663.512 ; gain = 0.000 ; free physical = 83483 ; free virtual = 222116
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3663.512 ; gain = 410.172 ; free physical = 81942 ; free virtual = 220569
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3663.512 ; gain = 410.172 ; free physical = 81938 ; free virtual = 220566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for interrupt_concat/xlconcat_interrupt. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for interrupt_concat/xlconcat_interrupt_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for interrupt_concat/xlconcat_interrupt_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for interrupt_concat/xlconcat_interrupt_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for interrupt_concat/xlconcat_interrupt_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for interrupt_concat/xlconstant_gnd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/psreset_gate_pr_control. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/psreset_gate_pr_data. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/psreset_gate_pr_dataclk. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/psreset_gate_pr_kernel. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/psreset_gate_pr_kernel2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/util_slice_hbm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/util_slice_slr0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/logic_reset_op. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/util_and2_hbm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/util_and2_hbm_ctrl_reset. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/expanded_region_resets_slr0/util_and2_slr0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/interconnect_axilite_user_slr0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/interconnect_axilite_user_slr0/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/interconnect_axilite_user_slr0/m00_couplers/m00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/interconnect_axilite_user_slr0/m01_couplers/m01_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/interconnect_axilite_user_slr0/m01_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/interconnect_axilite_user_slr0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr0/axi_gpio_null_slr0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/expanded_region_resets_slr1/psreset_gate_pr_control. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/expanded_region_resets_slr1/psreset_gate_pr_data. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/expanded_region_resets_slr1/psreset_gate_pr_dataclk. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/expanded_region_resets_slr1/psreset_gate_pr_ddr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/expanded_region_resets_slr1/psreset_gate_pr_kernel. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/expanded_region_resets_slr1/psreset_gate_pr_kernel2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/expanded_region_resets_slr1/util_slice_slr1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/expanded_region_resets_slr1/util_and2_slr1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/interconnect_axilite_user_slr1/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/interconnect_axilite_user_slr1/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/interconnect_axilite_user_slr1/m00_couplers/m00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/interconnect_axilite_user_slr1/m01_couplers/m01_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/interconnect_axilite_user_slr1/m02_couplers/m02_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/interconnect_axilite_user_slr1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr1/axi_gpio_null_slr1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/expanded_region_resets_slr2/psreset_gate_pr_control. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/expanded_region_resets_slr2/psreset_gate_pr_data. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/expanded_region_resets_slr2/psreset_gate_pr_dataclk. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/expanded_region_resets_slr2/psreset_gate_pr_kernel. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/expanded_region_resets_slr2/psreset_gate_pr_kernel2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/expanded_region_resets_slr2/logic_reset_op. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/frequency_counters/freq_counter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/frequency_counters/freq_counter_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/interconnect_axilite_user_slr2/s00_couplers/s00_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/interconnect_axilite_user_slr2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/axi_gpio_null_slr2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for slr2/dna_self_check_placeholder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_vip_ctrl_hbm_mgntpf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_vip_ctrl_mgntpf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_vip_ctrl_userpf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_vip_data. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axilite_user_input_reg. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for debug_bridge_xsdbm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hmss_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for regslice_pipe_ctrl_hbm_mgntpf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for k_verify_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for xlconstant_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3663.512 ; gain = 410.172 ; free physical = 81801 ; free virtual = 220428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3663.512 ; gain = 410.172 ; free physical = 81575 ; free virtual = 220204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3663.512 ; gain = 410.172 ; free physical = 81293 ; free virtual = 219924
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'hbm_ref_clk'
+WARNING: [Synth 8-565] redefining clock 'clk_gt_freerun'
+WARNING: [Synth 8-565] redefining clock 'clk_out1_pfm_top_clkwiz_hbm_aclk_0'
+WARNING: [Synth 8-565] redefining clock 'clkwiz_kernel2_clk_out1'
+WARNING: [Synth 8-565] redefining clock 'clkwiz_kernel_clk_out1'
+WARNING: [Synth 8-565] redefining clock 'dma_pcie_axi_aclk'
+WARNING: [Synth 8-565] redefining clock 'hbm_ref_clk'
+WARNING: [Synth 8-565] redefining clock 's_axi_aclk'
+WARNING: [Synth 8-565] redefining clock 'c0_sys_clk_p'
+WARNING: [Synth 8-565] redefining clock 'c1_sys_clk_p'
+WARNING: [Synth 8-565] redefining clock 'public_debug_hub_drck'
+WARNING: [Synth 8-565] redefining clock 'public_debug_hub_tck'
+WARNING: [Synth 8-565] redefining clock 'public_debug_hub_update'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 4032.488 ; gain = 779.148 ; free physical = 79748 ; free virtual = 218374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 4033.488 ; gain = 780.148 ; free physical = 79746 ; free virtual = 218373
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 4053.527 ; gain = 800.188 ; free physical = 79726 ; free virtual = 218348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 4059.465 ; gain = 806.125 ; free physical = 79777 ; free virtual = 218390
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 4059.465 ; gain = 806.125 ; free physical = 79777 ; free virtual = 218390
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 4059.465 ; gain = 806.125 ; free physical = 79778 ; free virtual = 218392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 4059.465 ; gain = 806.125 ; free physical = 79778 ; free virtual = 218392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 4059.465 ; gain = 806.125 ; free physical = 79779 ; free virtual = 218392
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 4059.465 ; gain = 806.125 ; free physical = 79786 ; free virtual = 218400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------------------+----------+
+|      |BlackBox name                               |Instances |
++------+--------------------------------------------+----------+
+|1     |pfm_dynamic_axi_vip_ctrl_hbm_mgntpf_0       |         1|
+|2     |pfm_dynamic_axi_vip_ctrl_mgntpf_0           |         1|
+|3     |pfm_dynamic_axi_vip_ctrl_userpf_0           |         1|
+|4     |pfm_dynamic_axi_vip_data_0                  |         1|
+|5     |pfm_dynamic_axilite_user_input_reg_0        |         1|
+|6     |pfm_dynamic_debug_bridge_xsdbm_0            |         1|
+|7     |pfm_dynamic_hmss_0_0                        |         1|
+|8     |pfm_dynamic_k_verify_1_0                    |         1|
+|9     |pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0 |         1|
+|10    |pfm_dynamic_xbar_4                          |         1|
+|11    |pfm_dynamic_m00_regslice_3                  |         1|
+|12    |pfm_dynamic_auto_cc_0                       |         1|
+|13    |pfm_dynamic_m01_regslice_10                 |         1|
+|14    |pfm_dynamic_s00_regslice_15                 |         1|
+|15    |pfm_dynamic_axi_gpio_null_slr0_0            |         1|
+|16    |pfm_dynamic_logic_reset_op_0                |         1|
+|17    |pfm_dynamic_psreset_gate_pr_control_0       |         1|
+|18    |pfm_dynamic_psreset_gate_pr_data_0          |         1|
+|19    |pfm_dynamic_psreset_gate_pr_dataclk_0       |         1|
+|20    |pfm_dynamic_psreset_gate_pr_kernel_0        |         1|
+|21    |pfm_dynamic_psreset_gate_pr_kernel2_0       |         1|
+|22    |pfm_dynamic_util_and2_hbm_0                 |         1|
+|23    |pfm_dynamic_util_and2_hbm_ctrl_reset_0      |         1|
+|24    |pfm_dynamic_util_and2_slr0_0                |         1|
+|25    |pfm_dynamic_xbar_2                          |         1|
+|26    |pfm_dynamic_m00_regslice_4                  |         1|
+|27    |pfm_dynamic_m01_regslice_11                 |         1|
+|28    |pfm_dynamic_m02_regslice_0                  |         1|
+|29    |pfm_dynamic_s00_regslice_16                 |         1|
+|30    |pfm_dynamic_axi_gpio_null_slr1_0            |         1|
+|31    |pfm_dynamic_psreset_gate_pr_control_1       |         1|
+|32    |pfm_dynamic_psreset_gate_pr_data_1          |         1|
+|33    |pfm_dynamic_psreset_gate_pr_dataclk_1       |         1|
+|34    |pfm_dynamic_psreset_gate_pr_ddr_0           |         1|
+|35    |pfm_dynamic_psreset_gate_pr_kernel_1        |         1|
+|36    |pfm_dynamic_psreset_gate_pr_kernel2_1       |         1|
+|37    |pfm_dynamic_util_and2_slr1_0                |         1|
+|38    |pfm_dynamic_s00_regslice_17                 |         1|
+|39    |pfm_dynamic_axi_gpio_null_slr2_0            |         1|
+|40    |pfm_dynamic_logic_reset_op_1                |         1|
+|41    |pfm_dynamic_psreset_gate_pr_control_2       |         1|
+|42    |pfm_dynamic_psreset_gate_pr_data_2          |         1|
+|43    |pfm_dynamic_psreset_gate_pr_dataclk_2       |         1|
+|44    |pfm_dynamic_psreset_gate_pr_kernel_2        |         1|
+|45    |pfm_dynamic_psreset_gate_pr_kernel2_2       |         1|
+|46    |pfm_dynamic_freq_counter_0_0                |         1|
+|47    |pfm_dynamic_freq_counter_1_0                |         1|
++------+--------------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------------+------+
+|      |Cell                                      |Count |
++------+------------------------------------------+------+
+|1     |pfm_dynamic_auto_cc                       |     1|
+|2     |pfm_dynamic_axi_gpio_null_slr0            |     1|
+|3     |pfm_dynamic_axi_gpio_null_slr1            |     1|
+|4     |pfm_dynamic_axi_gpio_null_slr2            |     1|
+|5     |pfm_dynamic_axi_vip_ctrl_hbm_mgntpf       |     1|
+|6     |pfm_dynamic_axi_vip_ctrl_mgntpf           |     1|
+|7     |pfm_dynamic_axi_vip_ctrl_userpf           |     1|
+|8     |pfm_dynamic_axi_vip_data                  |     1|
+|9     |pfm_dynamic_axilite_user_input_reg        |     1|
+|10    |pfm_dynamic_debug_bridge_xsdbm            |     1|
+|11    |pfm_dynamic_freq_counter_0                |     1|
+|12    |pfm_dynamic_freq_counter_1                |     1|
+|13    |pfm_dynamic_hmss_0                        |     1|
+|14    |pfm_dynamic_k_verify_1                    |     1|
+|15    |pfm_dynamic_logic_reset_op                |     2|
+|17    |pfm_dynamic_m00_regslice                  |     2|
+|19    |pfm_dynamic_m01_regslice                  |     2|
+|21    |pfm_dynamic_m02_regslice                  |     1|
+|22    |pfm_dynamic_psreset_gate_pr_control       |     3|
+|25    |pfm_dynamic_psreset_gate_pr_data          |     3|
+|28    |pfm_dynamic_psreset_gate_pr_dataclk       |     3|
+|31    |pfm_dynamic_psreset_gate_pr_ddr           |     1|
+|32    |pfm_dynamic_psreset_gate_pr_kernel2       |     3|
+|35    |pfm_dynamic_psreset_gate_pr_kernel        |     3|
+|38    |pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf |     1|
+|39    |pfm_dynamic_s00_regslice                  |     3|
+|42    |pfm_dynamic_util_and2_hbm                 |     1|
+|43    |pfm_dynamic_util_and2_hbm_ctrl_reset      |     1|
+|44    |pfm_dynamic_util_and2_slr0                |     1|
+|45    |pfm_dynamic_util_and2_slr1                |     1|
+|46    |pfm_dynamic_xbar                          |     2|
++------+------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 4059.465 ; gain = 806.125 ; free physical = 79786 ; free virtual = 218400
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 366 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 4059.465 ; gain = 765.469 ; free physical = 79821 ; free virtual = 218434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 4059.473 ; gain = 806.125 ; free physical = 79814 ; free virtual = 218428
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 4059.473 ; gain = 0.000 ; free physical = 79854 ; free virtual = 218467
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4146.059 ; gain = 0.000 ; free physical = 79811 ; free virtual = 218425
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 7fec953
+INFO: [Common 17-83] Releasing license: Synthesis
+194 Infos, 290 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 4159.996 ; gain = 1467.016 ; free physical = 80034 ; free virtual = 218648
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Coretcl 2-1174] Renamed 16 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/my_rm_synth_1/pfm_dynamic.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 15 14:30:37 2023...

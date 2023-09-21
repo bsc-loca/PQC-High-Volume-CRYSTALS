@@ -1,0 +1,251 @@
+<ENTRY>
+{
+ "thisFile": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/xobj/k_sign.hw.3.step1.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Sep 15 13:55:34 2023",
+ "timestampMillis": "1694778934511",
+ "buildStep": {
+  "cmdId": "8cfde480-170c-4ee1-95d5-66aa7f764614",
+  "name": "v++",
+  "logFile": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/k_sign.hw.3.step1/k_sign.hw.3.step1.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --custom_script k_sign:tcl/k_sign.hw.3.step1.tcl --platform xilinx_u280_xdma_201920_3 --target hw --temp_dir xout/hw.3/.temps --config config.cfg -Ixinclude -DDILITHIUM_MODE=3 -DSTEP=1 -c -k k_sign -o xout/hw.3/xobj/k_sign.hw.3.step1.xo xsrc/k_sign.cpp xinclude/kernel.hpp ",
+  "args": [
+   "--custom_script",
+   "k_sign:tcl/k_sign.hw.3.step1.tcl",
+   "--platform",
+   "xilinx_u280_xdma_201920_3",
+   "--target",
+   "hw",
+   "--temp_dir",
+   "xout/hw.3/.temps",
+   "--config",
+   "config.cfg",
+   "-Ixinclude",
+   "-DDILITHIUM_MODE=3",
+   "-DSTEP=1",
+   "-c",
+   "-k",
+   "k_sign",
+   "-o",
+   "xout/hw.3/xobj/k_sign.hw.3.step1.xo",
+   "xsrc/k_sign.cpp",
+   "xinclude/kernel.hpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/config.cfg",
+    "content": "[connectivity]\nsp=k_sign_1.m_axi_gmemret:HBM[0]\nsp=k_sign_1.m_axi_gmemsig:HBM[1]\nsp=k_sign_1.m_axi_gmemmu:HBM[2]\nsp=k_sign_1.m_axi_gmemmu2:HBM[3]\nsp=k_sign_1.m_axi_gmemsk:HBM[4]\n"
+   }
+  ],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 13:55:34 2023",
+ "timestampMillis": "1694778934511",
+ "status": {
+  "cmdId": "8cfde480-170c-4ee1-95d5-66aa7f764614",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Sep 15 13:55:41 2023",
+ "timestampMillis": "1694778941517",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u280_xdma_201920_3.xpfm",
+  "hardwareDsa": "xilinx_u280_xdma_201920_3.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u280_xdma_201920_3",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "k_sign",
+     "file": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/xobj/k_sign.hw.3.step1.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xsrc/k_sign.cpp",
+     "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xinclude/kernel.hpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.2. SW Build 3363252 on 2021-10-14-04:41:01"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Sep 15 13:55:41 2023",
+ "timestampMillis": "1694778941521",
+ "buildStep": {
+  "cmdId": "2c020d3d-5f23-4397-babf-fa3a6f75d168",
+  "name": "vitis_hls",
+  "logFile": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/k_sign.hw.3.step1/k_sign/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/k_sign.hw.3.step1/k_sign/k_sign.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/k_sign.hw.3.step1/k_sign/k_sign.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 13:55:41 2023",
+ "timestampMillis": "1694778941521",
+ "status": {
+  "cmdId": "2c020d3d-5f23-4397-babf-fa3a6f75d168",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:07:31 2023",
+ "timestampMillis": "1694779651546",
+ "status": {
+  "cmdId": "2c020d3d-5f23-4397-babf-fa3a6f75d168",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:07:36 2023",
+ "timestampMillis": "1694779656055",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/k_sign.hw.3.step1/k_sign/k_sign/solution/.autopilot/db/k_sign.design.xml",
+  "name": "k_sign",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:07:36 2023",
+ "timestampMillis": "1694779656056",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/k_sign.hw.3.step1/k_sign/k_sign/solution/.autopilot/db/.message_syn.xml",
+  "name": "k_sign",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:07:36 2023",
+ "timestampMillis": "1694779656060",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/reports/k_sign.hw.3.step1/hls_reports/k_sign_csynth.rpt",
+  "name": "k_sign",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:07:36 2023",
+ "timestampMillis": "1694779656060",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/k_sign.hw.3.step1/k_sign/k_sign/solution/syn/report/k_sign_csynth.xml",
+  "name": "k_sign",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:07:36 2023",
+ "timestampMillis": "1694779656289",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/reports/k_sign.hw.3.step1/system_estimate_k_sign.hw.3.step1.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:07:46 2023",
+ "timestampMillis": "1694779666621",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/reports/k_sign.hw.3.step1/v++_compile_k_sign.hw.3.step1_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 15 14:07:46 2023",
+ "timestampMillis": "1694779666621",
+ "report": {
+  "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/signature/xout/hw.3/.temps/v++_compile_k_sign.hw.3.step1_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 15 14:07:46 2023",
+ "timestampMillis": "1694779666623",
+ "status": {
+  "cmdId": "8cfde480-170c-4ee1-95d5-66aa7f764614",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

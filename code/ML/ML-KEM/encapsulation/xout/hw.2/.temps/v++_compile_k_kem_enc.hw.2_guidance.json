@@ -1,0 +1,41 @@
+{
+ "session": {
+  "name": "v++_compile_k_kem_enc.hw.2",
+  "uuid": "df4ba2f6-eda8-447d-9e66-96e9629b1135",
+  "description": "v++  --custom_script k_kem_enc:tcl/k_kem_enc.hw.2.tcl --platform xilinx_u280_xdma_201920_3 --target hw --temp_dir xout/hw.2/.temps --config config.cfg -Ixinclude -DKYBER_K=2 -c -k k_kem_enc -o xout/hw.2/xobj/k_kem_enc.hw.2.xo xsrc/k_kem_enc.cpp xinclude/kernel.hpp ",
+  "timestamp": "0",
+  "report_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/reports/k_kem_enc.hw.2/v++_compile_k_kem_enc.hw.2_guidance.html",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "proto_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/v++_compile_k_kem_enc.hw.2_guidance.pb",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "build_target": "",
+  "config_files": [
+   {
+    "fileName": "config.cfg",
+    "contents": "[connectivity]\n#sp=k_indcpa_enc_1.m_axi_gmemc:HBM[0]\n#sp=k_indcpa_enc_1.m_axi_gmemm:HBM[1]\n#sp=k_indcpa_enc_1.m_axi_gmempk:HBM[2]\n#sp=k_indcpa_enc_1.m_axi_gmemcoins:HBM[3]\nsp=k_kem_enc_1.m_axi_gmemct:HBM[0]\nsp=k_kem_enc_1.m_axi_gmemss:HBM[1]\nsp=k_kem_enc_1.m_axi_gmembuf:HBM[2]\nsp=k_kem_enc_1.m_axi_gmempk:HBM[3]\n"
+   }
+  ]
+ },
+ "violation_count": 0,
+ "waived_count": 0,
+ "affirmation_count": 0
+}
+

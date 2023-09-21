@@ -1,0 +1,531 @@
+===============================================================================
+Version:    v++ v2021.2 (64-bit)
+Build:      SW Build 3363252 on 2021-10-14-04:41:01
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Fri Sep 15 11:05:38 2023
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             k_kem_dec.hw.2
+Target Device:           xilinx:u280:xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+k_kem_dec    c     fpga0:OCL_REGION_0  k_kem_dec.hw.2  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     k_kem_dec.hw.2
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                                                 Target Frequency  Estimated Frequency
+------------  -----------  --------------------------------------------------------------------------  ----------------  -------------------
+k_kem_dec_1   k_kem_dec    entry_proc                                                                  300.300293        821.692688
+k_kem_dec_1   k_kem_dec    Block_split10_proc                                                          300.300293        877.192993
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_Pipeline_readmem                                      300.300293        411.015198
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_s                                                     300.300293        411.015198
+k_kem_dec_1   k_kem_dec    Block_split1012_proc                                                        300.300293        436.490631
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_1_Pipeline_readmem                                    300.300293        411.015198
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_1                                                     300.300293        411.015198
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_268_2                                          300.300293        411.015198
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_272_3                                          300.300293        419.287201
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_276_4                                          300.300293        419.287201
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_280_5                                          300.300293        419.287201
+k_kem_dec_1   k_kem_dec    sk_split                                                                    300.300293        411.015198
+k_kem_dec_1   k_kem_dec    triple_unsigned_char_Pipeline_duplicate                                     300.300293        411.015198
+k_kem_dec_1   k_kem_dec    triple_unsigned_char_s                                                      300.300293        411.015198
+k_kem_dec_1   k_kem_dec    decompress_Pipeline_VITIS_LOOP_342_2_VITIS_LOOP_343_3                       300.300293        451.875275
+k_kem_dec_1   k_kem_dec    decompress_Pipeline_VITIS_LOOP_369_5                                        300.300293        451.875275
+k_kem_dec_1   k_kem_dec    decompress                                                                  300.300293        438.596497
+k_kem_dec_1   k_kem_dec    frombytes_Pipeline_VITIS_LOOP_409_1                                         300.300293        411.015198
+k_kem_dec_1   k_kem_dec    frombytes                                                                   300.300293        411.015198
+k_kem_dec_1   k_kem_dec    Block_split1018_proc                                                        300.300293        inf
+k_kem_dec_1   k_kem_dec    split_short_Pipeline_stream_split                                           300.300293        419.111511
+k_kem_dec_1   k_kem_dec    split_short_s                                                               300.300293        419.111511
+k_kem_dec_1   k_kem_dec    ntt_layer_Pipeline_ntt_layer                                                300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer                                                                   300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_1_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_1                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_2_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_2                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_3_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_3                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_4_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_4                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_5_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_5                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_6_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_6                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    merge_short_Pipeline_merge                                                  300.300293        419.111511
+k_kem_dec_1   k_kem_dec    merge_short_s                                                               300.300293        419.111511
+k_kem_dec_1   k_kem_dec    bar_reduce_Pipeline_bar_reduce                                              300.300293        451.875275
+k_kem_dec_1   k_kem_dec    bar_reduce                                                                  300.300293        438.596497
+k_kem_dec_1   k_kem_dec    Block_split1029_proc                                                        300.300293        424.268127
+k_kem_dec_1   k_kem_dec    basemul_montgomery                                                          300.300293        570.776245
+k_kem_dec_1   k_kem_dec    basemul_add_Pipeline_VITIS_LOOP_1310_1_VITIS_LOOP_1312_2_VITIS_LOOP_1313_3  300.300293        427.167877
+k_kem_dec_1   k_kem_dec    basemul_add                                                                 300.300293        427.167877
+k_kem_dec_1   k_kem_dec    split_short_1_Pipeline_stream_split                                         300.300293        419.111511
+k_kem_dec_1   k_kem_dec    split_short_1                                                               300.300293        419.111511
+k_kem_dec_1   k_kem_dec    invntt_layer_Pipeline_invntt_layer                                          300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer                                                                300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_1_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_1                                                              300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_2_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_2                                                              300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_3_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_3                                                              300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_4_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_4                                                              300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_5_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_5                                                              300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_6_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_6                                                              300.300293        424.98938
+k_kem_dec_1   k_kem_dec    merge_short_1_Pipeline_merge                                                300.300293        419.111511
+k_kem_dec_1   k_kem_dec    merge_short_1                                                               300.300293        419.111511
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul_Pipeline_stream_reverse_fqmul                          300.300293        537.056946
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul                                                        300.300293        438.596497
+k_kem_dec_1   k_kem_dec    sub_reduce_Pipeline_VITIS_LOOP_425_1                                        300.300293        499.500488
+k_kem_dec_1   k_kem_dec    sub_reduce                                                                  300.300293        438.596497
+k_kem_dec_1   k_kem_dec    tomsg_Pipeline_VITIS_LOOP_433_1                                             300.300293        499.500488
+k_kem_dec_1   k_kem_dec    tomsg                                                                       300.300293        438.596497
+k_kem_dec_1   k_kem_dec    Block_split1044_proc                                                        300.300293        inf
+k_kem_dec_1   k_kem_dec    duplicate_unsigned_char_Pipeline_duplicate                                  300.300293        428.082184
+k_kem_dec_1   k_kem_dec    duplicate_unsigned_char_s                                                   300.300293        424.268127
+k_kem_dec_1   k_kem_dec    Block_split1046_proc                                                        300.300293        inf
+k_kem_dec_1   k_kem_dec    merge_unsigned_char_Pipeline_merge                                          300.300293        419.111511
+k_kem_dec_1   k_kem_dec    merge_unsigned_char_s                                                       300.300293        419.111511
+k_kem_dec_1   k_kem_dec    myxor                                                                       300.300293        3460.20752
+k_kem_dec_1   k_kem_dec    compute                                                                     300.300293        3460.20752
+k_kem_dec_1   k_kem_dec    KeccakF1600_StatePermute                                                    300.300293        689.179871
+k_kem_dec_1   k_kem_dec    sha                                                                         300.300293        432.338959
+k_kem_dec_1   k_kem_dec    split_unsigned_char_Pipeline_stream_split                                   300.300293        411.015198
+k_kem_dec_1   k_kem_dec    split_unsigned_char_s                                                       300.300293        411.015198
+k_kem_dec_1   k_kem_dec    make_coins_Pipeline_VITIS_LOOP_500_1                                        300.300293        453.51474
+k_kem_dec_1   k_kem_dec    make_coins                                                                  300.300293        438.596497
+k_kem_dec_1   k_kem_dec    get_key_Pipeline_VITIS_LOOP_516_1                                           300.300293        455.788513
+k_kem_dec_1   k_kem_dec    get_key                                                                     300.300293        438.596497
+k_kem_dec_1   k_kem_dec    absorb                                                                      300.300293        627.746399
+k_kem_dec_1   k_kem_dec    absorb_permute                                                              300.300293        505.050507
+k_kem_dec_1   k_kem_dec    squeeze                                                                     300.300293        541.125549
+k_kem_dec_1   k_kem_dec    kyber_shake                                                                 300.300293        416.666656
+k_kem_dec_1   k_kem_dec    cbd3                                                                        300.300293        419.111511
+k_kem_dec_1   k_kem_dec    Block_split1054_proc                                                        300.300293        1136.36365
+k_kem_dec_1   k_kem_dec    cbd2                                                                        300.300293        417.014191
+k_kem_dec_1   k_kem_dec    split_short_2_Pipeline_stream_split                                         300.300293        419.111511
+k_kem_dec_1   k_kem_dec    split_short_2                                                               300.300293        419.111511
+k_kem_dec_1   k_kem_dec    ntt_layer_7_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_7                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_8_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_8                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_9_Pipeline_ntt_layer                                              300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_9                                                                 300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_10_Pipeline_ntt_layer                                             300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_10                                                                300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_11_Pipeline_ntt_layer                                             300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_11                                                                300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_12_Pipeline_ntt_layer                                             300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_12                                                                300.300293        438.596497
+k_kem_dec_1   k_kem_dec    ntt_layer_13_Pipeline_ntt_layer                                             300.300293        542.593567
+k_kem_dec_1   k_kem_dec    ntt_layer_13                                                                300.300293        438.596497
+k_kem_dec_1   k_kem_dec    merge_short_2_Pipeline_merge                                                300.300293        419.111511
+k_kem_dec_1   k_kem_dec    merge_short_2                                                               300.300293        419.111511
+k_kem_dec_1   k_kem_dec    bar_reduce_1_Pipeline_bar_reduce                                            300.300293        451.875275
+k_kem_dec_1   k_kem_dec    bar_reduce_1                                                                300.300293        451.875275
+k_kem_dec_1   k_kem_dec    repeat_Pipeline_VITIS_LOOP_979_2                                            300.300293        411.015198
+k_kem_dec_1   k_kem_dec    repeat_Pipeline_VITIS_LOOP_983_3_VITIS_LOOP_984_4                           300.300293        417.710938
+k_kem_dec_1   k_kem_dec    repeat_r                                                                    300.300293        411.015198
+k_kem_dec_1   k_kem_dec    unpack_Pipeline_VITIS_LOOP_995_2                                            300.300293        419.287201
+k_kem_dec_1   k_kem_dec    unpack_Pipeline_VITIS_LOOP_1004_3                                           300.300293        472.366547
+k_kem_dec_1   k_kem_dec    unpack                                                                      300.300293        419.287201
+k_kem_dec_1   k_kem_dec    gen_at_ext_read                                                             300.300293        727.272705
+k_kem_dec_1   k_kem_dec    gen_at_absorb_init                                                          300.300293        2433.08984
+k_kem_dec_1   k_kem_dec    gen_at_permute                                                              300.300293        689.179871
+k_kem_dec_1   k_kem_dec    gen_at_squeeze                                                              300.300293        438.212097
+k_kem_dec_1   k_kem_dec    gen_at_Pipeline_VITIS_LOOP_1261_8                                           300.300293        411.015198
+k_kem_dec_1   k_kem_dec    gen_at                                                                      300.300293        411.015198
+k_kem_dec_1   k_kem_dec    Block_split1069_proc                                                        300.300293        485.201324
+k_kem_dec_1   k_kem_dec    basemul_montgomery_1                                                        300.300293        570.776245
+k_kem_dec_1   k_kem_dec    basemul_add_1                                                               300.300293        424.808807
+k_kem_dec_1   k_kem_dec    split_short_3_Pipeline_stream_split                                         300.300293        419.111511
+k_kem_dec_1   k_kem_dec    split_short_3                                                               300.300293        419.111511
+k_kem_dec_1   k_kem_dec    invntt_layer_7_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_7                                                              300.300293        424.268127
+k_kem_dec_1   k_kem_dec    invntt_layer_8_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_8                                                              300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_9_Pipeline_invntt_layer                                        300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_9                                                              300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_10_Pipeline_invntt_layer                                       300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_10                                                             300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_11_Pipeline_invntt_layer                                       300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_11                                                             300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_12_Pipeline_invntt_layer                                       300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_12                                                             300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_13_Pipeline_invntt_layer                                       300.300293        424.98938
+k_kem_dec_1   k_kem_dec    invntt_layer_13                                                             300.300293        424.98938
+k_kem_dec_1   k_kem_dec    merge_short_3_Pipeline_merge                                                300.300293        419.111511
+k_kem_dec_1   k_kem_dec    merge_short_3                                                               300.300293        419.111511
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul_1                                                      300.300293        537.056946
+k_kem_dec_1   k_kem_dec    frommsg_Pipeline_VITIS_LOOP_1384_1_VITIS_LOOP_1386_2                        300.300293        659.630615
+k_kem_dec_1   k_kem_dec    frommsg                                                                     300.300293        659.630615
+k_kem_dec_1   k_kem_dec    add_reduce_Pipeline_add_reduce_1                                            300.300293        499.500488
+k_kem_dec_1   k_kem_dec    add_reduce_Pipeline_add_reduce_2                                            300.300293        528.54126
+k_kem_dec_1   k_kem_dec    add_reduce                                                                  300.300293        438.596497
+k_kem_dec_1   k_kem_dec    compress_Pipeline_VITIS_LOOP_1457_2_VITIS_LOOP_1458_3                       300.300293        435.350464
+k_kem_dec_1   k_kem_dec    compress_Pipeline_VITIS_LOOP_1486_5                                         300.300293        451.467285
+k_kem_dec_1   k_kem_dec    compress                                                                    300.300293        435.350464
+k_kem_dec_1   k_kem_dec    verify_Pipeline_VITIS_LOOP_1532_1_VITIS_LOOP_1535_2                         300.300293        449.438232
+k_kem_dec_1   k_kem_dec    verify                                                                      300.300293        438.596497
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_673_3                                             300.300293        442.282196
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_666_2                                             300.300293        432.900452
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_673_31                                            300.300293        432.900452
+k_kem_dec_1   k_kem_dec    squeeze_out                                                                 300.300293        645.577759
+k_kem_dec_1   k_kem_dec    rkprf                                                                       300.300293        432.900452
+k_kem_dec_1   k_kem_dec    cmov_Pipeline_VITIS_LOOP_1546_1                                             300.300293        475.963806
+k_kem_dec_1   k_kem_dec    cmov                                                                        300.300293        475.963806
+k_kem_dec_1   k_kem_dec    writemem_Pipeline_writemem                                                  300.300293        411.015198
+k_kem_dec_1   k_kem_dec    writemem                                                                    300.300293        411.015198
+k_kem_dec_1   k_kem_dec    k_kem_dec                                                                   300.300293        208.768265
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                                                 Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  --------------------------------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+k_kem_dec_1   k_kem_dec    entry_proc                                                                  0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    Block_split10_proc                                                          0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_Pipeline_readmem                                      4 ~ -1          4              undef         undef           13.332 ns        undef           undef
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_s                                                     2 ~ -1          2              undef         undef           6.666 ns         undef           undef
+k_kem_dec_1   k_kem_dec    Block_split1012_proc                                                        1               1              1             1               3.333 ns         3.333 ns        3.333 ns
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_1_Pipeline_readmem                                    4 ~ -1          4              undef         undef           13.332 ns        undef           undef
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_1                                                     2 ~ -1          2              undef         undef           6.666 ns         undef           undef
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_268_2                                          770             770            770           770             2.566 us         2.566 us        2.566 us
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_272_3                                          802             802            802           802             2.673 us         2.673 us        2.673 us
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_276_4                                          34              34             34            34              0.113 us         0.113 us        0.113 us
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_280_5                                          34              34             34            34              0.113 us         0.113 us        0.113 us
+k_kem_dec_1   k_kem_dec    sk_split                                                                    undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    triple_unsigned_char_Pipeline_duplicate                                     undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    triple_unsigned_char_s                                                      undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    decompress_Pipeline_VITIS_LOOP_342_2_VITIS_LOOP_343_3                       645             645            645           645             2.150 us         2.150 us        2.150 us
+k_kem_dec_1   k_kem_dec    decompress_Pipeline_VITIS_LOOP_369_5                                        261             261            261           261             0.870 us         0.870 us        0.870 us
+k_kem_dec_1   k_kem_dec    decompress                                                                  undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    frombytes_Pipeline_VITIS_LOOP_409_1                                         undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    frombytes                                                                   undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    Block_split1018_proc                                                        0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    split_short_Pipeline_stream_split                                           undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    split_short_s                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_Pipeline_ntt_layer                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer                                                                   undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_1_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_1                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_2_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_2                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_3_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_3                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_4_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_4                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_5_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_5                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_6_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_6                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_short_Pipeline_merge                                                  undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_short_s                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    bar_reduce_Pipeline_bar_reduce                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    bar_reduce                                                                  undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    Block_split1029_proc                                                        0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    basemul_montgomery                                                          undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    basemul_add_Pipeline_VITIS_LOOP_1310_1_VITIS_LOOP_1312_2_VITIS_LOOP_1313_3  undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    basemul_add                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    split_short_1_Pipeline_stream_split                                         undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    split_short_1                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_Pipeline_invntt_layer                                          undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer                                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_1_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_1                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_2_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_2                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_3_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_3                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_4_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_4                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_5_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_5                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_6_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_6                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_short_1_Pipeline_merge                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_short_1                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul_Pipeline_stream_reverse_fqmul                          undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul                                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    sub_reduce_Pipeline_VITIS_LOOP_425_1                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    sub_reduce                                                                  undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    tomsg_Pipeline_VITIS_LOOP_433_1                                             2 ~ 4294967295  2              undef         4294967295      6.666 ns         undef           14.315 sec
+k_kem_dec_1   k_kem_dec    tomsg                                                                       4 ~ 4294967297  4              undef         4294967297      13.332 ns        undef           14.315 sec
+k_kem_dec_1   k_kem_dec    Block_split1044_proc                                                        0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    duplicate_unsigned_char_Pipeline_duplicate                                  undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    duplicate_unsigned_char_s                                                   undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    Block_split1046_proc                                                        0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    merge_unsigned_char_Pipeline_merge                                          undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_unsigned_char_s                                                       undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    myxor                                                                       0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    compute                                                                     0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    KeccakF1600_StatePermute                                                    50              50             50            50              0.167 us         0.167 us        0.167 us
+k_kem_dec_1   k_kem_dec    sha                                                                         undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    split_unsigned_char_Pipeline_stream_split                                   undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    split_unsigned_char_s                                                       undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    make_coins_Pipeline_VITIS_LOOP_500_1                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    make_coins                                                                  undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    get_key_Pipeline_VITIS_LOOP_516_1                                           undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    get_key                                                                     undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    absorb                                                                      0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    absorb_permute                                                              50              50             50            50              0.167 us         0.167 us        0.167 us
+k_kem_dec_1   k_kem_dec    squeeze                                                                     undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    kyber_shake                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    cbd3                                                                        2 ~ 4294967295  2              undef         4294967295      6.666 ns         undef           14.315 sec
+k_kem_dec_1   k_kem_dec    Block_split1054_proc                                                        0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    cbd2                                                                        2 ~ 4294967291  2              undef         4294967291      6.666 ns         undef           14.315 sec
+k_kem_dec_1   k_kem_dec    split_short_2_Pipeline_stream_split                                         undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    split_short_2                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_7_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_7                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_8_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_8                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_9_Pipeline_ntt_layer                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_9                                                                 undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_10_Pipeline_ntt_layer                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_10                                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_11_Pipeline_ntt_layer                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_11                                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_12_Pipeline_ntt_layer                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_12                                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_13_Pipeline_ntt_layer                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    ntt_layer_13                                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_short_2_Pipeline_merge                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_short_2                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    bar_reduce_1_Pipeline_bar_reduce                                            undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    bar_reduce_1                                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    repeat_Pipeline_VITIS_LOOP_979_2                                            514             514            514           514             1.713 us         1.713 us        1.713 us
+k_kem_dec_1   k_kem_dec    repeat_Pipeline_VITIS_LOOP_983_3_VITIS_LOOP_984_4                           1026            1026           1026          1026            3.420 us         3.420 us        3.420 us
+k_kem_dec_1   k_kem_dec    repeat_r                                                                    undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    unpack_Pipeline_VITIS_LOOP_995_2                                            770             770            770           770             2.566 us         2.566 us        2.566 us
+k_kem_dec_1   k_kem_dec    unpack_Pipeline_VITIS_LOOP_1004_3                                           35              35             35            35              0.117 us         0.117 us        0.117 us
+k_kem_dec_1   k_kem_dec    unpack                                                                      undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    gen_at_ext_read                                                             0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    gen_at_absorb_init                                                          0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    gen_at_permute                                                              2 ~ 102         2              52            102             6.666 ns         0.173 us        0.340 us
+k_kem_dec_1   k_kem_dec    gen_at_squeeze                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    gen_at_Pipeline_VITIS_LOOP_1261_8                                           514             514            514           514             1.713 us         1.713 us        1.713 us
+k_kem_dec_1   k_kem_dec    gen_at                                                                      undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    Block_split1069_proc                                                        0               0              0             0               0 ns             0 ns            0 ns
+k_kem_dec_1   k_kem_dec    basemul_montgomery_1                                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    basemul_add_1                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    split_short_3_Pipeline_stream_split                                         undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    split_short_3                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_7_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_7                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_8_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_8                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_9_Pipeline_invntt_layer                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_9                                                              undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_10_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_10                                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_11_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_11                                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_12_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_12                                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_13_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    invntt_layer_13                                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_short_3_Pipeline_merge                                                undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    merge_short_3                                                               undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul_1                                                      undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    frommsg_Pipeline_VITIS_LOOP_1384_1_VITIS_LOOP_1386_2                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    frommsg                                                                     undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    add_reduce_Pipeline_add_reduce_1                                            521             521            521           521             1.736 us         1.736 us        1.736 us
+k_kem_dec_1   k_kem_dec    add_reduce_Pipeline_add_reduce_2                                            265             265            265           265             0.883 us         0.883 us        0.883 us
+k_kem_dec_1   k_kem_dec    add_reduce                                                                  undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    compress_Pipeline_VITIS_LOOP_1457_2_VITIS_LOOP_1458_3                       646             646            646           646             2.153 us         2.153 us        2.153 us
+k_kem_dec_1   k_kem_dec    compress_Pipeline_VITIS_LOOP_1486_5                                         262             262            262           262             0.873 us         0.873 us        0.873 us
+k_kem_dec_1   k_kem_dec    compress                                                                    undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    verify_Pipeline_VITIS_LOOP_1532_1_VITIS_LOOP_1535_2                         undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    verify                                                                      undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_673_3                                             34              34             34            34              0.113 us         0.113 us        0.113 us
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_666_2                                             106 ~ 138       106            undef         138             0.353 us         undef           0.460 us
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_673_31                                            undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    squeeze_out                                                                 34              34             34            34              0.113 us         0.113 us        0.113 us
+k_kem_dec_1   k_kem_dec    rkprf                                                                       undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    cmov_Pipeline_VITIS_LOOP_1546_1                                             undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    cmov                                                                        undef           undef          undef         undef           undef            undef           undef
+k_kem_dec_1   k_kem_dec    writemem_Pipeline_writemem                                                  4 ~ -1          4              undef         undef           13.332 ns        undef           undef
+k_kem_dec_1   k_kem_dec    writemem                                                                    1 ~ -1          1              undef         undef           3.333 ns         undef           undef
+k_kem_dec_1   k_kem_dec    k_kem_dec                                                                   undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                                                 FF     LUT     DSP  BRAM  URAM
+------------  -----------  --------------------------------------------------------------------------  -----  ------  ---  ----  ----
+k_kem_dec_1   k_kem_dec    entry_proc                                                                  3      29      0    0     0
+k_kem_dec_1   k_kem_dec    Block_split10_proc                                                          76     95      0    0     0
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_Pipeline_readmem                                      44     115     0    0     0
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_s                                                     152    656     0    0     0
+k_kem_dec_1   k_kem_dec    Block_split1012_proc                                                        201    101     0    0     0
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_1_Pipeline_readmem                                    44     115     0    0     0
+k_kem_dec_1   k_kem_dec    readmem_unsigned_char_1                                                     151    638     0    0     0
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_268_2                                          13     88      0    0     0
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_272_3                                          13     88      0    0     0
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_276_4                                          9      83      0    0     0
+k_kem_dec_1   k_kem_dec    sk_split_Pipeline_VITIS_LOOP_280_5                                          9      83      0    0     0
+k_kem_dec_1   k_kem_dec    sk_split                                                                    126    593     0    0     0
+k_kem_dec_1   k_kem_dec    triple_unsigned_char_Pipeline_duplicate                                     35     137     0    0     0
+k_kem_dec_1   k_kem_dec    triple_unsigned_char_s                                                      73     231     0    0     0
+k_kem_dec_1   k_kem_dec    decompress_Pipeline_VITIS_LOOP_342_2_VITIS_LOOP_343_3                       37     167     0    0     0
+k_kem_dec_1   k_kem_dec    decompress_Pipeline_VITIS_LOOP_369_5                                        20     125     0    0     0
+k_kem_dec_1   k_kem_dec    decompress                                                                  131    467     0    0     0
+k_kem_dec_1   k_kem_dec    frombytes_Pipeline_VITIS_LOOP_409_1                                         51     179     0    0     0
+k_kem_dec_1   k_kem_dec    frombytes                                                                   112    237     0    0     0
+k_kem_dec_1   k_kem_dec    Block_split1018_proc                                                        25     20      0    0     0
+k_kem_dec_1   k_kem_dec    split_short_Pipeline_stream_split                                           68     252     0    0     0
+k_kem_dec_1   k_kem_dec    split_short_s                                                               74     328     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_Pipeline_ntt_layer                                                376    424     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer                                                                   438    518     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_1_Pipeline_ntt_layer                                              394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_1                                                                 456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_2_Pipeline_ntt_layer                                              394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_2                                                                 456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_3_Pipeline_ntt_layer                                              394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_3                                                                 456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_4_Pipeline_ntt_layer                                              394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_4                                                                 456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_5_Pipeline_ntt_layer                                              394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_5                                                                 456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_6_Pipeline_ntt_layer                                              394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_6                                                                 455    542     0    0     0
+k_kem_dec_1   k_kem_dec    merge_short_Pipeline_merge                                                  119    274     0    0     0
+k_kem_dec_1   k_kem_dec    merge_short_s                                                               157    359     0    0     0
+k_kem_dec_1   k_kem_dec    bar_reduce_Pipeline_bar_reduce                                              127    149     0    0     0
+k_kem_dec_1   k_kem_dec    bar_reduce                                                                  164    216     0    0     0
+k_kem_dec_1   k_kem_dec    Block_split1029_proc                                                        75     47      0    0     0
+k_kem_dec_1   k_kem_dec    basemul_montgomery                                                          1259   564     0    0     0
+k_kem_dec_1   k_kem_dec    basemul_add_Pipeline_VITIS_LOOP_1310_1_VITIS_LOOP_1312_2_VITIS_LOOP_1313_3  111    294     0    1     0
+k_kem_dec_1   k_kem_dec    basemul_add                                                                 180    361     0    1     0
+k_kem_dec_1   k_kem_dec    split_short_1_Pipeline_stream_split                                         68     256     0    0     0
+k_kem_dec_1   k_kem_dec    split_short_1                                                               74     332     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_Pipeline_invntt_layer                                          429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer                                                                492    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_1_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_1                                                              492    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_2_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_2                                                              492    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_3_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_3                                                              492    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_4_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_4                                                              492    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_5_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_5                                                              492    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_6_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_6                                                              491    612     0    0     0
+k_kem_dec_1   k_kem_dec    merge_short_1_Pipeline_merge                                                119    270     0    0     0
+k_kem_dec_1   k_kem_dec    merge_short_1                                                               157    346     0    0     0
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul_Pipeline_stream_reverse_fqmul                          145    149     0    0     0
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul                                                        206    216     0    0     0
+k_kem_dec_1   k_kem_dec    sub_reduce_Pipeline_VITIS_LOOP_425_1                                        53     151     0    0     0
+k_kem_dec_1   k_kem_dec    sub_reduce                                                                  115    236     0    0     0
+k_kem_dec_1   k_kem_dec    tomsg_Pipeline_VITIS_LOOP_433_1                                             185    1025    0    0     0
+k_kem_dec_1   k_kem_dec    tomsg                                                                       238    1101    0    0     0
+k_kem_dec_1   k_kem_dec    Block_split1044_proc                                                        29     20      0    0     0
+k_kem_dec_1   k_kem_dec    duplicate_unsigned_char_Pipeline_duplicate                                  35     128     0    0     0
+k_kem_dec_1   k_kem_dec    duplicate_unsigned_char_s                                                   41     204     0    0     0
+k_kem_dec_1   k_kem_dec    Block_split1046_proc                                                        28     20      0    0     0
+k_kem_dec_1   k_kem_dec    merge_unsigned_char_Pipeline_merge                                          95     271     0    0     0
+k_kem_dec_1   k_kem_dec    merge_unsigned_char_s                                                       101    347     0    0     0
+k_kem_dec_1   k_kem_dec    myxor                                                                       0      320     0    0     0
+k_kem_dec_1   k_kem_dec    compute                                                                     0      960     0    0     0
+k_kem_dec_1   k_kem_dec    KeccakF1600_StatePermute                                                    3272   8404    0    0     0
+k_kem_dec_1   k_kem_dec    sha                                                                         5013   9333    0    0     0
+k_kem_dec_1   k_kem_dec    split_unsigned_char_Pipeline_stream_split                                   68     253     0    0     0
+k_kem_dec_1   k_kem_dec    split_unsigned_char_s                                                       106    329     0    0     0
+k_kem_dec_1   k_kem_dec    make_coins_Pipeline_VITIS_LOOP_500_1                                        316    293     0    0     0
+k_kem_dec_1   k_kem_dec    make_coins                                                                  354    369     0    0     0
+k_kem_dec_1   k_kem_dec    get_key_Pipeline_VITIS_LOOP_516_1                                           297    205     0    0     0
+k_kem_dec_1   k_kem_dec    get_key                                                                     335    281     0    0     0
+k_kem_dec_1   k_kem_dec    absorb                                                                      1601   586     0    0     0
+k_kem_dec_1   k_kem_dec    absorb_permute                                                              8076   9249    0    0     0
+k_kem_dec_1   k_kem_dec    squeeze                                                                     19     391     0    0     0
+k_kem_dec_1   k_kem_dec    kyber_shake                                                                 11503  11149   0    0     0
+k_kem_dec_1   k_kem_dec    cbd3                                                                        70     342     0    0     0
+k_kem_dec_1   k_kem_dec    Block_split1054_proc                                                        107    86      0    0     0
+k_kem_dec_1   k_kem_dec    cbd2                                                                        89     718     0    0     0
+k_kem_dec_1   k_kem_dec    split_short_2_Pipeline_stream_split                                         68     252     0    0     0
+k_kem_dec_1   k_kem_dec    split_short_2                                                               106    337     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_7_Pipeline_ntt_layer                                              376    424     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_7                                                                 438    518     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_8_Pipeline_ntt_layer                                              394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_8                                                                 456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_9_Pipeline_ntt_layer                                              394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_9                                                                 456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_10_Pipeline_ntt_layer                                             394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_10                                                                456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_11_Pipeline_ntt_layer                                             394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_11                                                                456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_12_Pipeline_ntt_layer                                             394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_12                                                                456    551     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_13_Pipeline_ntt_layer                                             394    457     0    0     0
+k_kem_dec_1   k_kem_dec    ntt_layer_13                                                                455    542     0    0     0
+k_kem_dec_1   k_kem_dec    merge_short_2_Pipeline_merge                                                119    274     0    0     0
+k_kem_dec_1   k_kem_dec    merge_short_2                                                               157    359     0    0     0
+k_kem_dec_1   k_kem_dec    bar_reduce_1_Pipeline_bar_reduce                                            127    149     0    0     0
+k_kem_dec_1   k_kem_dec    bar_reduce_1                                                                165    216     0    0     0
+k_kem_dec_1   k_kem_dec    repeat_Pipeline_VITIS_LOOP_979_2                                            23     88      0    0     0
+k_kem_dec_1   k_kem_dec    repeat_Pipeline_VITIS_LOOP_983_3_VITIS_LOOP_984_4                           24     135     0    0     0
+k_kem_dec_1   k_kem_dec    repeat_r                                                                    120    426     0    1     0
+k_kem_dec_1   k_kem_dec    unpack_Pipeline_VITIS_LOOP_995_2                                            29     148     0    0     0
+k_kem_dec_1   k_kem_dec    unpack_Pipeline_VITIS_LOOP_1004_3                                           286    4496    0    0     0
+k_kem_dec_1   k_kem_dec    unpack                                                                      646    4825    0    0     0
+k_kem_dec_1   k_kem_dec    gen_at_ext_read                                                             257    747     0    0     0
+k_kem_dec_1   k_kem_dec    gen_at_absorb_init                                                          0      1575    0    0     0
+k_kem_dec_1   k_kem_dec    gen_at_permute                                                              9676   9903    0    0     0
+k_kem_dec_1   k_kem_dec    gen_at_squeeze                                                              316    7014    0    0     0
+k_kem_dec_1   k_kem_dec    gen_at_Pipeline_VITIS_LOOP_1261_8                                           13     88      0    0     0
+k_kem_dec_1   k_kem_dec    gen_at                                                                      17178  21188   0    0     0
+k_kem_dec_1   k_kem_dec    Block_split1069_proc                                                        28     62      0    0     0
+k_kem_dec_1   k_kem_dec    basemul_montgomery_1                                                        1258   555     0    0     0
+k_kem_dec_1   k_kem_dec    basemul_add_1                                                               110    332     0    1     0
+k_kem_dec_1   k_kem_dec    split_short_3_Pipeline_stream_split                                         68     256     0    0     0
+k_kem_dec_1   k_kem_dec    split_short_3                                                               106    341     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_7_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_7                                                              460    612     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_8_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_8                                                              485    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_9_Pipeline_invntt_layer                                        429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_9                                                              485    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_10_Pipeline_invntt_layer                                       429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_10                                                             485    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_11_Pipeline_invntt_layer                                       429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_11                                                             485    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_12_Pipeline_invntt_layer                                       429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_12                                                             485    621     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_13_Pipeline_invntt_layer                                       429    527     0    0     0
+k_kem_dec_1   k_kem_dec    invntt_layer_13                                                             484    603     0    0     0
+k_kem_dec_1   k_kem_dec    merge_short_3_Pipeline_merge                                                119    270     0    0     0
+k_kem_dec_1   k_kem_dec    merge_short_3                                                               156    337     0    0     0
+k_kem_dec_1   k_kem_dec    stream_reverse_fqmul_1                                                      145    151     0    0     0
+k_kem_dec_1   k_kem_dec    frommsg_Pipeline_VITIS_LOOP_1384_1_VITIS_LOOP_1386_2                        57     327     0    0     0
+k_kem_dec_1   k_kem_dec    frommsg                                                                     126    385     0    0     0
+k_kem_dec_1   k_kem_dec    add_reduce_Pipeline_add_reduce_1                                            107    152     0    0     0
+k_kem_dec_1   k_kem_dec    add_reduce_Pipeline_add_reduce_2                                            106    169     0    0     0
+k_kem_dec_1   k_kem_dec    add_reduce                                                                  287    524     0    0     0
+k_kem_dec_1   k_kem_dec    compress_Pipeline_VITIS_LOOP_1457_2_VITIS_LOOP_1458_3                       801    607     0    0     0
+k_kem_dec_1   k_kem_dec    compress_Pipeline_VITIS_LOOP_1486_5                                         1326   1274    0    0     0
+k_kem_dec_1   k_kem_dec    compress                                                                    2200   2052    0    0     0
+k_kem_dec_1   k_kem_dec    verify_Pipeline_VITIS_LOOP_1532_1_VITIS_LOOP_1535_2                         68     248     0    0     0
+k_kem_dec_1   k_kem_dec    verify                                                                      139    373     0    0     0
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_673_3                                             271    374     0    0     0
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_666_2                                             1363   614     0    0     0
+k_kem_dec_1   k_kem_dec    rkprf_Pipeline_VITIS_LOOP_673_31                                            1667   704     0    0     0
+k_kem_dec_1   k_kem_dec    squeeze_out                                                                 17     274     0    0     0
+k_kem_dec_1   k_kem_dec    rkprf                                                                       12067  12411   0    0     0
+k_kem_dec_1   k_kem_dec    cmov_Pipeline_VITIS_LOOP_1546_1                                             100    1250    0    0     0
+k_kem_dec_1   k_kem_dec    cmov                                                                        137    1326    0    0     0
+k_kem_dec_1   k_kem_dec    writemem_Pipeline_writemem                                                  44     117     0    0     0
+k_kem_dec_1   k_kem_dec    writemem                                                                    246    672     0    0     0
+k_kem_dec_1   k_kem_dec    k_kem_dec                                                                   88340  118873  0    36    0
+-------------------------------------------------------------------------------

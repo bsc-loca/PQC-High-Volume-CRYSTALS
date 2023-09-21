@@ -1,0 +1,546 @@
+===============================================================================
+Version:    v++ v2021.2 (64-bit)
+Build:      SW Build 3363252 on 2021-10-14-04:41:01
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Nov 22 23:17:08 2022
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             k_verify.hw.2
+Target Device:           xilinx:u280:xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+k_verify     c     fpga0:OCL_REGION_0  k_verify.hw.2   1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     k_verify.hw.2
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                                                    Target Frequency  Estimated Frequency
+------------  -----------  -----------------------------------------------------------------------------  ----------------  -------------------
+k_verify_1    k_verify     entry_proc                                                                     300.300293        821.692688
+k_verify_1    k_verify     Block_split2_proc                                                              300.300293        436.490631
+k_verify_1    k_verify     readmem_unsigned_char_Pipeline_readmem                                         300.300293        411.015198
+k_verify_1    k_verify     readmem_unsigned_char_s                                                        300.300293        411.015198
+k_verify_1    k_verify     duplicate_unsigned_char_Pipeline_duplicate                                     300.300293        428.082184
+k_verify_1    k_verify     duplicate_unsigned_char_s                                                      300.300293        428.082184
+k_verify_1    k_verify     unpack_pk_Pipeline_VITIS_LOOP_307_2                                            300.300293        428.082184
+k_verify_1    k_verify     unpack_pk_Pipeline_VITIS_LOOP_311_3                                            300.300293        423.549347
+k_verify_1    k_verify     unpack_pk                                                                      300.300293        423.549347
+k_verify_1    k_verify     Block_split26_proc                                                             300.300293        436.490631
+k_verify_1    k_verify     readmem_unsigned_char_1_Pipeline_readmem                                       300.300293        411.015198
+k_verify_1    k_verify     readmem_unsigned_char_1                                                        300.300293        411.015198
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_337_2                                           300.300293        419.287201
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_341_3                                           300.300293        501.001984
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_401_4                                           300.300293        559.9104
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_407_6                                           300.300293        842.459961
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_413_7                                           300.300293        566.893433
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_419_8                                           300.300293        559.597107
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_424_9                                           300.300293        566.893433
+k_verify_1    k_verify     unpack_sig                                                                     300.300293        419.287201
+k_verify_1    k_verify     Block_split29_proc                                                             300.300293        inf
+k_verify_1    k_verify     duplicate_int_Pipeline_duplicate                                               300.300293        419.111511
+k_verify_1    k_verify     duplicate_int_s                                                                300.300293        419.111511
+k_verify_1    k_verify     Block_split211_proc                                                            300.300293        inf
+k_verify_1    k_verify     duplicate_unsigned_char_1                                                      300.300293        406.008911
+k_verify_1    k_verify     chknorm_Pipeline_VITIS_LOOP_437_1_VITIS_LOOP_441_2                             300.300293        439.174347
+k_verify_1    k_verify     chknorm                                                                        300.300293        439.174347
+k_verify_1    k_verify     absorb_rate                                                                    300.300293        432.900452
+k_verify_1    k_verify     myxor                                                                          300.300293        3460.20752
+k_verify_1    k_verify     compute                                                                        300.300293        3460.20752
+k_verify_1    k_verify     KeccakF1600_StatePermute                                                       300.300293        689.179871
+k_verify_1    k_verify     squeeze_out_Pipeline_VITIS_LOOP_521_1                                          300.300293        629.326599
+k_verify_1    k_verify     squeeze_out                                                                    300.300293        456.82962
+k_verify_1    k_verify     shake                                                                          300.300293        432.900452
+k_verify_1    k_verify     Block_split215_proc                                                            300.300293        436.490631
+k_verify_1    k_verify     readmem_unsigned_char_2_Pipeline_readmem                                       300.300293        411.015198
+k_verify_1    k_verify     readmem_unsigned_char_2                                                        300.300293        411.015198
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_Pipeline_VITIS_LOOP_655_1                       300.300293        428.082184
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_Pipeline_VITIS_LOOP_659_2                       300.300293        428.082184
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_s                                               300.300293        428.082184
+k_verify_1    k_verify     Block_split218_proc                                                            300.300293        476.871735
+k_verify_1    k_verify     shake_1                                                                        300.300293        414.593719
+k_verify_1    k_verify     keccak_squeeze_array                                                           300.300293        426.075867
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_687_2                                            300.300293        581.733582
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_697_4                                            300.300293        501.504517
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_751_5                                            300.300293        560.538086
+k_verify_1    k_verify     challenge                                                                      300.300293        426.075867
+k_verify_1    k_verify     make_seed_Pipeline_VITIS_LOOP_764_2                                            300.300293        544.959106
+k_verify_1    k_verify     make_seed_Pipeline_VITIS_LOOP_767_3_VITIS_LOOP_768_4_VITIS_LOOP_771_5          300.300293        423.908447
+k_verify_1    k_verify     make_seed                                                                      300.300293        423.908447
+k_verify_1    k_verify     make_buf_state                                                                 300.300293        432.900452
+k_verify_1    k_verify     make_buf_squeeze_out                                                           300.300293        436.871979
+k_verify_1    k_verify     make_buf                                                                       300.300293        432.900452
+k_verify_1    k_verify     rej_uniform_Pipeline_VITIS_LOOP_814_2                                          300.300293        783.699036
+k_verify_1    k_verify     rej_uniform                                                                    300.300293        504.032257
+k_verify_1    k_verify     split_int_Pipeline_stream_split                                                300.300293        419.111511
+k_verify_1    k_verify     split_int_s                                                                    300.300293        419.111511
+k_verify_1    k_verify     ntt_layer_Pipeline_VITIS_LOOP_942_1                                            300.300293        424.98938
+k_verify_1    k_verify     ntt_layer                                                                      300.300293        424.268127
+k_verify_1    k_verify     ntt_layer_1_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_1                                                                    300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_2_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_2                                                                    300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_3_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_3                                                                    300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_4_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_4                                                                    300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_5_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_5                                                                    300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_6_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_6                                                                    300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_7_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_7                                                                    300.300293        424.98938
+k_verify_1    k_verify     merge_int_Pipeline_merge                                                       300.300293        419.111511
+k_verify_1    k_verify     merge_int_s                                                                    300.300293        419.111511
+k_verify_1    k_verify     repeatl_int_Pipeline_VITIS_LOOP_1112_2                                         300.300293        417.885529
+k_verify_1    k_verify     repeatl_int_Pipeline_VITIS_LOOP_1117_3_VITIS_LOOP_1118_4                       300.300293        417.885529
+k_verify_1    k_verify     repeatl_int_s                                                                  300.300293        417.885529
+k_verify_1    k_verify     Block_split236_proc                                                            300.300293        inf
+k_verify_1    k_verify     montgomery                                                                     300.300293        406.008911
+k_verify_1    k_verify     montgomery_add_Pipeline_VITIS_LOOP_1158_1_VITIS_LOOP_1160_2_VITIS_LOOP_1161_3  300.300293        443.26239
+k_verify_1    k_verify     montgomery_add                                                                 300.300293        424.268127
+k_verify_1    k_verify     Block_split239_proc                                                            300.300293        inf
+k_verify_1    k_verify     split_int_1_Pipeline_stream_split                                              300.300293        419.111511
+k_verify_1    k_verify     split_int_1                                                                    300.300293        419.111511
+k_verify_1    k_verify     ntt_layer_8_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_8                                                                    300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_9_Pipeline_VITIS_LOOP_942_1                                          300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_9                                                                    300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_10_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_10                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_11_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_11                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_12_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_12                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_13_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_13                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_14_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_14                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_15_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_15                                                                   300.300293        424.98938
+k_verify_1    k_verify     merge_int_1_Pipeline_merge                                                     300.300293        419.111511
+k_verify_1    k_verify     merge_int_1                                                                    300.300293        419.111511
+k_verify_1    k_verify     shiftl_Pipeline_VITIS_LOOP_1181_1                                              300.300293        419.111511
+k_verify_1    k_verify     shiftl                                                                         300.300293        419.111511
+k_verify_1    k_verify     split_int_2_Pipeline_stream_split                                              300.300293        419.111511
+k_verify_1    k_verify     split_int_2                                                                    300.300293        419.111511
+k_verify_1    k_verify     ntt_layer_16_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_16                                                                   300.300293        424.268127
+k_verify_1    k_verify     ntt_layer_17_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_17                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_18_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_18                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_19_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_19                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_20_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_20                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_21_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_21                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_22_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_22                                                                   300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_23_Pipeline_VITIS_LOOP_942_1                                         300.300293        424.98938
+k_verify_1    k_verify     ntt_layer_23                                                                   300.300293        424.98938
+k_verify_1    k_verify     merge_int_2_Pipeline_merge                                                     300.300293        419.111511
+k_verify_1    k_verify     merge_int_2                                                                    300.300293        419.111511
+k_verify_1    k_verify     repeat_int_Pipeline_VITIS_LOOP_1132_2                                          300.300293        419.111511
+k_verify_1    k_verify     repeat_int_Pipeline_VITIS_LOOP_1137_3_VITIS_LOOP_1138_4                        300.300293        419.111511
+k_verify_1    k_verify     repeat_int_s                                                                   300.300293        419.111511
+k_verify_1    k_verify     montgomery_1_Pipeline_VITIS_LOOP_1149_1                                        300.300293        427.350433
+k_verify_1    k_verify     montgomery_1                                                                   300.300293        427.350433
+k_verify_1    k_verify     sub_Pipeline_VITIS_LOOP_1192_1                                                 300.300293        482.39267
+k_verify_1    k_verify     sub                                                                            300.300293        438.596497
+k_verify_1    k_verify     reduce32_Pipeline_VITIS_LOOP_1212_1                                            300.300293        533.049011
+k_verify_1    k_verify     reduce32                                                                       300.300293        438.596497
+k_verify_1    k_verify     split_int_3_Pipeline_stream_split                                              300.300293        419.111511
+k_verify_1    k_verify     split_int_3                                                                    300.300293        419.111511
+k_verify_1    k_verify     invntt_layer_int_Pipeline_invntt_layer                                         300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_s                                                             300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_1_Pipeline_invntt_layer                                       300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_1                                                             300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_2_Pipeline_invntt_layer                                       300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_2                                                             300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_3_Pipeline_invntt_layer                                       300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_3                                                             300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_4_Pipeline_invntt_layer                                       300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_4                                                             300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_5_Pipeline_invntt_layer                                       300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_5                                                             300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_6_Pipeline_invntt_layer                                       300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_6                                                             300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_7_Pipeline_invntt_layer                                       300.300293        415.454926
+k_verify_1    k_verify     invntt_layer_int_7                                                             300.300293        415.454926
+k_verify_1    k_verify     merge_int_3_Pipeline_merge                                                     300.300293        419.111511
+k_verify_1    k_verify     merge_int_3                                                                    300.300293        419.111511
+k_verify_1    k_verify     reducef_Pipeline_VITIS_LOOP_1201_1                                             300.300293        436.490631
+k_verify_1    k_verify     reducef                                                                        300.300293        436.490631
+k_verify_1    k_verify     caddq_Pipeline_VITIS_LOOP_1227_1                                               300.300293        482.39267
+k_verify_1    k_verify     caddq                                                                          300.300293        438.596497
+k_verify_1    k_verify     hint_Pipeline_VITIS_LOOP_1256_1                                                300.300293        454.338928
+k_verify_1    k_verify     hint                                                                           300.300293        454.338928
+k_verify_1    k_verify     pack_Pipeline_VITIS_LOOP_1290_1_VITIS_LOOP_1292_2                              300.300293        703.729736
+k_verify_1    k_verify     pack                                                                           300.300293        703.729736
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1_Pipeline_VITIS_LOOP_655_1                     300.300293        419.287201
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1_Pipeline_VITIS_LOOP_659_2                     300.300293        411.015198
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1                                               300.300293        411.015198
+k_verify_1    k_verify     shake_2                                                                        300.300293        432.900452
+k_verify_1    k_verify     make_ver                                                                       300.300293        438.596497
+k_verify_1    k_verify     writemem_int_Pipeline_writemem                                                 300.300293        411.015198
+k_verify_1    k_verify     writemem_int_s                                                                 300.300293        411.015198
+k_verify_1    k_verify     k_verify                                                                       300.300293        406.008911
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                                                    Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -----------------------------------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+k_verify_1    k_verify     entry_proc                                                                     0               0              0             0               0 ns             0 ns            0 ns
+k_verify_1    k_verify     Block_split2_proc                                                              1               1              1             1               3.333 ns         3.333 ns        3.333 ns
+k_verify_1    k_verify     readmem_unsigned_char_Pipeline_readmem                                         4 ~ -1          4              undef         undef           13.332 ns        undef           undef
+k_verify_1    k_verify     readmem_unsigned_char_s                                                        2 ~ -1          2              undef         undef           6.666 ns         undef           undef
+k_verify_1    k_verify     duplicate_unsigned_char_Pipeline_duplicate                                     undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     duplicate_unsigned_char_s                                                      undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     unpack_pk_Pipeline_VITIS_LOOP_307_2                                            34              34             34            34              0.113 us         0.113 us        0.113 us
+k_verify_1    k_verify     unpack_pk_Pipeline_VITIS_LOOP_311_3                                            1282            1282           1282          1282            4.273 us         4.273 us        4.273 us
+k_verify_1    k_verify     unpack_pk                                                                      undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     Block_split26_proc                                                             1               1              1             1               3.333 ns         3.333 ns        3.333 ns
+k_verify_1    k_verify     readmem_unsigned_char_1_Pipeline_readmem                                       4 ~ -1          4              undef         undef           13.332 ns        undef           undef
+k_verify_1    k_verify     readmem_unsigned_char_1                                                        2 ~ -1          2              undef         undef           6.666 ns         undef           undef
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_337_2                                           34              34             34            34              0.113 us         0.113 us        0.113 us
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_341_3                                           2307            2307           2307          2307            7.689 us         7.689 us        7.689 us
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_401_4                                           86              86             86            86              0.287 us         0.287 us        0.287 us
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_407_6                                           258             258            258           258             0.860 us         0.860 us        0.860 us
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_413_7                                           undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_419_8                                           258             258            258           258             0.860 us         0.860 us        0.860 us
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_424_9                                           undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     unpack_sig                                                                     undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     Block_split29_proc                                                             0               0              0             0               0 ns             0 ns            0 ns
+k_verify_1    k_verify     duplicate_int_Pipeline_duplicate                                               undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     duplicate_int_s                                                                undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     Block_split211_proc                                                            0               0              0             0               0 ns             0 ns            0 ns
+k_verify_1    k_verify     duplicate_unsigned_char_1                                                      undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     chknorm_Pipeline_VITIS_LOOP_437_1_VITIS_LOOP_441_2                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     chknorm                                                                        undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     absorb_rate                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     myxor                                                                          0               0              0             0               0 ns             0 ns            0 ns
+k_verify_1    k_verify     compute                                                                        0               0              0             0               0 ns             0 ns            0 ns
+k_verify_1    k_verify     KeccakF1600_StatePermute                                                       49              49             49            49              0.163 us         0.163 us        0.163 us
+k_verify_1    k_verify     squeeze_out_Pipeline_VITIS_LOOP_521_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     squeeze_out                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     shake                                                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     Block_split215_proc                                                            1               1              1             1               3.333 ns         3.333 ns        3.333 ns
+k_verify_1    k_verify     readmem_unsigned_char_2_Pipeline_readmem                                       4 ~ -1          4              undef         undef           13.332 ns        undef           undef
+k_verify_1    k_verify     readmem_unsigned_char_2                                                        2 ~ -1          2              undef         undef           6.666 ns         undef           undef
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_Pipeline_VITIS_LOOP_655_1                       34              34             34            34              0.113 us         0.113 us        0.113 us
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_Pipeline_VITIS_LOOP_659_2                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_s                                               undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     Block_split218_proc                                                            0               0              0             0               0 ns             0 ns            0 ns
+k_verify_1    k_verify     shake_1                                                                        undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     keccak_squeeze_array                                                           137             137            137           137             0.457 us         0.457 us        0.457 us
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_687_2                                            10              10             10            10              33.330 ns        33.330 ns       33.330 ns
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_697_4                                            386             386            386           386             1.287 us         1.287 us        1.287 us
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_751_5                                            258             258            258           258             0.860 us         0.860 us        0.860 us
+k_verify_1    k_verify     challenge                                                                      undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     make_seed_Pipeline_VITIS_LOOP_764_2                                            34              34             34            34              0.113 us         0.113 us        0.113 us
+k_verify_1    k_verify     make_seed_Pipeline_VITIS_LOOP_767_3_VITIS_LOOP_768_4_VITIS_LOOP_771_5          1538            1538           1538          1538            5.126 us         5.126 us        5.126 us
+k_verify_1    k_verify     make_seed                                                                      undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     make_buf_state                                                                 undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     make_buf_squeeze_out                                                           58              58             58            58              0.193 us         0.193 us        0.193 us
+k_verify_1    k_verify     make_buf                                                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     rej_uniform_Pipeline_VITIS_LOOP_814_2                                          284             284            284           284             0.947 us         0.947 us        0.947 us
+k_verify_1    k_verify     rej_uniform                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     split_int_Pipeline_stream_split                                                undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     split_int_s                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_Pipeline_VITIS_LOOP_942_1                                            undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer                                                                      undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_1_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_1                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_2_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_2                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_3_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_3                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_4_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_4                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_5_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_5                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_6_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_6                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_7_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_7                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_int_Pipeline_merge                                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_int_s                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     repeatl_int_Pipeline_VITIS_LOOP_1112_2                                         1026            1026           1026          1026            3.420 us         3.420 us        3.420 us
+k_verify_1    k_verify     repeatl_int_Pipeline_VITIS_LOOP_1117_3_VITIS_LOOP_1118_4                       3074            3074           3074          3074            10.246 us        10.246 us       10.246 us
+k_verify_1    k_verify     repeatl_int_s                                                                  undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     Block_split236_proc                                                            0               0              0             0               0 ns             0 ns            0 ns
+k_verify_1    k_verify     montgomery                                                                     undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     montgomery_add_Pipeline_VITIS_LOOP_1158_1_VITIS_LOOP_1160_2_VITIS_LOOP_1161_3  undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     montgomery_add                                                                 undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     Block_split239_proc                                                            0               0              0             0               0 ns             0 ns            0 ns
+k_verify_1    k_verify     split_int_1_Pipeline_stream_split                                              undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     split_int_1                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_8_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_8                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_9_Pipeline_VITIS_LOOP_942_1                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_9                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_10_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_10                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_11_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_11                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_12_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_12                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_13_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_13                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_14_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_14                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_15_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_15                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_int_1_Pipeline_merge                                                     undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_int_1                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     shiftl_Pipeline_VITIS_LOOP_1181_1                                              undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     shiftl                                                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     split_int_2_Pipeline_stream_split                                              undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     split_int_2                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_16_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_16                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_17_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_17                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_18_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_18                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_19_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_19                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_20_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_20                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_21_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_21                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_22_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_22                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_23_Pipeline_VITIS_LOOP_942_1                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     ntt_layer_23                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_int_2_Pipeline_merge                                                     undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_int_2                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     repeat_int_Pipeline_VITIS_LOOP_1132_2                                          258             258            258           258             0.860 us         0.860 us        0.860 us
+k_verify_1    k_verify     repeat_int_Pipeline_VITIS_LOOP_1137_3_VITIS_LOOP_1138_4                        770             770            770           770             2.566 us         2.566 us        2.566 us
+k_verify_1    k_verify     repeat_int_s                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     montgomery_1_Pipeline_VITIS_LOOP_1149_1                                        undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     montgomery_1                                                                   undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     sub_Pipeline_VITIS_LOOP_1192_1                                                 undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     sub                                                                            undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     reduce32_Pipeline_VITIS_LOOP_1212_1                                            undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     reduce32                                                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     split_int_3_Pipeline_stream_split                                              undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     split_int_3                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_Pipeline_invntt_layer                                         undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_s                                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_1_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_1                                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_2_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_2                                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_3_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_3                                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_4_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_4                                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_5_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_5                                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_6_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_6                                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_7_Pipeline_invntt_layer                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     invntt_layer_int_7                                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_int_3_Pipeline_merge                                                     undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_int_3                                                                    undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     reducef_Pipeline_VITIS_LOOP_1201_1                                             undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     reducef                                                                        undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     caddq_Pipeline_VITIS_LOOP_1227_1                                               undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     caddq                                                                          undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     hint_Pipeline_VITIS_LOOP_1256_1                                                undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     hint                                                                           undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     pack_Pipeline_VITIS_LOOP_1290_1_VITIS_LOOP_1292_2                              undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     pack                                                                           undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1_Pipeline_VITIS_LOOP_655_1                     66              66             66            66              0.220 us         0.220 us        0.220 us
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1_Pipeline_VITIS_LOOP_659_2                     770             770            770           770             2.566 us         2.566 us        2.566 us
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1                                               undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     shake_2                                                                        undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     make_ver                                                                       undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     writemem_int_Pipeline_writemem                                                 undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     writemem_int_s                                                                 undef           undef          undef         undef           undef            undef           undef
+k_verify_1    k_verify     k_verify                                                                       undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                                                    FF      LUT     DSP  BRAM  URAM
+------------  -----------  -----------------------------------------------------------------------------  ------  ------  ---  ----  ----
+k_verify_1    k_verify     entry_proc                                                                     3       29      0    0     0
+k_verify_1    k_verify     Block_split2_proc                                                              201     110     0    0     0
+k_verify_1    k_verify     readmem_unsigned_char_Pipeline_readmem                                         44      115     0    0     0
+k_verify_1    k_verify     readmem_unsigned_char_s                                                        152     656     0    0     0
+k_verify_1    k_verify     duplicate_unsigned_char_Pipeline_duplicate                                     35      128     0    0     0
+k_verify_1    k_verify     duplicate_unsigned_char_s                                                      72      195     0    0     0
+k_verify_1    k_verify     unpack_pk_Pipeline_VITIS_LOOP_307_2                                            9       83      0    0     0
+k_verify_1    k_verify     unpack_pk_Pipeline_VITIS_LOOP_311_3                                            38      170     0    0     0
+k_verify_1    k_verify     unpack_pk                                                                      121     428     0    0     0
+k_verify_1    k_verify     Block_split26_proc                                                             201     101     0    0     0
+k_verify_1    k_verify     readmem_unsigned_char_1_Pipeline_readmem                                       44      115     0    0     0
+k_verify_1    k_verify     readmem_unsigned_char_1                                                        151     638     0    0     0
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_337_2                                           9       83      0    0     0
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_341_3                                           62      297     0    0     0
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_401_4                                           17      73      0    0     0
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_407_6                                           11      54      0    0     0
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_413_7                                           117     267     0    0     0
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_419_8                                           12      76      0    0     0
+k_verify_1    k_verify     unpack_sig_Pipeline_VITIS_LOOP_424_9                                           43      116     0    0     0
+k_verify_1    k_verify     unpack_sig                                                                     490     1503    0    0     0
+k_verify_1    k_verify     Block_split29_proc                                                             122     56      0    0     0
+k_verify_1    k_verify     duplicate_int_Pipeline_duplicate                                               35      128     0    0     0
+k_verify_1    k_verify     duplicate_int_s                                                                41      204     0    0     0
+k_verify_1    k_verify     Block_split211_proc                                                            29      20      0    0     0
+k_verify_1    k_verify     duplicate_unsigned_char_1                                                      35      130     0    0     0
+k_verify_1    k_verify     chknorm_Pipeline_VITIS_LOOP_437_1_VITIS_LOOP_441_2                             125     330     0    0     0
+k_verify_1    k_verify     chknorm                                                                        194     388     0    0     0
+k_verify_1    k_verify     absorb_rate                                                                    1667    1054    0    0     0
+k_verify_1    k_verify     myxor                                                                          0       320     0    0     0
+k_verify_1    k_verify     compute                                                                        0       960     0    0     0
+k_verify_1    k_verify     KeccakF1600_StatePermute                                                       3272    8404    0    0     0
+k_verify_1    k_verify     squeeze_out_Pipeline_VITIS_LOOP_521_1                                          18      320     0    0     0
+k_verify_1    k_verify     squeeze_out                                                                    22      355     0    0     0
+k_verify_1    k_verify     shake                                                                          9429    10403   0    0     0
+k_verify_1    k_verify     Block_split215_proc                                                            296     101     0    0     0
+k_verify_1    k_verify     readmem_unsigned_char_2_Pipeline_readmem                                       44      115     0    0     0
+k_verify_1    k_verify     readmem_unsigned_char_2                                                        151     638     0    0     0
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_Pipeline_VITIS_LOOP_655_1                       9       83      0    0     0
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_Pipeline_VITIS_LOOP_659_2                       35      119     0    0     0
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_s                                               117     377     0    0     0
+k_verify_1    k_verify     Block_split218_proc                                                            34      59      0    0     0
+k_verify_1    k_verify     shake_1                                                                        11343   11454   0    0     0
+k_verify_1    k_verify     keccak_squeeze_array                                                           10      312     0    0     0
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_687_2                                            75      314     0    0     0
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_697_4                                            152     240     0    0     0
+k_verify_1    k_verify     challenge_Pipeline_VITIS_LOOP_751_5                                            12      76      0    0     0
+k_verify_1    k_verify     challenge                                                                      8122    12898   0    0     0
+k_verify_1    k_verify     make_seed_Pipeline_VITIS_LOOP_764_2                                            15      72      0    0     0
+k_verify_1    k_verify     make_seed_Pipeline_VITIS_LOOP_767_3_VITIS_LOOP_768_4_VITIS_LOOP_771_5          41      320     0    0     0
+k_verify_1    k_verify     make_seed                                                                      138     599     0    0     0
+k_verify_1    k_verify     make_buf_state                                                                 4870    1883    0    0     0
+k_verify_1    k_verify     make_buf_squeeze_out                                                           153     977     0    0     0
+k_verify_1    k_verify     make_buf                                                                       14580   12777   0    0     0
+k_verify_1    k_verify     rej_uniform_Pipeline_VITIS_LOOP_814_2                                          98      170     0    0     0
+k_verify_1    k_verify     rej_uniform                                                                    196     345     0    0     0
+k_verify_1    k_verify     split_int_Pipeline_stream_split                                                68      252     0    0     0
+k_verify_1    k_verify     split_int_s                                                                    106     337     0    0     0
+k_verify_1    k_verify     ntt_layer_Pipeline_VITIS_LOOP_942_1                                            1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer                                                                      1179    840     0    1     0
+k_verify_1    k_verify     ntt_layer_1_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_1                                                                    1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_2_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_2                                                                    1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_3_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_3                                                                    1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_4_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_4                                                                    1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_5_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_5                                                                    1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_6_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_6                                                                    1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_7_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_7                                                                    1203    831     0    1     0
+k_verify_1    k_verify     merge_int_Pipeline_merge                                                       167     270     0    0     0
+k_verify_1    k_verify     merge_int_s                                                                    204     337     0    0     0
+k_verify_1    k_verify     repeatl_int_Pipeline_VITIS_LOOP_1112_2                                         25      90      0    0     0
+k_verify_1    k_verify     repeatl_int_Pipeline_VITIS_LOOP_1117_3_VITIS_LOOP_1118_4                       26      139     0    0     0
+k_verify_1    k_verify     repeatl_int_s                                                                  124     423     0    2     0
+k_verify_1    k_verify     Block_split236_proc                                                            22      20      0    0     0
+k_verify_1    k_verify     montgomery                                                                     855     380     0    0     0
+k_verify_1    k_verify     montgomery_add_Pipeline_VITIS_LOOP_1158_1_VITIS_LOOP_1160_2_VITIS_LOOP_1161_3  158     311     0    1     0
+k_verify_1    k_verify     montgomery_add                                                                 196     378     0    1     0
+k_verify_1    k_verify     Block_split239_proc                                                            26      20      0    0     0
+k_verify_1    k_verify     split_int_1_Pipeline_stream_split                                              68      252     0    0     0
+k_verify_1    k_verify     split_int_1                                                                    74      328     0    0     0
+k_verify_1    k_verify     ntt_layer_8_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_8                                                                    1211    849     0    1     0
+k_verify_1    k_verify     ntt_layer_9_Pipeline_VITIS_LOOP_942_1                                          1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_9                                                                    1211    849     0    1     0
+k_verify_1    k_verify     ntt_layer_10_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_10                                                                   1211    849     0    1     0
+k_verify_1    k_verify     ntt_layer_11_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_11                                                                   1211    849     0    1     0
+k_verify_1    k_verify     ntt_layer_12_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_12                                                                   1211    849     0    1     0
+k_verify_1    k_verify     ntt_layer_13_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_13                                                                   1211    849     0    1     0
+k_verify_1    k_verify     ntt_layer_14_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_14                                                                   1211    849     0    1     0
+k_verify_1    k_verify     ntt_layer_15_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_15                                                                   1210    840     0    1     0
+k_verify_1    k_verify     merge_int_1_Pipeline_merge                                                     167     270     0    0     0
+k_verify_1    k_verify     merge_int_1                                                                    205     346     0    0     0
+k_verify_1    k_verify     shiftl_Pipeline_VITIS_LOOP_1181_1                                              35      119     0    0     0
+k_verify_1    k_verify     shiftl                                                                         41      186     0    0     0
+k_verify_1    k_verify     split_int_2_Pipeline_stream_split                                              68      252     0    0     0
+k_verify_1    k_verify     split_int_2                                                                    106     337     0    0     0
+k_verify_1    k_verify     ntt_layer_16_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_16                                                                   1179    840     0    1     0
+k_verify_1    k_verify     ntt_layer_17_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_17                                                                   1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_18_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_18                                                                   1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_19_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_19                                                                   1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_20_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_20                                                                   1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_21_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_21                                                                   1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_22_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_22                                                                   1204    849     0    1     0
+k_verify_1    k_verify     ntt_layer_23_Pipeline_VITIS_LOOP_942_1                                         1148    755     0    1     0
+k_verify_1    k_verify     ntt_layer_23                                                                   1203    840     0    1     0
+k_verify_1    k_verify     merge_int_2_Pipeline_merge                                                     167     270     0    0     0
+k_verify_1    k_verify     merge_int_2                                                                    205     355     0    0     0
+k_verify_1    k_verify     repeat_int_Pipeline_VITIS_LOOP_1132_2                                          21      87      0    0     0
+k_verify_1    k_verify     repeat_int_Pipeline_VITIS_LOOP_1137_3_VITIS_LOOP_1138_4                        22      131     0    0     0
+k_verify_1    k_verify     repeat_int_s                                                                   116     421     0    1     0
+k_verify_1    k_verify     montgomery_1_Pipeline_VITIS_LOOP_1149_1                                        855     378     0    0     0
+k_verify_1    k_verify     montgomery_1                                                                   892     454     0    0     0
+k_verify_1    k_verify     sub_Pipeline_VITIS_LOOP_1192_1                                                 69      167     0    0     0
+k_verify_1    k_verify     sub                                                                            107     252     0    0     0
+k_verify_1    k_verify     reduce32_Pipeline_VITIS_LOOP_1212_1                                            139     188     0    0     0
+k_verify_1    k_verify     reduce32                                                                       177     264     0    0     0
+k_verify_1    k_verify     split_int_3_Pipeline_stream_split                                              68      252     0    0     0
+k_verify_1    k_verify     split_int_3                                                                    106     337     0    0     0
+k_verify_1    k_verify     invntt_layer_int_Pipeline_invntt_layer                                         1049    671     0    1     0
+k_verify_1    k_verify     invntt_layer_int_s                                                             1105    765     0    1     0
+k_verify_1    k_verify     invntt_layer_int_1_Pipeline_invntt_layer                                       1049    671     0    1     0
+k_verify_1    k_verify     invntt_layer_int_1                                                             1105    765     0    1     0
+k_verify_1    k_verify     invntt_layer_int_2_Pipeline_invntt_layer                                       1049    671     0    1     0
+k_verify_1    k_verify     invntt_layer_int_2                                                             1105    765     0    1     0
+k_verify_1    k_verify     invntt_layer_int_3_Pipeline_invntt_layer                                       1049    671     0    1     0
+k_verify_1    k_verify     invntt_layer_int_3                                                             1105    765     0    1     0
+k_verify_1    k_verify     invntt_layer_int_4_Pipeline_invntt_layer                                       1049    671     0    1     0
+k_verify_1    k_verify     invntt_layer_int_4                                                             1105    765     0    1     0
+k_verify_1    k_verify     invntt_layer_int_5_Pipeline_invntt_layer                                       1049    671     0    1     0
+k_verify_1    k_verify     invntt_layer_int_5                                                             1105    765     0    1     0
+k_verify_1    k_verify     invntt_layer_int_6_Pipeline_invntt_layer                                       1049    671     0    1     0
+k_verify_1    k_verify     invntt_layer_int_6                                                             1105    765     0    1     0
+k_verify_1    k_verify     invntt_layer_int_7_Pipeline_invntt_layer                                       1049    671     0    1     0
+k_verify_1    k_verify     invntt_layer_int_7                                                             1104    747     0    1     0
+k_verify_1    k_verify     merge_int_3_Pipeline_merge                                                     167     270     0    0     0
+k_verify_1    k_verify     merge_int_3                                                                    205     355     0    0     0
+k_verify_1    k_verify     reducef_Pipeline_VITIS_LOOP_1201_1                                             808     359     0    0     0
+k_verify_1    k_verify     reducef                                                                        846     435     0    0     0
+k_verify_1    k_verify     caddq_Pipeline_VITIS_LOOP_1227_1                                               69      179     0    0     0
+k_verify_1    k_verify     caddq                                                                          106     246     0    0     0
+k_verify_1    k_verify     hint_Pipeline_VITIS_LOOP_1256_1                                                361     530     0    0     0
+k_verify_1    k_verify     hint                                                                           398     597     0    0     0
+k_verify_1    k_verify     pack_Pipeline_VITIS_LOOP_1290_1_VITIS_LOOP_1292_2                              94      216     0    0     0
+k_verify_1    k_verify     pack                                                                           163     274     0    0     0
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1_Pipeline_VITIS_LOOP_655_1                     10      85      0    0     0
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1_Pipeline_VITIS_LOOP_659_2                     13      88      0    0     0
+k_verify_1    k_verify     merge_unbalanced_unsigned_char_1                                               97      357     0    0     0
+k_verify_1    k_verify     shake_2                                                                        9427    10400   0    0     0
+k_verify_1    k_verify     make_ver                                                                       248     470     0    0     0
+k_verify_1    k_verify     writemem_int_Pipeline_writemem                                                 70      121     0    0     0
+k_verify_1    k_verify     writemem_int_s                                                                 239     676     0    0     0
+k_verify_1    k_verify     k_verify                                                                       121797  131249  0    71    0
+-------------------------------------------------------------------------------

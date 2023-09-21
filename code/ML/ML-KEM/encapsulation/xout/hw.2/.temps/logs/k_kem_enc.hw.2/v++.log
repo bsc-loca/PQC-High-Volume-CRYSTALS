@@ -1,0 +1,21 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/reports/k_kem_enc.hw.2
+	Log files: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/logs/k_kem_enc.hw.2
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/xobj/k_kem_enc.hw.2.xo.compile_summary, at Mon Sep 18 16:43:40 2023
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Mon Sep 18 16:43:40 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/reports/k_kem_enc.hw.2/v++_compile_k_kem_enc.hw.2_guidance.html', at Mon Sep 18 16:43:41 2023
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u280_xdma_201920_3/xilinx_u280_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u280_xdma_201920_3/hw/xilinx_u280_xdma_201920_3.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.2
+INFO: [v++ 60-1302] Platform 'xilinx_u280_xdma_201920_3.xpfm' has been explicitly enabled for this release.
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u280_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'k_kem_enc'
+INFO: [v++ 60-804] Imported HLS script '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/tcl/k_kem_enc.hw.2.tcl' for kernel 'k_kem_enc'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: k_kem_enc Log file: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/k_kem_enc.hw.2/k_kem_enc/vitis_hls.log :
+ERROR: [v++ 200-70] Cannot find any design unit to elaborate.
+ERROR: [v++ 60-300] Failed to build kernel(ip) k_kem_enc, see log for details: /home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/k_kem_enc.hw.2/k_kem_enc/vitis_hls.log
+ERROR: [v++ 60-773] In '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/k_kem_enc.hw.2/k_kem_enc/vitis_hls.log', caught Tcl error: ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+ERROR: [v++ 60-599] Kernel compilation failed to complete
+ERROR: [v++ 60-592] Failed to finish compilation

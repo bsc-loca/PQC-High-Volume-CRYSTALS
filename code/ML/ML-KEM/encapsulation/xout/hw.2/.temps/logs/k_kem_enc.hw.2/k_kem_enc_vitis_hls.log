@@ -1,0 +1,56 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2021.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'xcarril' on host 'picu' (Linux_x86_64 version 5.8.0-38-generic) on Mon Sep 18 16:43:48 CEST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/k_kem_enc.hw.2/k_kem_enc'
+Sourcing Tcl script 'k_kem_enc.tcl'
+INFO: [HLS 200-1510] Running: open_project k_kem_enc 
+INFO: [HLS 200-10] Creating and opening project '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/k_kem_enc.hw.2/k_kem_enc/k_kem_enc'.
+INFO: [HLS 200-1510] Running: set_top k_kem_enc 
+INFO: [HLS 200-1510] Running: add_files /home/xcarril/dilithium-update/ML-KEM/encapsulation/xsrc/k_kem_enc.cpp -cflags  -D KYBER_K=2 -I /home/xcarril/dilithium-update/ML-KEM/encapsulation/xinclude  
+WARNING: [HLS 200-40] Cannot find design file '/home/xcarril/dilithium-update/ML-KEM/encapsulation/xsrc/k_kem_enc.cpp'
+INFO: [HLS 200-1510] Running: add_files /home/xcarril/dilithium-update/ML-KEM/encapsulation/xinclude/kernel.hpp -cflags  -D KYBER_K=2 -I /home/xcarril/dilithium-update/ML-KEM/encapsulation/xinclude  
+WARNING: [HLS 200-40] Cannot find design file '/home/xcarril/dilithium-update/ML-KEM/encapsulation/xinclude/kernel.hpp'
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/xcarril/pqc_codesign/dilithium-update/ML-KEM/encapsulation/xout/hw.2/.temps/k_kem_enc.hw.2/k_kem_enc/k_kem_enc/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu280-fsvh2892-2L-e 
+INFO: [HLS 200-1611] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 300.000000MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_dataflow -fifo_depth 100 
+INFO: [XFORM 203-701] Set default FIFO size in dataflow to 100.
+INFO: [HLS 200-1510] Running: config_export -deadlock_detection none 
+INFO: [HLS 200-1510] Running: config_export -version 0.0.1 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_conservative_mode=1 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format xo -ipname k_kem_enc 
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-40] Cannot find source file /home/xcarril/dilithium-update/ML-KEM/encapsulation/xinclude/kernel.hpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file /home/xcarril/dilithium-update/ML-KEM/encapsulation/xsrc/k_kem_enc.cpp; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.110 GB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.110 GB.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 0.000 MB.
+Error in linking the design.
+    while executing
+"source k_kem_enc.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total CPU user time: 1.28 seconds. Total CPU system time: 0.26 seconds. Total elapsed time: 1.01 seconds; peak allocated memory: 1.110 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Mon Sep 18 16:43:49 2023...

@@ -1,0 +1,438 @@
+
+*** Running vivado
+    with args -log pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0.tcl -notrace
+INFO: Dispatch client connection id - 39923
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 2679.105 ; gain = 0.023 ; free physical = 61385 ; free virtual = 195809
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/int/xo/ip_repo/xilinx_com_hls_k_verify_0_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3032496
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 3447.262 ; gain = 285.797 ; free physical = 52940 ; free virtual = 188502
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/synth/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (1#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (2#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_multi_slr' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_source_region_slr' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2854]
+INFO: [Synth 8-6157] synthesizing module 'FDCE' [/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27621]
+INFO: [Synth 8-6155] done synthesizing module 'FDCE' (3#1) [/opt/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:27621]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_source_region_slr' (4#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2854]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_middle_region_slr' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2713]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_middle_region_slr' (5#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2713]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_dest_region_slr' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3038]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_reg_srl_fifo' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3442]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_srl_rtl' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_srl_rtl' (6#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_reg_srl_fifo' (7#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3442]
+WARNING: [Synth 8-6014] Unused sequential element common.areset_dly_reg was removed.  [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3189]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_dest_region_slr' (8#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_multi_slr' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_multi_slr__parameterized0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_source_region_slr__parameterized0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2854]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_source_region_slr__parameterized0' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2854]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_middle_region_slr__parameterized0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2713]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_middle_region_slr__parameterized0' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2713]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_dest_region_slr__parameterized0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3038]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_reg_srl_fifo__parameterized0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3442]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_reg_srl_fifo__parameterized0' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3442]
+WARNING: [Synth 8-6014] Unused sequential element common.areset_dly_reg was removed.  [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3189]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_dest_region_slr__parameterized0' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_multi_slr__parameterized0' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_multi_slr__parameterized1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_source_region_slr__parameterized1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2854]
+WARNING: [Synth 8-6014] Unused sequential element common.areset_dly_reg was removed.  [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2959]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_source_region_slr__parameterized1' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2854]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_middle_region_slr__parameterized1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2713]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_middle_region_slr__parameterized1' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2713]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_dest_region_slr__parameterized1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3038]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_reg_srl_fifo__parameterized1' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3442]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_reg_srl_fifo__parameterized1' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3442]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_dest_region_slr__parameterized1' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_multi_slr__parameterized1' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_multi_slr__parameterized2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_source_region_slr__parameterized2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2854]
+WARNING: [Synth 8-6014] Unused sequential element common.areset_dly_reg was removed.  [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2959]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_source_region_slr__parameterized2' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2854]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_middle_region_slr__parameterized2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2713]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_middle_region_slr__parameterized2' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2713]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_dest_region_slr__parameterized2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3038]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_reg_srl_fifo__parameterized2' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3442]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_reg_srl_fifo__parameterized2' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3442]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_dest_region_slr__parameterized2' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3038]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_multi_slr__parameterized2' (9#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:2201]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice' (10#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0' (11#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/synth/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0.v:58]
+WARNING: [Synth 8-7129] Port ACLK2X in module axi_register_slice_v2_1_25_dest_region_slr__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axi_register_slice_v2_1_25_source_region_slr__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axi_register_slice_v2_1_25_dest_region_slr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axi_register_slice_v2_1_25_source_region_slr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axi_register_slice_v2_1_25_dest_region_slr__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axi_register_slice_v2_1_25_source_region_slr__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axi_register_slice_v2_1_25_dest_region_slr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK2X in module axi_register_slice_v2_1_25_source_region_slr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 3505.199 ; gain = 343.734 ; free physical = 51035 ; free virtual = 186605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 3523.012 ; gain = 361.547 ; free physical = 50782 ; free virtual = 186411
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 3523.012 ; gain = 361.547 ; free physical = 50781 ; free virtual = 186410
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3528.949 ; gain = 0.000 ; free physical = 52459 ; free virtual = 188110
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3645.574 ; gain = 0.000 ; free physical = 53956 ; free virtual = 189769
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.runs/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.runs/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3645.574 ; gain = 0.000 ; free physical = 54011 ; free virtual = 189828
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3648.543 ; gain = 2.969 ; free physical = 53777 ; free virtual = 189569
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 3648.543 ; gain = 487.078 ; free physical = 55562 ; free virtual = 191463
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 3648.543 ; gain = 487.078 ; free physical = 55551 ; free virtual = 191462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.runs/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 3648.543 ; gain = 487.078 ; free physical = 55473 ; free virtual = 191396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 3648.543 ; gain = 487.078 ; free physical = 54984 ; free virtual = 190892
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 5     
++---Registers : 
+	               36 Bit    Registers := 11    
+	               34 Bit    Registers := 11    
+	               27 Bit    Registers := 22    
+	               16 Bit    Registers := 5     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 26    
+	                1 Bit    Registers := 95    
++---Muxes : 
+	   2 Input   36 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 11    
+	   4 Input    2 Bit        Muxes := 5     
+	   8 Input    2 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 15    
+	  10 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 5     
+	   7 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_register_slice_v2_1_25_axi_register_slice is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (aw15.aw_multi/triple_slr.fwd.slr_master/common.pipe[2].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (aw15.aw_multi/triple_slr.fwd.slr_middle/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (aw15.aw_multi/triple_slr.fwd.slr_middle/common.pipe[3].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (aw15.aw_multi/triple_slr.fwd.slr_slave/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (w15.w_multi/triple_slr.fwd.slr_master/common.pipe[2].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (w15.w_multi/triple_slr.fwd.slr_middle/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (w15.w_multi/triple_slr.fwd.slr_middle/common.pipe[3].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (w15.w_multi/triple_slr.fwd.slr_slave/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (b15.b_multi/triple_slr.resp.slr_slave/common.pipe[2].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (b15.b_multi/triple_slr.resp.slr_middle/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (b15.b_multi/triple_slr.resp.slr_middle/common.pipe[3].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (b15.b_multi/triple_slr.resp.slr_master/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (ar15.ar_multi/triple_slr.fwd.slr_master/common.pipe[2].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (ar15.ar_multi/triple_slr.fwd.slr_middle/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (ar15.ar_multi/triple_slr.fwd.slr_middle/common.pipe[3].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (ar15.ar_multi/triple_slr.fwd.slr_slave/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (r15.r_multi/triple_slr.resp.slr_slave/common.pipe[2].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (r15.r_multi/triple_slr.resp.slr_middle/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (r15.r_multi/triple_slr.resp.slr_middle/common.pipe[3].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+INFO: [Synth 8-3332] Sequential element (r15.r_multi/triple_slr.resp.slr_master/common.pipe[0].payload_valid_asyncclear_inst) is unused and will be removed from module axi_register_slice_v2_1_25_axi_register_slice.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 3648.543 ; gain = 487.078 ; free physical = 55614 ; free virtual = 191595
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:54 . Memory (MB): peak = 3949.402 ; gain = 787.938 ; free physical = 56327 ; free virtual = 192442
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:55 . Memory (MB): peak = 3976.434 ; gain = 814.969 ; free physical = 58417 ; free virtual = 194535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 3984.441 ; gain = 822.977 ; free physical = 56950 ; free virtual = 193072
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:01:03 . Memory (MB): peak = 3987.410 ; gain = 825.945 ; free physical = 54929 ; free virtual = 191048
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:01:03 . Memory (MB): peak = 3987.410 ; gain = 825.945 ; free physical = 54928 ; free virtual = 191048
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:03 . Memory (MB): peak = 3987.410 ; gain = 825.945 ; free physical = 54886 ; free virtual = 191005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:03 . Memory (MB): peak = 3987.410 ; gain = 825.945 ; free physical = 54882 ; free virtual = 191002
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:03 . Memory (MB): peak = 3987.410 ; gain = 825.945 ; free physical = 54855 ; free virtual = 190974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:03 . Memory (MB): peak = 3987.410 ; gain = 825.945 ; free physical = 54852 ; free virtual = 190971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name      | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | shift_reg_reg | 32     | 1          | 0      | 1       | 0      | 0      | 0      | 
++------------+---------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |    11|
+|2     |LUT2    |    14|
+|3     |LUT3    |     1|
+|4     |LUT4    |   136|
+|5     |LUT5    |    25|
+|6     |LUT6    |    20|
+|7     |SRLC32E |   126|
+|8     |FDCE    |    65|
+|9     |FDRE    |  1516|
+|10    |FDSE    |   100|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:03 . Memory (MB): peak = 3987.410 ; gain = 825.945 ; free physical = 54850 ; free virtual = 190970
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 3987.410 ; gain = 700.414 ; free physical = 54874 ; free virtual = 190993
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:03 . Memory (MB): peak = 3987.418 ; gain = 825.945 ; free physical = 54865 ; free virtual = 190984
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3987.418 ; gain = 0.000 ; free physical = 54545 ; free virtual = 190661
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4057.793 ; gain = 0.000 ; free physical = 54216 ; free virtual = 190302
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a6e16bb
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 4057.793 ; gain = 1378.688 ; free physical = 55671 ; free virtual = 191757
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.runs/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_synth_1/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0, cache-ID = 83bab30cd8c81a53
+INFO: [Coretcl 2-1174] Renamed 152 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.5/.temps/link/vivado/vpl/prj/prj.runs/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_synth_1/pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_utilization_synth.rpt -pb pfm_dynamic_regslice_pipe_ctrl_hbm_mgntpf_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 15 14:13:58 2023...

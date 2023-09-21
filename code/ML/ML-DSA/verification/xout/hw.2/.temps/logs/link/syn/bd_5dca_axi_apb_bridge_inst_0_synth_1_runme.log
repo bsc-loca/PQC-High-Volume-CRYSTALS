@@ -1,0 +1,410 @@
+
+*** Running vivado
+    with args -log bd_5dca_axi_apb_bridge_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_5dca_axi_apb_bridge_inst_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_5dca_axi_apb_bridge_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 39335
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/int/xo/ip_repo/xilinx_com_hls_k_verify_0_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2021.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2021.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top bd_5dca_axi_apb_bridge_inst_0 -part xcu280-fsvh2892-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3023987
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3448.133 ; gain = 287.766 ; free physical = 70900 ; free virtual = 202862
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_5dca_axi_apb_bridge_inst_0' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_18/synth/bd_5dca_axi_apb_bridge_inst_0.vhd:90]
+	Parameter C_FAMILY bound to: virtexuplusHBM - type: string 
+	Parameter C_INSTANCE bound to: axi_apb_bridge_inst - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 22 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_APB_ADDR_WIDTH bound to: 22 - type: integer 
+	Parameter C_M_APB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_APB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_M_APB_PROTOCOL bound to: apb3 - type: string 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000001111111111111111111111 
+	Parameter C_S_AXI_RNG2_BASEADDR bound to: 64'b0000000000000000000000000000000000010000000000000000000000000000 
+	Parameter C_S_AXI_RNG2_HIGHADDR bound to: 64'b0000000000000000000000000000000000011111111111111111111111111111 
+	Parameter C_S_AXI_RNG3_BASEADDR bound to: 64'b0000000000000000000000000000000000100000000000000000000000000000 
+	Parameter C_S_AXI_RNG3_HIGHADDR bound to: 64'b0000000000000000000000000000000000101111111111111111111111111111 
+	Parameter C_S_AXI_RNG4_BASEADDR bound to: 64'b0000000000000000000000000000000000110000000000000000000000000000 
+	Parameter C_S_AXI_RNG4_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_S_AXI_RNG5_BASEADDR bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_S_AXI_RNG5_HIGHADDR bound to: 64'b0000000000000000000000000000000001001111111111111111111111111111 
+	Parameter C_S_AXI_RNG6_BASEADDR bound to: 64'b0000000000000000000000000000000001010000000000000000000000000000 
+	Parameter C_S_AXI_RNG6_HIGHADDR bound to: 64'b0000000000000000000000000000000001011111111111111111111111111111 
+	Parameter C_S_AXI_RNG7_BASEADDR bound to: 64'b0000000000000000000000000000000001100000000000000000000000000000 
+	Parameter C_S_AXI_RNG7_HIGHADDR bound to: 64'b0000000000000000000000000000000001101111111111111111111111111111 
+	Parameter C_S_AXI_RNG8_BASEADDR bound to: 64'b0000000000000000000000000000000001110000000000000000000000000000 
+	Parameter C_S_AXI_RNG8_HIGHADDR bound to: 64'b0000000000000000000000000000000001111111111111111111111111111111 
+	Parameter C_S_AXI_RNG9_BASEADDR bound to: 64'b0000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_S_AXI_RNG9_HIGHADDR bound to: 64'b0000000000000000000000000000000010001111111111111111111111111111 
+	Parameter C_S_AXI_RNG10_BASEADDR bound to: 64'b0000000000000000000000000000000010010000000000000000000000000000 
+	Parameter C_S_AXI_RNG10_HIGHADDR bound to: 64'b0000000000000000000000000000000010011111111111111111111111111111 
+	Parameter C_S_AXI_RNG11_BASEADDR bound to: 64'b0000000000000000000000000000000010100000000000000000000000000000 
+	Parameter C_S_AXI_RNG11_HIGHADDR bound to: 64'b0000000000000000000000000000000010101111111111111111111111111111 
+	Parameter C_S_AXI_RNG12_BASEADDR bound to: 64'b0000000000000000000000000000000010110000000000000000000000000000 
+	Parameter C_S_AXI_RNG12_HIGHADDR bound to: 64'b0000000000000000000000000000000010111111111111111111111111111111 
+	Parameter C_S_AXI_RNG13_BASEADDR bound to: 64'b0000000000000000000000000000000011000000000000000000000000000000 
+	Parameter C_S_AXI_RNG13_HIGHADDR bound to: 64'b0000000000000000000000000000000011001111111111111111111111111111 
+	Parameter C_S_AXI_RNG14_BASEADDR bound to: 64'b0000000000000000000000000000000011010000000000000000000000000000 
+	Parameter C_S_AXI_RNG14_HIGHADDR bound to: 64'b0000000000000000000000000000000011011111111111111111111111111111 
+	Parameter C_S_AXI_RNG15_BASEADDR bound to: 64'b0000000000000000000000000000000011100000000000000000000000000000 
+	Parameter C_S_AXI_RNG15_HIGHADDR bound to: 64'b0000000000000000000000000000000011101111111111111111111111111111 
+	Parameter C_S_AXI_RNG16_BASEADDR bound to: 64'b0000000000000000000000000000000011110000000000000000000000000000 
+	Parameter C_S_AXI_RNG16_HIGHADDR bound to: 64'b0000000000000000000000000000000011111111111111111111111111111111 
+	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_apb_bridge' declared at '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:7175' bound to instance 'U0' of component 'axi_apb_bridge' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_18/synth/bd_5dca_axi_apb_bridge_inst_0.vhd:228]
+INFO: [Synth 8-638] synthesizing module 'axi_apb_bridge' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:7284]
+INFO: [Synth 8-638] synthesizing module 'psel_decoder' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:564]
+INFO: [Synth 8-256] done synthesizing module 'psel_decoder' (1#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:564]
+INFO: [Synth 8-638] synthesizing module 'multiplexor' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:4148]
+INFO: [Synth 8-256] done synthesizing module 'multiplexor' (2#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:4148]
+INFO: [Synth 8-638] synthesizing module 'axilite_sif' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6098]
+INFO: [Synth 8-226] default block is never used [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6346]
+INFO: [Synth 8-256] done synthesizing module 'axilite_sif' (3#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6098]
+INFO: [Synth 8-638] synthesizing module 'apb_mif' [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6674]
+INFO: [Synth 8-256] done synthesizing module 'apb_mif' (4#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:6674]
+INFO: [Synth 8-256] done synthesizing module 'axi_apb_bridge' (5#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ipshared/c0b5/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd:7284]
+INFO: [Synth 8-256] done synthesizing module 'bd_5dca_axi_apb_bridge_inst_0' (6#1) [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_18/synth/bd_5dca_axi_apb_bridge_inst_0.vhd:90]
+WARNING: [Synth 8-7129] Port axi_awprot[2] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[1] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[0] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module apb_mif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module axilite_sif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module axilite_sif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module axilite_sif is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[31] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[30] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[29] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[28] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[27] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[26] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[25] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[24] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[23] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[22] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[21] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[20] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[19] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[18] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[17] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[16] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[15] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[14] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[13] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[12] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[11] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[10] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[9] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[8] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[7] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[6] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[5] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[4] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[3] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[2] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[1] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA2[0] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[31] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[30] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[29] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[28] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[27] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[26] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[25] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[24] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[23] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[22] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[21] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[20] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[19] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[18] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[17] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[16] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[15] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[14] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[13] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[12] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[11] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[10] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[9] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[8] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[7] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[6] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[5] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[4] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[3] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[2] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[1] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA3[0] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[31] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[30] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[29] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[28] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[27] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[26] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[25] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[24] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[23] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[22] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[21] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[20] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[19] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[18] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[17] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[16] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[15] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[14] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[13] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[12] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[11] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[10] in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_APB_PRDATA4[9] in module multiplexor is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 3499.070 ; gain = 338.703 ; free physical = 72692 ; free virtual = 204684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 3516.883 ; gain = 356.516 ; free physical = 73943 ; free virtual = 205946
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 3516.883 ; gain = 356.516 ; free physical = 73943 ; free virtual = 205946
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3516.883 ; gain = 0.000 ; free physical = 73967 ; free virtual = 205972
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_18/bd_5dca_axi_apb_bridge_inst_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.gen/my_rm/bd/bd/ip/pfm_dynamic_hmss_0_0/bd_0/ip/ip_18/bd_5dca_axi_apb_bridge_inst_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_axi_apb_bridge_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_axi_apb_bridge_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3636.383 ; gain = 0.000 ; free physical = 73844 ; free virtual = 205847
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3636.383 ; gain = 0.000 ; free physical = 73842 ; free virtual = 205845
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 3636.383 ; gain = 476.016 ; free physical = 73972 ; free virtual = 206026
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 3636.383 ; gain = 476.016 ; free physical = 73970 ; free virtual = 206024
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_axi_apb_bridge_inst_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 3636.383 ; gain = 476.016 ; free physical = 73965 ; free virtual = 206020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'axi_wr_rd_cs_reg' in module 'axilite_sif'
+INFO: [Synth 8-802] inferred FSM for state register 'apb_wr_rd_cs_reg' in module 'apb_mif'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                axi_idle |                              000 |                              000
+               read_wait |                              001 |                              110
+                    read |                              010 |                              101
+                 rd_resp |                              011 |                              111
+              write_wait |                              100 |                              011
+            write_w_wait |                              101 |                              010
+                   write |                              110 |                              001
+                 wr_resp |                              111 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_wr_rd_cs_reg' using encoding 'sequential' in module 'axilite_sif'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                apb_idle |                              001 |                               00
+               apb_setup |                              010 |                               01
+              apb_access |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'apb_wr_rd_cs_reg' using encoding 'one-hot' in module 'apb_mif'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 3636.383 ; gain = 476.016 ; free physical = 73788 ; free virtual = 205857
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               22 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 13    
+	   8 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3636.383 ; gain = 476.016 ; free physical = 73792 ; free virtual = 205949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 3942.578 ; gain = 782.211 ; free physical = 70766 ; free virtual = 202984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 3964.609 ; gain = 804.242 ; free physical = 70793 ; free virtual = 203011
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 3972.617 ; gain = 812.250 ; free physical = 70853 ; free virtual = 203071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3972.617 ; gain = 812.250 ; free physical = 70806 ; free virtual = 203045
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3972.617 ; gain = 812.250 ; free physical = 70805 ; free virtual = 203043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3972.617 ; gain = 812.250 ; free physical = 70795 ; free virtual = 203034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3972.617 ; gain = 812.250 ; free physical = 70794 ; free virtual = 203033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3972.617 ; gain = 812.250 ; free physical = 70793 ; free virtual = 203031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3972.617 ; gain = 812.250 ; free physical = 70791 ; free virtual = 203029
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |    33|
+|3     |LUT3 |    25|
+|4     |LUT4 |    35|
+|5     |LUT5 |    28|
+|6     |LUT6 |    13|
+|7     |FDRE |   123|
+|8     |FDSE |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3972.617 ; gain = 812.250 ; free physical = 70791 ; free virtual = 203029
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 491 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 3972.617 ; gain = 692.750 ; free physical = 70837 ; free virtual = 203075
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3972.625 ; gain = 812.250 ; free physical = 70837 ; free virtual = 203075
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3983.586 ; gain = 0.000 ; free physical = 70941 ; free virtual = 203181
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4048.844 ; gain = 0.000 ; free physical = 71026 ; free virtual = 203289
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 437c5da8
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 4048.844 ; gain = 1360.836 ; free physical = 71136 ; free virtual = 203401
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_axi_apb_bridge_inst_0_synth_1/bd_5dca_axi_apb_bridge_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_5dca_axi_apb_bridge_inst_0, cache-ID = f1c34487235de643
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/xcarril/pqc_codesign/dilithium-update/ML-DSA/verification/xout/hw.2/.temps/link/vivado/vpl/prj/prj.runs/bd_5dca_axi_apb_bridge_inst_0_synth_1/bd_5dca_axi_apb_bridge_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_5dca_axi_apb_bridge_inst_0_utilization_synth.rpt -pb bd_5dca_axi_apb_bridge_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 15 14:07:12 2023...
