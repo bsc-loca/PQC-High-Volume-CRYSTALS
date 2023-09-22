@@ -24,37 +24,37 @@ $(EMCONFIG):
 	emconfigutil --platform $(PLATFORM) --od $(BIN_DIR)
 
 # Kernel
-.PHONY: xclbin kernel tcl
+#.PHONY: xclbin kernel tcl
 
-tcl: $(TCL)
+#tcl: $(TCL)
 
-$(TCL):
-ifeq ($(TARGET), sw_emu)
-	$(error tcl script generation not supported for software emulation)
-else
-	@mkdir -p $(TCL_DIR)
-	$(VXX) --export_script $(VITIS_CFLAGS) -c -k $(KERNEL) -o $(XOBJ) $(XSRC_DIR)/$(KERNEL).cpp $(XINC)
-	@mv $(KERNEL)_$(TARGET).tcl $(TCL)
-	@sed -i "/deadlock_detection/a config_export -version 0.0.1" $(TCL)
-	@sed -i "/strict_mode/a config_dataflow -fifo_depth 100" $(TCL)
-endif
+#$(TCL):
+#ifeq ($(TARGET), sw_emu)
+#	$(error tcl script generation not supported for software emulation)
+#else
+#	@mkdir -p $(TCL_DIR)
+#	$(VXX) --export_script $(VITIS_CFLAGS) -c -k $(KERNEL) -o $(XOBJ) $(XSRC_DIR)/$(KERNEL).cpp $(XINC)
+#	@mv $(KERNEL)_$(TARGET).tcl $(TCL)
+#	@sed -i "/deadlock_detection/a config_export -version 0.0.1" $(TCL)
+#	@sed -i "/strict_mode/a config_dataflow -fifo_depth 100" $(TCL)
+#endif
 
-kernel: $(XOBJ)
+#kernel: $(XOBJ)
 
-$(XOBJ): $(XSRC_DIR)/$(KERNEL).cpp $(XINC)
-	@mkdir -p $(XOBJ_DIR)
-ifneq ($(TARGET), sw_emu)
-	@make --no-print-directory tcl
-	$(VXX) --custom_script $(KERNEL):$(TCL) $(VITIS_CFLAGS) -c -k $(KERNEL) -o $@ $^
-else
-	$(VXX) $(VITIS_CFLAGS) -c -k $(KERNEL) -o $@ $^
-endif
+#$(XOBJ): $(XSRC_DIR)/$(KERNEL).cpp $(XINC)
+#	@mkdir -p $(XOBJ_DIR)
+#ifneq ($(TARGET), sw_emu)
+#	@make --no-print-directory tcl
+#	$(VXX) --custom_script $(KERNEL):$(TCL) $(VITIS_CFLAGS) -c -k $(KERNEL) -o $@ $^
+#else
+#	$(VXX) $(VITIS_CFLAGS) -c -k $(KERNEL) -o $@ $^
+#endif
 
-xclbin: $(XCLBIN)
+#xclbin: $(XCLBIN)
 
-$(XCLBIN): $(XOBJ)
-	@mkdir -p $(XCLBIN_DIR)
-	$(VXX) $(VITIS_CFLAGS) -l -o $@ $^
+#$(XCLBIN): $(XOBJ)
+#	@mkdir -p $(XCLBIN_DIR)
+#	$(VXX) $(VITIS_CFLAGS) -l -o $@ $^
 
 # Clean
 .PHONY: tidy clean cleanFpga cleanFpgaTemps
