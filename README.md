@@ -3,11 +3,11 @@ This repository contains the paper artifacts for "Hardware Acceleration for High
 Includes:
 
 **Acceleration HW/SW Co-design Experiments:**
-- OpenCL test environment to execute a high-volume operations for CRYSTALS-Kyber and CRYSTALS-Dilithium hardware accelerators. (`acc_experiments/CRYSTALS` folder)
-- OpenCL test environment to execute a high-volume operations for ML-KEM and ML-DSA hardware accelerators. Theoretical batch optimization (`acc_experiments/ML` folder)
+- OpenCL test environment to execute a high-volume operations for CRYSTALS-Kyber and CRYSTALS-Dilithium hardware accelerators. (`./acc_experiments/CRYSTALS` folder)
+- OpenCL test environment to execute a high-volume operations for ML-KEM and ML-DSA hardware accelerators. Theoretical batch optimization (`./acc_experiments/ML` folder)
 
 **Theoretical batch optimization**
-- Python script that determines the optimal batch size for minimizing the average waiting time, taking into account the algorithm, the number of parallel computing units, and the specified requests per second.
+- Python script that determines the optimal batch size for minimizing the average waiting time, taking into account the algorithm, the number of parallel computing units, and the specified requests per second. (`./batch_script` folder)
 
 
 
