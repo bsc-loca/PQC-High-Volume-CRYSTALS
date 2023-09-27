@@ -17,7 +17,7 @@ Script 'optimal_batch_size.py' attached to the article "Hardware Acceleration fo
   The description of the script and the instructions to launch it can be retrieved with a parameterless execution, or by providing the option '-h'.  
   The provided script can be run with `py optimal_batch_size.py` followed by three arguments, as in:  
 
-    py optimal_batch_size.py {alg} c lam
+    py optimal_batch_size.py {alg} {c} {lam}
 
   where the positional arguments stand for:  
     - `alg`         the accelerated algorithm (accepted options: kybenc2, kybenc3, kybenc4, kybdec2, kybdec3, kybdec4, dilsig3, dilver3)  
@@ -47,7 +47,7 @@ Script 'optimal_batch_size.py' attached to the article "Hardware Acceleration fo
   For instance,  
 
     (alg=dilsig3, c=1, lam=723) -> [b,time]=[1, 2185.7220722308657]
-    
+
 	
 ### **5. An explanation of how the source code is organized**
 
