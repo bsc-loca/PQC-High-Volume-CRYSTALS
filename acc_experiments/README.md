@@ -1,4 +1,4 @@
-# Post-Quantun Cryptography Acceleration
+# Post-Quantum Cryptographic Acceleration
 
 The structure of the code directory is as follows
 
